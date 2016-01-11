@@ -1,0 +1,19 @@
+# DEVLOG
+Jennifer Yu and Jessica Yang
+
+Kanimop ~ Search Engine for Everything Anime / Kpop !
+
+01/08/16
+JENN & JESS
+- brainstormed ideas for the project
+
+01/10/16
+JENN & JESS
+- submitted proposal by email
+
+01/11/16
+JENN
+- created the devlog and updated
+JESS
+- created the readme and updated
+
