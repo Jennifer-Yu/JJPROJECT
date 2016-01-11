@@ -12,8 +12,10 @@ JENN & JESS
 - submitted proposal by email
 
 01/11/16
-JENN
-- created the devlog and updated
-JESS
-- created the readme and updated
-
+JENN & JESS
+- created the devlog.txt and updated
+- updated readme.md
+- created Database.java
+Project Planning
+- create a database file that manages the animes / kpop groups (CSV)
+- create separate anime and kpop classes that will be elements in the database
