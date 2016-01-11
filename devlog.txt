@@ -1,21 +1,37 @@
 # DEVLOG
+
 Jennifer Yu and Jessica Yang
 
 Kanimop ~ Search Engine for Everything Anime / Kpop !
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
 01/08/16
 JENN & JESS
 - brainstormed ideas for the project
 
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
 01/10/16
 JENN & JESS
 - submitted proposal by email
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
 01/11/16
 JENN & JESS
 - created the devlog.txt and updated
 - updated readme.md
 - created Database.java
+
 Project Planning
 - create a database file that manages the animes / kpop groups (CSV)
 - create separate anime and kpop classes that will be elements in the database
+
+JENN
+- created Anime.java and Kpop.java skeletons
+- made instance variables for each
+- made constructors for each
+- made mutator methods for each
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
