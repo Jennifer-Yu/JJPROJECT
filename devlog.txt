@@ -34,4 +34,20 @@ JENN
 - made constructors for each
 - made mutator methods for each
 
+JESS
+- looked up CSV documentation, excel and processing
+- looking for ways to include graphics
+
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+01/12/16
+JESS
+- editing Anime and Kpop skeletons
+- fixing constructors
+
+JENN
+- creating Kanimop.java
+- using tools from YORPG to store answers for the quiz
+
+JESS & JENN
+- plan to implement cs1 package
