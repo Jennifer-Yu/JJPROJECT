@@ -44,6 +44,7 @@ JESS
 JESS
 - editing Anime and Kpop skeletons
 - fixing constructors
+- creating Avatar.java
 
 JENN
 - creating Kanimop.java
