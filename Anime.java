@@ -23,26 +23,22 @@ public class Anime {
 
     public String plot;
 
+
     //CONSTRUCTORS
 
     public Anime() {
 	
-	/*name = "Naruto";
-	alternateName = "N/A";
-	genres = {"Action", "Ninjas", "Shounen"};
-	characters = {"Naruto", "Sakura", "Sasuke"};
-	rating = 5;
-	episodes = 600;
-	reviews = {"Loved it!", "Ew, sucked."};
-	plot = "Ninjas and stuff.";*/
-	
 	name = "Name";
 	alternateName = "N/A";
+	genres = new ArrayList<String>();
+	characters = new ArrayList<String>();
 	rating = 0;
 	episodes = 0;
+	reviews = new ArrayList<String>();
 	plot = "Plot";
 
     }
+
 
     //ACCESSORS
 
@@ -112,20 +108,15 @@ public class Anime {
 	plot = input;
     }
 
-    //main method for testing
+
+    //MAIN METHOD FOR TESTING
 
     public static void main(String[] args) {
+
 	Anime Naruto = new Anime();
-	//Naruto.name("Naruto");
+	Naruto.setName("Naruto");
+	System.out.println(Naruto.getName());
 
-	//Naruto.set();
-
-	System.out.println(Naruto.name());
-	//System.out.println(
-	//System.out.println(
-	//System.out.println(
-	//System.out.println(
-	//System.out.println(
-	
     }
+
 }    

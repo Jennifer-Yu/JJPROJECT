@@ -15,133 +15,139 @@ public class Kpop {
 
     public String fanName;
 
-    public String[] members;
+    public ArrayList<String> members;
+
+    public int numMembers;
 
     public double rating;
 
     public int titleSongs;
 
-    public String[] reviews;
+    public ArrayList<String> reviews;
 
     public String description;
 
+
     //CONSTRUCTORS
 
-    public String groupName() {
+    public Kpop() {
+
+	groupName = "Name of Group";
+	gender = "Girl Group or Boy Group?";
+	company = "Company Name";
+	fanBase = "Name of Fanbase";
+	fanName = "Name of Fans";
+	members = new ArrayList<String>();
+	rating = 0;
+	titleSongs = 0;
+	reviews = new ArrayList<String>();
+	description = "Description";
+
+    }
+
+
+    //ACCESSORS
+
+    public String getGroupName() {
 	return groupName;
     }
 
-    public String gender() {
+    public String getGender() {
 	return gender;
     }
 
-    public String company() {
+    public String getCompany() {
 	return company;
     }
 
-    public String fanBase() {
+    public String getFanBase() {
 	return fanBase;
     }
 
-    public String fanName() {
+    public String getFanName() {
 	return fanName;
     }
 
-    public String[] members() {
+    public ArrayList<String> getMembers() {
 	return members;
     }
 
-    public double rating() {
+    public int getNumMembers() {
+	return members.length;
+    }
+
+    public double getRating() {
 	return rating;
     }
 
-    public int titleSongs() {
+    public int getTitleSongs() {
 	return titleSongs;
     }
 
-    public String[] reviews() {
+    public ArrayList<String> getReviews() {
 	return reviews;
     }
 
-    public String description() {
+    public String getDescription() {
 	return description;
     }
 
-    //METHODS
 
-    public void groupName(String input) {
+    //MUTATORS
+
+    public void setGroupName(String input) {
 	groupName = input;
     }
 
-    public void gender(String input) {
+    public void setGender(String input) {
 	gender = input;
     }
 
-    public void company(String input) {
+    public void setCompany(String input) {
 	company = input;
     }
 
-    public void fanBase(String input) {
+    public void setFanBase(String input) {
 	fanBase = input;
     }
 
-    public void fanName(String input) {
+    public void setFanName(String input) {
 	fanName = input;
     }
 
-    public void members(String[] input) {
+    public void setMembers(ArrayList<String> input) {
 	members = input;
     }
 
-    public void rating(double input) {
+    public void setNumMembers(int input) {
+	numMembers = input;
+    }
+
+    public void setRating(double input) {
 	rating = input;
     }
 
-    public void titleSongs(int input) {
+    public void setTitleSongs(int input) {
 	titleSongs = input;
     }
 
-    public void reviews(String[] input) {
+    public void setReviews(ArrayList<String> input) {
 	reviews = input;
     }
 
-    public void description(String input) {
+    public void setDescription(String input) {
 	description = input;
     }
 
-    //ANIMES
 
-    /*
-    public void set() {
-	
-	groupName = "GOT7";
-	gender = "male";
-	company = "JYP Entertainment";
-	fanBase = "N/A";
-	fanName = "IGOT7";
-	members = {"Im Jaebum", "Park Jinyoung", "Mark Tuan", "Jackson Wang", "Kumpimook Bwuakul Bambam", "Choi Youngjae", "Kim Yugyeom"};
-	rating = 5;
-	titleSongs = 5;
-	reviews = {"Love them!", "Ew, they suck."};
-	description = "JJProject joined to make them. Doing well lately.";
-
-    }
-    */
-
-
+    //MAIN METHOD FOR TESTING    
 
     public static void main(String[] args) {
+
 	Kpop GOT7 = new Kpop();
-	//GOT7.groupName("GOT7");
-
-	GOT7.set();
-
-	System.out.println(GOT7.groupName());
-	//System.out.println(
-	//System.out.println(
-	//System.out.println(
-	//System.out.println(
-	//System.out.println(
+	GOT7.setGroupName("GOT7");
+	System.out.println(GOT7.getGroupName());
 	
     }
+
 }    
