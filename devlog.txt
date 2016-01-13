@@ -52,3 +52,17 @@ JENN
 
 JESS & JENN
 - plan to implement cs1 package
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+01/13/16
+JESS
+- worked on Avatar.java
+- pondered how to store info within an Avatar
+
+JENN
+- worked on Kanimop.java
+- developed the beginning statements and choices
+
+PROJECT PLANNING
+- considered the positives of being able to save accounts
