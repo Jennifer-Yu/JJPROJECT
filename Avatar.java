@@ -52,7 +52,12 @@ public class Avatar {
 	String retStr = "";
 	for (Anime x : animeList) {
 	    if (x.getName().equals(animeName)) {
-		retStr += ; //insert info
+		retStr += x.getName() +
+		    "\nInformation:" +
+		    "\n Alternative Titles: " + x.getAlternateName() +
+		    "\n Episodes: " + x.getEpisodes() + 
+		    "\n Producers: " +   +
+		    +; //insert info
 	    }
 	}
 	retStr = "Sorry, this anime is not on your list.";

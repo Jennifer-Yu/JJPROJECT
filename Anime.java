@@ -19,6 +19,8 @@ public class Anime {
 
     public int episodes;
 
+    public ArrayList<String> producers;
+
     public ArrayList<String> reviews;
 
     public String plot;
@@ -66,6 +68,10 @@ public class Anime {
 	return episodes;
     }
 
+    public ArrayList<String> getProducers() {
+	return producers;
+    }
+
     public ArrayList<String> getReviews() {
 	return reviews;
     }
@@ -73,6 +79,7 @@ public class Anime {
     public String getPlot() {
 	return plot;
     }
+
 
     //MUTATORS
 
@@ -100,6 +107,10 @@ public class Anime {
 	episodes = input;
     }
 
+    public void setProducers(ArrayList<String> input) {
+	producers = input;    
+    }
+
     public void setReviews(ArrayList<String> input) {
 	reviews = input;
     }
@@ -108,6 +119,17 @@ public class Anime {
 	plot = input;
     }
 
+
+    //METHODS
+
+    public static String returnALStr(ArrayList<String> input) {
+	String retStr = "";
+	for (String x : input) {
+	    retStr += x + ", ";
+	}
+	retStr = retStr.substring(0, retStr.length()-2); //remove last comma
+	return retStr;
+    } 
 
     //MAIN METHOD FOR TESTING
 
