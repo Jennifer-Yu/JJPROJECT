@@ -1,5 +1,8 @@
 // AVATAR SKELETON IN DATABASE
 
+import java.util.ArrayList;
+import java.util.Comparator;
+
 public class Avatar {
 
 
@@ -37,17 +40,34 @@ public class Avatar {
 
     //METHODS
 
-    public void viewAnimeInfo(Anime anime) {
-	System.out.println();
+    public void alphabetize() {
+	Collections.sort(animeList, new Comparator<Anime>() {
+		public int compare(final Anime a1, final Anime a2) {
+		    return a1.getName().compareTo(a2.getName());	
+		}
+	    } );
+    }
+	
+    public String viewAnimeInfo(String animeName) {
+	String retStr = "";
+	for (Anime x : animeList) {
+	    if (x.getName().equals(animeName)) {
+		retStr += ; //insert info
+	    }
+	}
+	retStr = "Sorry, this anime is not on your list.";
+	return retStr;
     }
 
-    public void viewKpopInfo(Kpop group) {
-	if () {
-	    System.out.println();
+    public String viewKpopInfo(String groupName) {
+	String retStr = "";
+	for (Kpop x : kpopList) {
+	    if (x.getGroupName().equals(groupName)) {
+		retStr += ; //insert info
+	    }
 	}
-	else {
-	    System.out.println("Sorry, this group is not on your list.");
-	}
+	retStr = "Sorry, this group is not on your list.";
+	return retStr;
     }
 
     public void viewAnimeList() {
