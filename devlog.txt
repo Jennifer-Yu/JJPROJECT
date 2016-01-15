@@ -6,15 +6,47 @@ Kanimop ~ Search Engine for Everything Anime / Kpop !
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
-01/08/16
-JENN & JESS
-- brainstormed ideas for the project
+01/14/16
+JESS
+- worked on Avatar.java and Anime.java
+- researched tools to use in Avatar.java
+
+JENN
+- worked on Kanimop.java
+
+PROJECT PLANNING / JENN & JESS
+- worked on to-do list
+- worked on UML diagram
+- worked on flowchart
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
-01/10/16
-JENN & JESS
-- submitted proposal by email
+01/13/16
+JESS
+- worked on Avatar.java
+- pondered how to store info within an Avatar
+
+JENN
+- worked on Kanimop.java
+- developed the beginning statements and choices
+
+PROJECT PLANNING
+- considered the positives of being able to save accounts
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+01/12/16
+JESS
+- editing Anime and Kpop skeletons
+- fixing constructors
+- creating Avatar.java
+
+JENN
+- creating Kanimop.java
+- using tools from YORPG to store answers for the quiz
+
+JESS & JENN
+- plan to implement cs1 package
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
@@ -40,29 +72,12 @@ JESS
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
-01/12/16
-JESS
-- editing Anime and Kpop skeletons
-- fixing constructors
-- creating Avatar.java
-
-JENN
-- creating Kanimop.java
-- using tools from YORPG to store answers for the quiz
-
-JESS & JENN
-- plan to implement cs1 package
+01/10/16
+JENN & JESS
+- submitted proposal by email
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
-01/13/16
-JESS
-- worked on Avatar.java
-- pondered how to store info within an Avatar
-
-JENN
-- worked on Kanimop.java
-- developed the beginning statements and choices
-
-PROJECT PLANNING
-- considered the positives of being able to save accounts
+01/08/16
+JENN & JESS
+- brainstormed ideas for the project
