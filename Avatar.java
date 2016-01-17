@@ -38,12 +38,20 @@ public class Avatar {
     }
 
 
-    //METHODS
+    //ANIME METHODS
 
-    public void alphabetize() {
+    public void sortAnimeName() {
 	Collections.sort(animeList, new Comparator<Anime>() {
 		public int compare(final Anime a1, final Anime a2) {
 		    return a1.getName().compareTo(a2.getName());	
+		}
+	    } );
+    }
+
+    public void sortAnimeRating() {
+	Collections.sort(animeList, new Comparator<Anime>() {
+		public int compare(final Anime a1, final Anime a2) {
+		    return a1.getRating().compareTo(a2.getRating());
 		}
 	    } );
     }
@@ -64,6 +72,32 @@ public class Avatar {
 	return retStr;
     }
 
+    public void viewAnimeList() {
+	System.out.println(uName + "\'s Anime List: ");
+	for (Anime x : animeList) {
+	    System.out.println(x.getName());
+	}
+	System.out.println("Anime Count: " + totalAnime);
+    }
+
+    //KPOP METHODS
+
+    public void sortGroupName() {
+	Collections.sort(kpopList, new Comparator<Kpop>() {
+		public int compare(final Kpop k1, final Kpop k2) {
+		    return k1.getName().compareTo(k2.getName());	
+		}
+	    } );
+    }
+
+    public void sortGroupRating() {
+	Collections.sort(kpopList, new Comparator<Kpop>() {
+		public int compare(final Kpop k1, final Kpop k2) {
+		    return k1.getRating().compareTo(k2.getRating());
+		}
+	    } );
+    }
+    
     public String viewKpopInfo(String groupName) {
 	String retStr = "";
 	for (Kpop x : kpopList) {
@@ -73,14 +107,6 @@ public class Avatar {
 	}
 	retStr = "Sorry, this group is not on your list.";
 	return retStr;
-    }
-
-    public void viewAnimeList() {
-	System.out.println(uName + "\'s Anime List: ");
-	for (Anime x : animeList) {
-	    System.out.println(x.getName());
-	}
-	System.out.println("Anime Count: " + totalAnime);
     }
 
     public void viewKpopList() {
