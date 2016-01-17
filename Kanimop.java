@@ -17,7 +17,7 @@ public class Kanimop {
     private InputStreamReader isr;
     private BufferedReader in;
     private int choice = 0;
-  
+    private String text = "";
 
 
     // DEFAULT CONSTRUCTOR
@@ -31,12 +31,12 @@ public class Kanimop {
 
     // START
     public void start() {
-	String text;
-	
 	text = "\nWelcome to Kanimop!";
 	System.out.println(text);
-	
-	while ( choice == 0 ) {
+
+
+
+	while ( choice != 1 && choice != 2 ) {
 
 	    text = "\nWould you like to create a new avatar?\n";
 	    text += "\t1: Yeah, let's go!\n";
@@ -48,58 +48,57 @@ public class Kanimop {
 	    try {
 		choice = Integer.parseInt( in.readLine() );
 	    }
-	    catch ( Exception e ) { 
+	    catch ( Exception e ) { }
+	    
+	    if ( choice != 1 && choice != 2 ) {
 		System.out.print("\n\n\n\n\nSorry! You need to pick 1 or 2 to continue.\n\n\n\n\n");
 	    }
-		
 	}
+
+
 	    
 	if ( choice == 1 ) {
 	    choice = 0;
 
-	    text = "\n\nDo you have an avatar already?\n";
-	    text += "\t1: Yes\n";
-	    text += "\t2: No\n";
+	    while ( choice != 1 && choice != 2 ) {
+		text = "\n\n\n\n\nDo you have an avatar already?\n";
+		text += "\t1: Yes\n";
+		text += "\t2: No\n";
 
-	    text += ">> ";
-	    System.out.print(text);
-
-	    try {
-		choice = Integer.parseInt( in.readLine() );
-	    }
-	    catch ( Exception e ) { 
-		System.out.print("\n\n\n\n\nSorry! You need to pick 1 or 2 to continue.\n\n\n\n\n");
+		text += ">> ";
+		System.out.print(text);
+		
+		try {
+		    choice = Integer.parseInt( in.readLine() );
+		}
+		catch ( Exception e ) { }
+	
+		if ( choice != 1 && choice != 2 ) {
+		    System.out.print("\n\n\n\n\nSorry! You need to pick 1 or 2 to continue.\n\n\n\n\n");
+		}
 	    }
 
 	    if (choice == 1) {
+		choice = 0;
 		//login check
 	    }
 	    
 	    if (choice == 2) {
-		//create avatar, go to quiz, create character
-		text = "\n\nWould you like to be an anime character or a korean pop star?\n";
-		text += "\t1: ANIME CHARACTER PLZZ!\n";
-		text += "\t2: Smoking hot kpop star, DUR.\n";
-		System.out.print(text);
+		choice = 0;
+		quiz();
 	    }
-	    
-	    try {
-		choice3 = Integer.parseInt( in.readLine() );
-	    }
-	    catch ( Exception e ) { 
-		System.out.print("\n\n\n\n\nSorry! You need to pick 1 or 2 to continue.\n\n\n\n\n");
-	    }
-	    
-	    //quiz();
 	}
 
+
+
 	if ( choice == 2 ) {
-	    //skip();
-	    text = "You have entered as a guest.\n";
-	    text += "Feel free to browse and type, but remember that you need a character to save your progress!\n";
+	    choice = 0;
+	    //skip(); go to database
+	    text = "\n\n\n\n\nYou have entered as a guest.\n";
+	    text += "Feel free to browse and type, but remember that you need a character to save your progress!\n\n";
 	    System.out.println(text);
 	}
-    
+    }    
 
 
     // RESTART
@@ -110,12 +109,24 @@ public class Kanimop {
 
     // QUIZ
     public void quiz() {
+
+	while (choice != 1 && choice != 2) {
+	    text = "\n\n\n\n\nWould you like to be an anime character or a korean pop star?\n";
+	    text += "\t1: ANIME CHARACTER PLZZ!\n";
+	    text += "\t2: Smoking hot kpop star, DUR.\n";
+	    System.out.print(text);
+	    
+	    try {
+		choice = Integer.parseInt( in.readLine() );
+	    }
+	    catch ( Exception e ) { }
+	    if ( choice != 1 && choice != 2 ) {
+		System.out.print("\n\n\n\n\nSorry! You need to pick 1 or 2 to continue.\n\n\n\n\n");
+	    }
+	}
+	    
 	String text;
-	ArrayList[][] characters = {"Haruhi", "Yuno", "Mikasa", "Homura", \
-				    "Shiro", "Kaori", "Alice", "Guila", \
-				    "Teresa", "Erza", "Izaya", "L", "Lelouch", \ 
-				    "Gintoki", "Kirito", "Itachi", "Kaneki", \
-				    "Ichigo", "Kise", "Edward"}
+	//	ArrayList[][] characters = {"Haruhi", "Yuno", "Mikasa", "Homura", "Shiro", "Kaori", "Alice", "Guila", "Teresa", "Erza", "Izaya", "L", "Lelouch", "Gintoki", "Kirito", "Itachi", "Kaneki", "Ichigo", "Kise", "Edward"};
 	
 	/*  
 	text += "If you could "
