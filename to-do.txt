@@ -1,0 +1,9 @@
+// TO-DO LIST
+
+DUE 1/17/16
+1. Working database, search engine, quiz, accounts
+
+DUE 1/22/16
+2. Upgraded database, search engine, quiz, accounts
+3. Implement demo (RPG) section
+4. Error check and testing
