@@ -37,7 +37,7 @@ public class Kanimop {
 
 	while ( choice != 1 && choice != 2 ) {
 
-	    text = "\nWould you like to create a new avatar?\n";
+	    text = "\n\n\n\n\nWould you like to create a new avatar?\n";
 	    text += "\t1: Yeah, let's go!\n";
 	    text += "\t2: Nah, maybe later.\n";
 	    
@@ -50,7 +50,7 @@ public class Kanimop {
 	    catch ( Exception e ) { }
 	    
 	    if ( choice != 1 && choice != 2 ) {
-		System.out.print("\n\n\n\n\nSorry! You need to pick 1 or 2 to continue.\n\n\n\n\n");
+		System.out.print("\n\n\n\n\nSorry! You need to pick 1 or 2 to continue.");
 	    }
 	}
 
@@ -73,7 +73,7 @@ public class Kanimop {
 		catch ( Exception e ) { }
 	
 		if ( choice != 1 && choice != 2 ) {
-		    System.out.print("\n\n\n\n\nSorry! You need to pick 1 or 2 to continue.\n\n\n\n\n");
+		    System.out.print("\n\n\n\n\nSorry! You need to pick 1 or 2 to continue.");
 		}
 	    }
 
@@ -122,7 +122,7 @@ public class Kanimop {
 	    }
 	    catch ( Exception e ) { }
 	    if ( choice != 1 && choice != 2 ) {
-		System.out.print("\n\n\n\n\nSorry! You need to pick 1 or 2 to continue.\n\n\n\n\n");
+		System.out.print("\n\n\n\n\nSorry! You need to pick 1 or 2 to continue.");
 	    }
 	}
 
@@ -149,11 +149,12 @@ public class Kanimop {
 	int i = 0;
 	int l = 0;
 
-	text = "\n\n\n\n\nAnswer the questions to generate your avatar!\n\n\n\n\n";
+	text = "\n\n\n\n\nAnswer the questions to generate your avatar!\n";
+	System.out.println(text);
 
 	//1
 	while (choice != 1 && choice != 2) {
-	    text += "\n\nWould you hug a stranger?\n";
+	    text = "Would you hug a stranger?\n";
 	    text += "\t1: Yeah, why not.\n";
 	    text += "\t2: Ew, no.\n";
 
@@ -165,7 +166,7 @@ public class Kanimop {
 	    }
 	    catch ( Exception e ) { }
 	    if ( choice != 1 && choice != 2 ) {
-		System.out.print("\n\n\n\n\nSorry! You need to pick 1 or 2 to continue.\n\n\n\n\n");
+		System.out.print("\n\n\n\n\nSorry! You need to pick 1 or 2 to continue.");
 	    }
 	}
 
@@ -183,7 +184,7 @@ public class Kanimop {
 
 	//2
 	while (choice != 1 && choice != 2) {
-	    text += "\n\nAre you active or a lazy potato?\n";
+	    text = "\n\n\n\n\nAre you active or a lazy potato?\n";
 	    text += "\t1: Mostly active, a little potato.\n";
 	    text += "\t2: A little active, mostly potato.\n";
 
@@ -195,7 +196,7 @@ public class Kanimop {
 	    }
 	    catch ( Exception e ) { }
 	    if ( choice != 1 && choice != 2 ) {
-		System.out.print("\n\n\n\n\nSorry! You need to pick 1 or 2 to continue.\n\n\n\n\n");
+		System.out.print("\n\n\n\n\nSorry! You need to pick 1 or 2 to continue.");
 	    }
 	}
 
@@ -213,7 +214,7 @@ public class Kanimop {
 
 	//3
 	while (choice != 1 && choice != 2) {
-	    text += "\n\nIf you could, would you take over the world?\n";
+	    text = "\n\n\n\n\nIf you could, would you take over the world?\n";
 	    text += "\t1: Yeah, sounds cool.\n";
 	    text += "\t2: No, okay, maybe a little.\n";
 
@@ -225,7 +226,7 @@ public class Kanimop {
 	    }
 	    catch ( Exception e ) { }
 	    if ( choice != 1 && choice != 2 ) {
-		System.out.print("\n\n\n\n\nSorry! You need to pick 1 or 2 to continue.\n\n\n\n\n");
+		System.out.print("\n\n\n\n\nSorry! You need to pick 1 or 2 to continue.");
 	    }
 	}
 
@@ -243,7 +244,7 @@ public class Kanimop {
 
 	//4
 	while (choice != 1 && choice != 2) {
-	    text += "\n\nAre you good at keeping secrets?\n";
+	    text = "\n\n\n\n\nAre you good at keeping secrets?\n";
 	    text += "\t1: Sure, there was that one time when...\n";
 	    text += "\t2: I guess.\n";
 
@@ -255,7 +256,7 @@ public class Kanimop {
 	    }
 	    catch ( Exception e ) { }
 	    if ( choice != 1 && choice != 2 ) {
-		System.out.print("\n\n\n\n\nSorry! You need to pick 1 or 2 to continue.\n\n\n\n\n");
+		System.out.print("\n\n\n\n\nSorry! You need to pick 1 or 2 to continue.");
 	    }
 	}
 
@@ -273,7 +274,7 @@ public class Kanimop {
 
 	//5
 	while (choice != 1 && choice != 2) {
-	    text += "\n\nEvil-o-meter?\n";
+	    text = "\n\n\n\n\nEvil-o-meter?\n";
 	    text += "\t1: Secretly evil, but outwardly nice.\n";
 	    text += "\t2: Evil, of course.\n";
 
@@ -285,7 +286,7 @@ public class Kanimop {
 	    }
 	    catch ( Exception e ) { }
 	    if ( choice != 1 && choice != 2 ) {
-		System.out.print("\n\n\n\n\nSorry! You need to pick 1 or 2 to continue.\n\n\n\n\n");
+		System.out.print("\n\n\n\n\nSorry! You need to pick 1 or 2 to continue.");
 	    }
 	}
 
@@ -303,7 +304,7 @@ public class Kanimop {
 
 	//6
 	while (choice != 1 && choice != 2) {
-	    text += "\n\nAre you an honest person?\n";
+	    text = "\n\n\n\n\nAre you an honest person?\n";
 	    text += "\t1: Maybe.\n";
 	    text += "\t2: Yeah, most of the time.\n";
 
@@ -315,7 +316,7 @@ public class Kanimop {
 	    }
 	    catch ( Exception e ) { }
 	    if ( choice != 1 && choice != 2 ) {
-		System.out.print("\n\n\n\n\nSorry! You need to pick 1 or 2 to continue.\n\n\n\n\n");
+		System.out.print("\n\n\n\n\nSorry! You need to pick 1 or 2 to continue.");
 	    }
 	}
 
@@ -333,7 +334,7 @@ public class Kanimop {
 
 	//7
 	while (choice != 1 && choice != 2 && choice != 3 && choice != 4) {
-	    text += "\n\nIs there anyone that you would die for?\n";
+	    text = "\n\n\n\n\nIs there anyone that you would die for?\n";
 	    text += "\t1: Yes.\n";
 	    text += "\t2: No.\n";
 	    text += "\t3: I'm not sure.\n";
@@ -347,7 +348,7 @@ public class Kanimop {
 	    }
 	    catch ( Exception e ) { }
 	    if (choice != 1 && choice != 2 && choice != 3 && choice != 4) {
-		System.out.print("\n\n\n\n\nSorry! You need to pick 1 or 2 to continue.\n\n\n\n\n");
+		System.out.print("\n\n\n\n\nSorry! You need to pick 1 or 2 to continue.");
 	    }
 	}
 
@@ -371,14 +372,35 @@ public class Kanimop {
 	    choice = 0;
 	}
 
+	//System.out.println(c);
+	//System.out.println(i);
+	//System.out.println(x);
+	//System.out.println(l);
+
 	ArrayList<Comparable> values = new ArrayList<Comparable>(4);
 	values.add(c);
 	values.add(x);
 	values.add(i);
 	values.add(l);
 
-	selectionSort(values);
-	
+	//for (Comparable yum : values) {
+	//    System.out.print(yum + " ");
+	//}
+
+	int passes = 0;
+	while (passes < 4) {
+	    for (int ctr = 0; ctr < values.size()-1; ctr++) {
+		if ((values.get(ctr)).compareTo(values.get(ctr+1)) < 0) {
+		    values.set(ctr+1,values.set(ctr,values.get(ctr+1)));
+		}
+	    }
+	    passes++;
+	}
+
+	//for (Comparable yum : values) {
+	//    System.out.print(yum + " ");
+	//}
+
 	String winner = "";
 
 	int numofwinners = 0;
@@ -409,7 +431,7 @@ public class Kanimop {
 		numofwinners += 1;
 	    }
 	}
-	if (l == values.get(x)) {
+	if (l == values.get(3)) {
 	    if (numofwinners > 0) { 
 		if (((int)(Math.random() * 10)) > 4) {
 		    winner = L.get((int)(Math.random() * 4));
@@ -424,38 +446,9 @@ public class Kanimop {
 	text = "\n\n\n\n\nYour avatar is...";
 	text += "\n\n\n\t" + winner + "\n\n\n";
 	
+	System.out.println(text);
     }	
 
-    public static void selectionSort( ArrayList<Comparable> data) {
-	ArrayList<Comparable> values = new ArrayList<Comparable>(data.size());
-	for (Comparable x : data) {
-	    values.add(x);
-	}
-	int p = data.size()-1;
-	int ctr = 0;
-	while (p > 0) {
-	    Comparable a = min(values);
-	    int b = data.indexOf(a);
-	    for (int x = b; x > ctr; x--) {
-		data.set(x, data.get(x-1));
-	    }
-	    data.set(ctr, a);
-	    values.remove(b-ctr);
-	    p--;
-	    ctr++;
-	}
-    }
-
-    public static Comparable min( ArrayList<Comparable> data ) {
-	Comparable smallest = data.get(0);
-	for (Comparable x : data) {
-	    if (x.compareTo(smallest) < 0) {
-		smallest = x;
-	    }
-	}
-	return smallest;
-    }
-	
     public static void main(String[] args) {
 	Kanimop jubjubjub = new Kanimop();
     }
