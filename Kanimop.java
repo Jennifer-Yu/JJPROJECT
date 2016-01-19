@@ -280,7 +280,7 @@ public class Kanimop {
 
 	if (choice == 2) {
 	    choice = 0;
-	    //    kpopQuiz();
+	    kpopQuiz();
 	}
     }
 
@@ -591,6 +591,319 @@ public class Kanimop {
 	}
 
 	user.setAnimePersona(winner);
+	text = "\n\n\n\n\nYour avatar is...";
+	text += "\n\n\n\t" + winner + "\n\n\n";
+	
+	System.out.println(text);
+    }	
+
+    public void kpopQuiz() {
+	
+	ArrayList<String> C = new ArrayList<String>(Arrays.asList("Jimin", "Suzy", "Yoseob", "Sunggyu", "Daehyun"));
+	ArrayList<String> X = new ArrayList<String>(Arrays.asList("Amber", "Jackson", "Eunji", "Minah", "Eunji"));
+	ArrayList<String> I = new ArrayList<String>(Arrays.asList("Taeyeon", "Jungkook", "Baekhyun", "Hani", "Taemin"));
+	ArrayList<String> L = new ArrayList<String>(Arrays.asList("G-Dragon", "CL", "Hyuna", "Heechul", "Hyorin"));
+		
+	int c = 0;
+	int x = 0;
+	int i = 0;
+	int l = 0;
+
+	text = "\n\n\n\n\nAnswer the questions to generate your avatar!\n";
+	System.out.println(text);
+
+	//1
+	while (choice != 1 && choice != 2) {
+	    text = "Would you hug a stranger?\n";
+	    text += "\t1: Yeah, why not.\n";
+	    text += "\t2: Ew, no.\n";
+
+	    text += ">> ";
+	    System.out.print(text);
+
+	    try {
+		choice = Integer.parseInt( in.readLine() );
+	    }
+	    catch ( Exception e ) { }
+	    if ( choice != 1 && choice != 2 ) {
+		System.out.print("\n\n\n\n\nSorry! You need to pick 1 or 2 to continue.");
+	    }
+	}
+
+	if (choice == 1) {
+	    x += 1;
+	    c += 1;
+	    choice = 0;
+	}
+
+	if (choice == 2) {
+	    l += 1;
+	    i += 1;
+	    choice = 0;
+	}
+
+	//2
+	while (choice != 1 && choice != 2) {
+	    text = "\n\n\n\n\nAre you active or a lazy potato?\n";
+	    text += "\t1: Mostly active, a little potato.\n";
+	    text += "\t2: A little active, mostly potato.\n";
+
+	    text += ">> ";
+	    System.out.print(text);
+
+	    try {
+		choice = Integer.parseInt( in.readLine() );
+	    }
+	    catch ( Exception e ) { }
+	    if ( choice != 1 && choice != 2 ) {
+		System.out.print("\n\n\n\n\nSorry! You need to pick 1 or 2 to continue.");
+	    }
+	}
+
+	if (choice == 1) {
+	    x += 1;
+	    l += 1;
+	    choice = 0;
+	}
+
+	if (choice == 2) {
+	    c += 1;
+	    i += 1;
+	    choice = 0;
+	}
+
+	//3
+	while (choice != 1 && choice != 2) {
+	    text = "\n\n\n\n\nIf you could, would you take over the world?\n";
+	    text += "\t1: Yeah, sounds cool.\n";
+	    text += "\t2: No, okay, maybe a little.\n";
+
+	    text += ">> ";
+	    System.out.print(text);
+
+	    try {
+		choice = Integer.parseInt( in.readLine() );
+	    }
+	    catch ( Exception e ) { }
+	    if ( choice != 1 && choice != 2 ) {
+		System.out.print("\n\n\n\n\nSorry! You need to pick 1 or 2 to continue.");
+	    }
+	}
+
+	if (choice == 1) {
+	    x += 1;
+	    i += 1;
+	    choice = 0;
+	}
+
+	if (choice == 2) {
+	    c += 1;
+	    l += 1;
+	    choice = 0;
+	}
+
+	//4
+	while (choice != 1 && choice != 2) {
+	    text = "\n\n\n\n\nAre you good at keeping secrets?\n";
+	    text += "\t1: Sure, there was that one time when...\n";
+	    text += "\t2: I guess.\n";
+
+	    text += ">> ";
+	    System.out.print(text);
+
+	    try {
+		choice = Integer.parseInt( in.readLine() );
+	    }
+	    catch ( Exception e ) { }
+	    if ( choice != 1 && choice != 2 ) {
+		System.out.print("\n\n\n\n\nSorry! You need to pick 1 or 2 to continue.");
+	    }
+	}
+
+	if (choice == 1) {
+	    x += 1;
+	    c += 1;
+	    choice = 0;
+	}
+
+	if (choice == 2) {
+	    l += 1;
+	    i += 1;
+	    choice = 0;
+	}
+
+	//5
+	while (choice != 1 && choice != 2) {
+	    text = "\n\n\n\n\nEvil-o-meter?\n";
+	    text += "\t1: Secretly evil, but outwardly nice.\n";
+	    text += "\t2: Evil, of course.\n";
+
+	    text += ">> ";
+	    System.out.print(text);
+
+	    try {
+		choice = Integer.parseInt( in.readLine() );
+	    }
+	    catch ( Exception e ) { }
+	    if ( choice != 1 && choice != 2 ) {
+		System.out.print("\n\n\n\n\nSorry! You need to pick 1 or 2 to continue.");
+	    }
+	}
+
+	if (choice == 1) {
+	    x += 1;
+	    l += 1;
+	    choice = 0;
+	}
+
+	if (choice == 2) {
+	    c += 1;
+	    i += 1;
+	    choice = 0;
+	}	
+
+	//6
+	while (choice != 1 && choice != 2) {
+	    text = "\n\n\n\n\nAre you an honest person?\n";
+	    text += "\t1: Maybe.\n";
+	    text += "\t2: Yeah, most of the time.\n";
+
+	    text += ">> ";
+	    System.out.print(text);
+
+	    try {
+		choice = Integer.parseInt( in.readLine() );
+	    }
+	    catch ( Exception e ) { }
+	    if ( choice != 1 && choice != 2 ) {
+		System.out.print("\n\n\n\n\nSorry! You need to pick 1 or 2 to continue.");
+	    }
+	}
+
+	if (choice == 1) {
+	    x += 1;
+	    i += 1;
+	    choice = 0;
+	}
+
+	if (choice == 2) {
+	    l += 1;
+	    c += 1;
+	    choice = 0;
+	}
+
+	//7
+	while (choice != 1 && choice != 2 && choice != 3 && choice != 4) {
+	    text = "\n\n\n\n\nIs there anyone that you would die for?\n";
+	    text += "\t1: Yes.\n";
+	    text += "\t2: No.\n";
+	    text += "\t3: I'm not sure.\n";
+	    text += "\t4: Never really thought about it.\n";
+
+	    text += ">> ";
+	    System.out.print(text);
+
+	    try {
+		choice = Integer.parseInt( in.readLine() );
+	    }
+	    catch ( Exception e ) { }
+	    if (choice != 1 && choice != 2 && choice != 3 && choice != 4) {
+		System.out.print("\n\n\n\n\nSorry! You need to pick 1 or 2 to continue.");
+	    }
+	}
+
+	if (choice == 1) {
+	    l += 1;
+	    choice = 0;
+	}
+
+	if (choice == 2) {
+	    x += 1;
+	    choice = 0;
+	}
+
+	if (choice == 3) {
+	    c += 1;
+	    choice = 0;
+	}
+
+	if (choice == 4) {
+	    i += 1;
+	    choice = 0;
+	}
+
+	//System.out.println(c);
+	//System.out.println(i);
+	//System.out.println(x);
+	//System.out.println(l);
+
+	ArrayList<Comparable> values = new ArrayList<Comparable>(4);
+	values.add(c);
+	values.add(x);
+	values.add(i);
+	values.add(l);
+
+	//for (Comparable yum : values) {
+	//    System.out.print(yum + " ");
+	//}
+
+	int passes = 0;
+	while (passes < 4) {
+	    for (int ctr = 0; ctr < values.size()-1; ctr++) {
+		if ((values.get(ctr)).compareTo(values.get(ctr+1)) < 0) {
+		    values.set(ctr+1,values.set(ctr,values.get(ctr+1)));
+		}
+	    }
+	    passes++;
+	}
+
+	//for (Comparable yum : values) {
+	//    System.out.print(yum + " ");
+	//}
+
+	String winner = "";
+
+	int numofwinners = 0;
+
+	if (c == values.get(3)) {
+	    numofwinners += 1;
+	    winner = C.get((int)(Math.random() * 4));
+	}
+	if (x == values.get(3)) {
+	    if (numofwinners > 0) { 
+		if (((int)(Math.random() * 10)) > 4) {
+		    winner = X.get((int)(Math.random() * 4));
+		}
+	    }
+	    else {
+		winner = X.get((int)(Math.random() * 4));
+		numofwinners += 1;
+	    }
+	}
+	if (i == values.get(3)) {
+	    if (numofwinners > 0) { 
+		if (((int)(Math.random() * 10)) > 4) {
+		    winner = I.get((int)(Math.random() * 4));
+		}
+	    }
+	    else {
+		winner = I.get((int)(Math.random() * 4));
+		numofwinners += 1;
+	    }
+	}
+	if (l == values.get(3)) {
+	    if (numofwinners > 0) { 
+		if (((int)(Math.random() * 10)) > 4) {
+		    winner = L.get((int)(Math.random() * 4));
+		}
+	    }
+	    else {
+		winner = I.get((int)(Math.random() * 4));
+		numofwinners += 1;
+	    }
+	}
+
+	user.setKpopPersona(winner);
 	text = "\n\n\n\n\nYour avatar is...";
 	text += "\n\n\n\t" + winner + "\n\n\n";
 	
