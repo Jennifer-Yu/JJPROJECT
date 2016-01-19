@@ -10,6 +10,8 @@ public class Avatar {
     
     private String uName;
 
+    private String uPass;
+
     private ArrayList<Anime> animeList;
 
     private ArrayList<Kpop> kpopList;
@@ -25,9 +27,10 @@ public class Avatar {
 
     //CONSTRUCTORS
     
-    public Avatar(String username) {
+    public Avatar(String username, String password) {
 
 	uName = username;
+	uPass = password;
 	animeList = new ArrayList<Anime>();
 	kpopList = new ArrayList<Kpop>();
 	animePersona = "N/A"; // to be updated after quiz
@@ -37,6 +40,44 @@ public class Avatar {
 	
     }
 
+
+    //ACCESSORS
+
+    public String getUName() {
+	return uName;
+    }
+
+    public String getUPass() {
+	return uPass;
+    }
+
+    public String getAnimePersona() {
+	return animePersona;
+    }
+
+    public String getKpopPersona() {
+	return kpopPersona;
+    }
+
+    public int getTotalAnime() {
+	return animeList.size();
+    }
+
+    public int getTotalKpop() {
+	return kpopList.size();
+    }
+    
+
+    //MUTATORS
+
+    public void setAnimePersona(String aPersona) {
+	animePersona = aPersona;
+    }
+
+    public void setKpopPersona(String kPersona) {
+	kpopPersona = kPersona;
+    }
+    
 
     //ANIME METHODS
 
@@ -77,9 +118,10 @@ public class Avatar {
 	for (Anime x : animeList) {
 	    System.out.println(x.getName());
 	}
-	System.out.println("Anime Count: " + totalAnime);
+	System.out.println("Anime Count: " + getTotalAnime());
     }
 
+    
     //KPOP METHODS
 
     public void sortGroupName() {
@@ -114,10 +156,21 @@ public class Avatar {
 	for (Kpop x : kpopList) {
 	    System.out.println(x.getGroupName());
 	}
-	System.out.println("Kpop Group Count: " + totalKpop);
+	System.out.println("Kpop Group Count: " + getTotalKpop());
     }
 
 
+    //METHODS
+    public String viewProfile() {
+	retStr = uName + "\'s Profile:\n";
+	retStr += "\t" + viewAnimeList + "\n";
+	retStr += "\tAnime Persona: " + animePersona + "\n";
+	retStr += "\t" + viewKpopList + "\n";
+	retStr += "\tKpop Persona: " + kpopPersona + "\n";
+	return retStr;
+    }
+    
+    
     //MAIN METHOD FOR TESTING
 
     public static void main(String[] args) {

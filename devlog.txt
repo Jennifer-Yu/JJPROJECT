@@ -8,7 +8,8 @@ Kanimop ~ Search Engine for Everything Anime / Kpop !
 
 01/17/16
 JESS
-- added sorting methods for avatar.java
+- added sorting / other methods for avatar.java
+- updated login check in kanimop.java
 
 JENN
 - finished anime quiz!

@@ -17,6 +17,8 @@ public class Kanimop {
     private BufferedReader in;
     private int choice = 0;
     private String text = "";
+    private ArrayList<Avatar> avatarList;
+    private Avatar user;
 
 
     // DEFAULT CONSTRUCTOR
@@ -30,6 +32,7 @@ public class Kanimop {
 
     // START
     public void start() {
+	String name = "";
 	text = "\nWelcome to Kanimop!";
 	System.out.println(text);
 
@@ -79,11 +82,128 @@ public class Kanimop {
 
 	    if (choice == 1) {
 		choice = 0;
-		//login check
+		//~~~~login check~~~~~
+		text = "\n\n\n\n\nType in your username.\n";
+		
+		text += ">> ";
+		System.out.print(text);
+		
+		try {
+		    name = in.readLine();
+		}
+		catch ( IOException e ) { }
+
+		while ( !exists(name) ) { //checks if avatar exists
+		    text = "\n\n\n\n\nThis avatar does not exist. Try again. Enter your username.\n";
+		    
+		    text += ">> ";
+		    System.out.print(text);
+		    
+		    try {
+			name = in.readLine();
+		    }
+		    catch ( IOException e ) { }
+		}
+
+		text = "\n\n\n\n\nType in your password.\n";
+		
+		text += ">> ";
+		System.out.print(text);
+			
+		try {
+		    String pass = in.readLine();
+		}
+		catch ( IOException e ) { }
+			
+		while ( !matches(pass,x.getUPass()) ) {
+		    text = "\n\n\n\n\nTry again. Type in your password.\n";
+		
+		    text += ">> ";
+		    System.out.print(text);
+			
+		    try {
+			pass = in.readLine();
+		    }
+		    catch ( IOException e ) { }
+		}
+
+		user.setAvatar();
+		text = "\n\n\n\n\nHurray, you've successfully logged in!!\n";
+		text += "Now go on to take a quiz.\n";
+		    
+		System.out.print(text);
+		
+		//~~~~~~~~~~~~~~~~~~~~~
+		
+		quiz();
 	    }
 	    
 	    if (choice == 2) {
 		choice = 0;
+		//~~~~create avatar~~~~
+		text = "\n\n\n\n\nType in the name you want to be called.\n";
+		
+		text += ">> ";
+		System.out.print(text);
+		
+		try {
+		    name = in.readLine();
+		}
+		catch ( IOException e ) { }
+
+		while ( exists(name) ) { //keep doing this until name is unique
+		    text = "\n\n\n\n\nSorry, this name is taken. Try a different name.\n";
+		
+		    text += ">> ";
+		    System.out.print(text);
+		
+		    try {
+			name = in.readLine();
+		    }
+		    catch ( IOException e ) { }
+		}
+		
+		text = "\n\n\n\n\nType in your desired password.\n";
+		
+		text += ">> ";
+		System.out.print(text);
+			
+		try {
+		    String pass = in.readLine();
+		}
+		catch ( IOException e ) { }
+
+		text = "\n\n\n\n\nReenter in your desired password.\n"; //verify pass
+		
+		text += ">> ";
+		System.out.print(text);
+			
+		try {
+		    String check = in.readLine();
+		}
+		catch ( IOException e ) { }
+
+		while ( !matches(pass,check) ) {
+		    text = "\n\n\n\n\nTry again. Reenter in your desired password.\n";
+		
+		    text += ">> ";
+		    System.out.print(text);
+			
+		    try {
+			check = in.readLine();
+		    }
+		    catch ( IOException e ) { }
+		}
+
+		avatarList.add(new Avatar(name,pass));
+		user.setAvatar();	
+		text = "\n\n\n\n\nHurray, you've successfully created an avatar!!\n";
+		text += "Now go on to take a quiz.\n";
+		    
+		System.out.print(text);
+
+		//~~~~~~~~~~~~~~~~~~~~~
+		
 		quiz();
 	    }
 	}
@@ -97,7 +217,34 @@ public class Kanimop {
 	    text += "Feel free to browse and type, but remember that you need a character to save your progress!\n\n";
 	    System.out.println(text);
 	}
-    }    
+    }
+
+    // NAME CHECK
+    public boolean exists(String name) {
+	for ( Avatar x : avatarList ) {
+	    if ( name.equals(x.getUName()) ) { //checks if avatar exists
+		return true;
+	    }
+	}
+	return false;
+    }
+
+    // PASSWORD CHECK
+    public boolean matches(String pass, String check) {
+	if ( pass.equals(check) ) {
+	    return true;
+	}
+	return false;
+    }
+
+    // SET AVATAR
+    public void setAvatar() {
+	for ( Avatar x : avatarList ) {
+	    if ( name.equals(x.getUName()) ) { 
+		user = x;
+	    }
+	}
+    }
 
 
     // RESTART
@@ -443,6 +590,7 @@ public class Kanimop {
 	    }
 	}
 
+	user.setAnimePersona(winner);
 	text = "\n\n\n\n\nYour avatar is...";
 	text += "\n\n\n\t" + winner + "\n\n\n";
 	
