@@ -6,6 +6,33 @@ Kanimop ~ Search Engine for Everything Anime / Kpop !
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
+01/17/16
+JESS
+- added sorting methods for avatar.java
+
+JENN
+- finished anime quiz!
+- updated kanimop.java to generate avatar
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+01/16/16
+JENN
+- updated anime quiz choices
+
+JESS
+- researched for avatar.java
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+01/15/16
+JENN & JESS
+- created to-do list
+- created flow-chart
+- created UML diagrams
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
 01/14/16
 JESS
 - worked on Avatar.java and Anime.java
