@@ -105,20 +105,21 @@ public class Avatar {
 		    "\nInformation:" +
 		    "\n Alternative Titles: " + x.getAlternateName() +
 		    "\n Episodes: " + x.getEpisodes() + 
-		    "\n Producers: " +   +
-		    +; //insert info
+		    "\n Producers: " + "TO BE INSERTED NOT DONE"  +
+		    + "TO BE INSERTED NOT DONE"; //insert info
 	    }
 	}
 	retStr = "Sorry, this anime is not on your list.";
 	return retStr;
     }
 
-    public void viewAnimeList() {
-	System.out.println(uName + "\'s Anime List: ");
+    public String viewAnimeList() {
+	String retStr = uName + "\'s Anime List: ";
 	for (Anime x : animeList) {
-	    System.out.println(x.getName());
+	    retStr += x.getName();
 	}
-	System.out.println("Anime Count: " + getTotalAnime());
+	retStr += "Anime Count: " + getTotalAnime();
+	return retStr;
     }
 
     
@@ -127,7 +128,7 @@ public class Avatar {
     public void sortGroupName() {
 	Collections.sort(kpopList, new Comparator<Kpop>() {
 		public int compare(final Kpop k1, final Kpop k2) {
-		    return k1.getName().compareTo(k2.getName());	
+		    return k1.getGroupName().compareTo(k2.getGroupName());	
 		}
 	    } );
     }
@@ -135,7 +136,7 @@ public class Avatar {
     public void sortGroupRating() {
 	Collections.sort(kpopList, new Comparator<Kpop>() {
 		public int compare(final Kpop k1, final Kpop k2) {
-		    return k1.getRating().compareTo(k2.getRating());
+		    return (k1.getRating()) == (k2.getRating());
 		}
 	    } );
     }
@@ -144,28 +145,29 @@ public class Avatar {
 	String retStr = "";
 	for (Kpop x : kpopList) {
 	    if (x.getGroupName().equals(groupName)) {
-		retStr += ; //insert info
+		retStr += "TO BE INSERTED NOT DONE"; //insert info
 	    }
 	}
 	retStr = "Sorry, this group is not on your list.";
 	return retStr;
     }
 
-    public void viewKpopList() {
-	System.out.println(uName + "\'s Kpop Group List: ");
+    public String viewKpopList() {
+	String retStr = uName + "\'s Kpop Group List: ";
 	for (Kpop x : kpopList) {
-	    System.out.println(x.getGroupName());
+	    retStr += x.getGroupName();
 	}
-	System.out.println("Kpop Group Count: " + getTotalKpop());
+	retStr += "Kpop Group Count: " + getTotalKpop();
+	return retStr; 
     }
 
 
     //METHODS
     public String viewProfile() {
-	retStr = uName + "\'s Profile:\n";
-	retStr += "\t" + viewAnimeList + "\n";
+	String retStr = uName + "\'s Profile:\n";
+	retStr += "\t" + viewAnimeList() + "\n";
 	retStr += "\tAnime Persona: " + animePersona + "\n";
-	retStr += "\t" + viewKpopList + "\n";
+	retStr += "\t" + viewKpopList() + "\n";
 	retStr += "\tKpop Persona: " + kpopPersona + "\n";
 	return retStr;
     }

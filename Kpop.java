@@ -1,31 +1,33 @@
 // KPOP SKELETON IN DATABASE
 
+import java.util.ArrayList;
+
 public class Kpop {
 
 
     //INSTANCE VARIABLES
     
-    public String groupName;
+    private String groupName;
 
-    public String gender;
+    private String gender;
 
-    public String company;
+    private String company;
 
-    public String fanBase;
+    private String fanBase;
 
-    public String fanName;
+    private String fanName;
 
-    public ArrayList<String> members;
+    private ArrayList<String> members;
 
-    public int numMembers;
+    private int numMembers;
 
-    public double rating;
+    private double rating;
 
-    public int titleSongs;
+    private int titleSongs;
 
-    public ArrayList<String> reviews;
+    private ArrayList<String> reviews;
 
-    public String description;
+    private String description;
 
 
     //CONSTRUCTORS
@@ -73,7 +75,7 @@ public class Kpop {
     }
 
     public int getNumMembers() {
-	return members.length;
+	return members.size();
     }
 
     public double getRating() {
