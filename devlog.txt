@@ -6,14 +6,43 @@ Kanimop ~ Search Engine for Everything Anime / Kpop !
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
-01/17/16
+01/20/16
 JESS
-- added sorting / other methods for avatar.java
+- updating Avatar.java
+
+JENN
+- redrew flowchat
+
+PROJECT PLANNING
+- mapped out a clearer diagram
+- plan to put a focus on Avatars and stick lists inside
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+01/19/16
+JESS
+- debugging and updating Avatar.java
+
+JENN
+- created working Kpop quiz!
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+01/18/16
+JESS
 - updated login check in kanimop.java
 
 JENN
-- finished anime quiz!
 - updated kanimop.java to generate avatar
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+01/17/16
+JESS
+- added sorting / other methods for avatar.java
+
+JENN
+- finished anime quiz!
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
