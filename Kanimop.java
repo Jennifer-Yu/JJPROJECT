@@ -132,7 +132,6 @@ public class Kanimop {
 		    catch ( IOException e ) { }
 		}
 
-		//setAvatar(name);
 		text = "\n\n\n\n\nHurray, you've successfully logged in!!\n";
 		text += "Now go on to take a quiz.\n";
 		    
@@ -204,7 +203,6 @@ public class Kanimop {
 		}
 
 		avatarList.add(new Avatar(name,pass));
-		//setAvatar(name);	
 		text = "\n\n\n\n\nHurray, you've successfully created an avatar!!\n";
 		text += "Now go on to take a quiz.\n";
 		    
@@ -288,7 +286,7 @@ public class Kanimop {
 
 	if (choice == 2) {
 	    choice = 0;
-	    //    kpopQuiz();
+	    kpopQuiz();
 	}
     }
 
