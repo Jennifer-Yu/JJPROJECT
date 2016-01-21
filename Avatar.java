@@ -81,21 +81,31 @@ public class Avatar {
 
     //ANIME METHODS
 
-    public void sortAnimeName() {
-	Collections.sort(animeList, new Comparator<Anime>() {
-		public int compare(final Anime a1, final Anime a2) {
-		    return a1.getName().compareTo(a2.getName());	
-		}
-	    } );
+    /* public void sortAnimeName() {
+	Collections.sort(animeList, animeNameComparator);
     }
+    
+    public static Comparator<Anime> animeNameComparator = new Comparator<Anime>() {
+		public int compare(Anime a1, Anime a2) {
+		    String animeName1 = a1.getName().toUpperCase();
+		    String animeName2 = a2.getName().toUpperCase();
+		    
+		    return animeName1.compareTo(animeName2);	
+		}
+		};
 
     public void sortAnimeRating() {
-	Collections.sort(animeList, new Comparator<Anime>() {
-		public int compare(final Anime a1, final Anime a2) {
-		    return a1.getRating().compareTo(a2.getRating());
-		}
-	    } );
+	Collections.sort(animeList, animeRatingComparator);
     }
+
+    public static Comparator<Anime> animeRatingComparator = new Comparator<Anime>() {
+	    public int compare(Anime a1, Anime a2) {
+		double animeRating1 = a1.getRating();
+		double animeRating2 = a2.getRating();
+		
+		return animeRating1.compareTo(animeRating2);
+	    }
+	    };*/
 	
     public String viewAnimeInfo(String animeName) {
 	String retStr = "";
@@ -104,9 +114,9 @@ public class Avatar {
 		retStr += x.getName() +
 		    "\nInformation:" +
 		    "\n Alternative Titles: " + x.getAlternateName() +
-		    "\n Episodes: " + x.getEpisodes() + 
+		    "\n Episodes: " + x.getNumEpisodes() + 
 		    "\n Producers: " + "TO BE INSERTED NOT DONE"  +
-		    + "TO BE INSERTED NOT DONE"; //insert info
+		    "TO BE INSERTED NOT DONE"; //insert info
 	    }
 	}
 	retStr = "Sorry, this anime is not on your list.";
@@ -125,21 +135,33 @@ public class Avatar {
     
     //KPOP METHODS
 
-    public void sortGroupName() {
-	Collections.sort(kpopList, new Comparator<Kpop>() {
-		public int compare(final Kpop k1, final Kpop k2) {
-		    return k1.getGroupName().compareTo(k2.getGroupName());	
-		}
-	    } );
+	    /* public void sortGroupName() {
+	Collections.sort(kpopList, groupNameComparator);
     }
 
+    public static Comparator<Kpop> groupNameComparator = new Comparator<Kpop>() {
+	    public int compare(Kpop k1, Kpop k2) {
+		String groupName1 = k1.getGroupName().toUpperCase();
+		String groupName2 = k2.getGroupName().toUpperCase();
+		
+		return groupName1.compareTo(groupName2);	
+	    }
+	};
+
+
+
     public void sortGroupRating() {
-	Collections.sort(kpopList, new Comparator<Kpop>() {
-		public int compare(final Kpop k1, final Kpop k2) {
-		    return (k1.getRating()) == (k2.getRating());
-		}
-	    } );
+	Collections.sort(kpopList, groupRatingComparator);
     }
+
+    public static Comparator<Kpop> groupRatingComparator = new Comparator<Kpop>() {
+	    public int compare(Kpop k1, Kpop k2) {
+		String groupRating1 = k1.getRating();
+		String groupRating2 = k2.getRating();
+		
+		return groupRating1.compareTo(groupRating2);	
+	    }
+	    };*/
     
     public String viewKpopInfo(String groupName) {
 	String retStr = "";

@@ -25,6 +25,7 @@ public class Kanimop {
     public Kanimop() {
 	isr = new InputStreamReader( System.in );
 	in = new BufferedReader( isr );
+	avatarList = new ArrayList<Avatar>();
 	start();
     }
 
