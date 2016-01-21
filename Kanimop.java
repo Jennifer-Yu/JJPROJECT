@@ -597,7 +597,7 @@ public class Kanimop {
 	    }
 	}
 
-	user.setAnimePersona(winner);
+	//user.setAnimePersona(winner);
 	text = "\n\n\n\n\nYour avatar is...";
 	text += "\n\n\n\t" + winner + "\n\n\n";
 				
@@ -910,7 +910,7 @@ public class Kanimop {
 	    }
 	}
 			
-	user.setKpopPersona(winner);
+	//user.setKpopPersona(winner);
 	text = "\n\n\n\n\nYour avatar is...";
 	text += "\n\n\n\t" + winner + "\n\n\n";
 	
