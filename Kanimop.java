@@ -168,6 +168,7 @@ public class Kanimop {
 		    catch ( IOException e ) { }
 		}
 
+		user = new Avatar(name,pass);
 		setAvatar(name);
 		
 		text = "\n\n\n\n\nType in your desired password.\n";
