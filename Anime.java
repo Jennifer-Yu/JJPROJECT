@@ -1,6 +1,10 @@
 // ANIME SKELETON IN DATABASE
 
 import java.util.ArrayList;
+import java.io.*;
+import java.util.*;
+
+
 
 public class Anime {
 
@@ -25,6 +29,12 @@ public class Anime {
 
     public String plot;
 
+
+    // INSTANCE VARIABLES
+    private InputStreamReader isr;
+    private BufferedReader in;
+    private int choice = 0;
+    private String text = "";
 
     //CONSTRUCTORS
 
@@ -113,7 +123,7 @@ public class Anime {
 
     public void setReviews(ArrayList<String> input) {
 	reviews = input;
-    }
+	    choice = 0;    }
 
     public void setPlot(String input) {
 	plot = input;
@@ -131,13 +141,196 @@ public class Anime {
 	return retStr;
     } 
 
+    public void demo() {
+	String text = "\n\n\n\n\nDEMO:\n";
+	System.out.println(text);
+
+	if ((this.name).equals("Naruto")) {
+	    naruto();
+	}
+
+	text = "\n\n\n\n\nThanks for playing the demo! Now go watch the anime!\n";
+	System.out.println(text);
+    }
+
+    public void naruto() {
+	text = "\n\n\n\n\nWelcome to Naruto!\n";
+	text += "You are about to begin your path to becoming a ninja.\n\n";
+	System.out.print(text);
+	proceed();
+
+	
+
+	while (choice != 1 && choice != 2 && choice != 3 && choice != 4) {
+	    text = "Please select a character.\n";
+	    text += "\t1: Naruto.\n";
+	    text += "\t2: Sasuke.\n";
+	    text += "\t3: Sakura.\n";
+	    text += "\t4: Kakashi.\n";
+	    
+	    text += ">> ";
+	    System.out.print(text);
+	    
+	    try {
+		String temp = in.readLine();
+		System.out.println("1");
+		choice = Integer.parseInt(temp);
+		System.out.println("2");
+	    }
+	    catch ( Exception e ) { 
+		System.out.println("3");
+		System.out.println("oops");
+	    }
+	    
+	    if (choice != 1 && choice != 2 && choice != 3 && choice != 4) {
+		System.out.print("\n\n\n\n\nSorry! You need to pick 1, 2, 3 or 4 to continue.\n\n\n\n\n");
+		System.out.println("ayymao");
+	    }
+	}
+	
+	if (choice == 1) {
+	    choice = 0;
+	    naruto1();
+	}
+
+	if (choice == 2) {
+	    choice = 0;
+	    //sasuke();
+	}
+
+	if (choice == 3) {
+	    choice = 0;
+	    //sakura();
+	}
+
+	if (choice == 4) {
+	    choice = 0;
+	    //kakashi();
+	}
+    }
+	
+
+    public void proceed() {
+	text = ">> ";
+	System.out.print(text);
+	
+	try {
+	    choice = Integer.parseInt ( in.readLine() );
+	}
+	catch ( Exception e ) { }
+    }
+	
+    
+    public void naruto1() {
+	text = "\n\n\n\n\n'Believe it!' You shout, hopping out of bed.\n";
+	System.out.print(text);
+	proceed();
+
+	text = "Today you have a C-rank mission.\n";
+	System.out.print(text);
+	proceed();
+
+	text = "It's probably something dumb like chasing cats.\n";
+	System.out.print(text);
+	proceed();
+
+	text = "Oh well. Time to leave.";
+	System.out.print(text);
+	proceed();
+
+	text = "You've finally met up with Sasuke and Sakura, but Kakashi is nowhere to be found.\n";
+	System.out.print(text);
+	proceed();
+
+	text = "You: Where is Kakashi-sensei?\n";
+	System.out.print(text);
+	proceed();
+
+	text = "Sasuke: How should I know? What are you, an idiot?\n";
+	System.out.print(text);
+	proceed();
+
+	text = "Sakura: Yeah, does he look like he's here?\n";
+	System.out.print(text);
+	proceed();
+
+	text = "Before you can sputter about how much of a jerk Sasuke is, Kakashi arrives.\n";
+	System.out.print(text);
+	proceed();
+
+	text = "Sorry I'm late, a cat just crossed my path...\n";
+	System.out.print(text);
+	proceed();
+
+	text = "It's an obvious lie and the three of you see right through it!\n";
+	System.out.print(text);
+	proceed();
+
+	text = "Sakura: Yeah right, Kakashi-sensei!\n";
+	System.out.print(text);
+	proceed();
+
+	text = "Sasuke: Hmph.\n";
+	System.out.print(text);
+	proceed();
+
+	text = "You: Kakashi-sensei! You better make this up to us with a S-ranked mission!\n";
+	System.out.print(text);
+	proceed();
+
+	text = "Kakashi (pretends to) think for a moment...\n";
+	System.out.print(text);
+	proceed();
+
+	text = "Kakashi: Well, if you insist. The Hokage did ask me to give you an S-ranked mission.\n";
+	System.out.print(text);
+	proceed();
+
+	text = "ALL: WHAT?!\n";
+	System.out.print(text);
+	proceed();
+    }
+	/*
+	text += "\t1: Go on the mission anyway.\n";
+	text += "\t2: .\n";
+	text += "\t3: Sakura.\n";
+	text += "\t4: Kakashi.\n";
+	
+	text += ">> ";
+	System.out.print(text);
+	
+	try {
+	    choice = Integer.parseInt ( in.readLine() );
+	    }
+	    catch ( Exception e ) { }
+	    
+	    if (choice != 1 && choice != 2 && choice != 3 && choice != 4) {
+		System.out.print("\n\n\n\n\nSorry! You need to pick 1, 2, 3 or 4 to continue.\n");
+	    }
+
+	System.out.print(text);
+	
+
+    }
+
+    public void sasuke() {
+    }
+
+    public void sakura() {
+    }
+
+    public void kakashi() {
+    }
+	
+	*/
+
     //MAIN METHOD FOR TESTING
 
     public static void main(String[] args) {
 
 	Anime Naruto = new Anime();
 	Naruto.setName("Naruto");
-	System.out.println(Naruto.getName());
+	Naruto.demo();
 
     }
 
