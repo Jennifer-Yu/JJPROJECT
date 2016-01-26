@@ -6,6 +6,50 @@ Kanimop ~ Search Engine for Everything Anime / Kpop !
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
+01/25/15
+JENN
+- creating working demos
+- working on options and navigation
+
+JESS
+- working on login, masterlist
+- implementing search engine feature
+
+JENN & JESS
+- touching up
+- finishing touches
+- submission
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+01/24/15
+PROJECT PLANNING
+- solified plan for options and choices
+- went through old codes
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+01/23/15
+JESS
+- drew out diagrams for options
+
+JENN
+- brainstorming to-do list changes
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+01/22/15
+JENN & JESS
+- cleaning up working code
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+01/21/16
+PROJECT PLANNING
+- mapping out quizzes and demos
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
 01/20/16
 JESS
 - updating Avatar.java
