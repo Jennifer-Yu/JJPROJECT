@@ -16,6 +16,6 @@ Kanimop.java is the driver file!!!
 
 
 Note: Search functionality has been put aside because of issues getting it to work. 
-      Methods related to search include:
-            Kanimop.java: retrieveAnimeList(), retrieveKpopList()
-            Avatar.java: animeSearch(), kpopSearch()
+- Methods related to search include:
+      - Kanimop.java: retrieveAnimeList(), retrieveKpopList()
+      - Avatar.java: animeSearch(), kpopSearch()
