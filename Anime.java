@@ -487,6 +487,7 @@ public class Anime {
 	    text = "You end up getting a lot of attention for defeating Orochimaru's army and become the Hokage!\n";
 	    System.out.print(text);
 	    proceed();	
+        }
     }
 /*
     public void sasuke() {
