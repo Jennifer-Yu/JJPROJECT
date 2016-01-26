@@ -429,6 +429,37 @@ public class Kanimop {
 	    choice = 0;
 	    kpopQuiz();
 	}
+	
+	if (choice == 3 || choice == 4) {
+	while (choice != 1 && choice != 2) {
+	    text = "\n\n\n\n\nTry our Naruto demo!\n";
+	    text += "\t1: YES!\n";
+	    text += "\t2: No thanks!\n";
+	    
+	    text += ">> ";
+	    System.out.print(text);
+	    
+	    try {
+		choice = Integer.parseInt( in.readLine() );
+	    }
+	    catch ( Exception e ) { }
+	    if ( choice != 1 && choice != 2 ) {
+		System.out.print("\n\n\n\n\nSorry! You need to pick 1 or 2 to continue.");
+	    }
+	}
+
+	if (choice == 1) {
+	    choice = 0;
+	    Anime Naruto = new Anime("Naruto");
+   	    Naruto.demo();
+	}
+
+	if (choice == 2) {
+	    choice = 0;
+	    text = "\n\n\n\n\nSee you later then!\n";
+	    System.out.print(text);
+	}
+	}
     }
 
     public void animeQuiz() {
