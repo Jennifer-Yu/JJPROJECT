@@ -488,7 +488,7 @@ public class Anime {
 	    System.out.print(text);
 	    proceed();	
     }
-
+/*
     public void sasuke() {
     }
 
