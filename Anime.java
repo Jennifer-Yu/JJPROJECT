@@ -204,7 +204,7 @@ public class Anime {
 	
 
     public void proceed() {
-	text = "> ";
+	text = "\n>> ";
 	System.out.print(text);
 	
 	try {
