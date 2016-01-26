@@ -5,6 +5,8 @@
 import java.io.*;
 import java.util.*;
 
+import com.opencsv.CSVReader;
+import com.opencsv.CSVWriter;
 
 
 // MAIN CLASS
@@ -36,6 +38,7 @@ public class Kanimop {
 	String name = "";
 	String pass = "";
 	String check = "";
+	retrieveAvatars();
 	text = "\nWelcome to Kanimop!";
 	System.out.println(text);
 
@@ -203,6 +206,10 @@ public class Kanimop {
 		}
 
 		avatarList.add(new Avatar(name,pass));
+		//+++++++++++++++++++++++++++++++++++++++
+		addToCSV(name, pass);
+		//+++++++++++++++++++++++++++++++++++++++
+		
 		text = "\n\n\n\n\nHurray, you've successfully created an avatar!!\n";
 		text += "Now go on to take a quiz.\n";
 		    
@@ -225,6 +232,29 @@ public class Kanimop {
 	}
     }
 
+    // RETRIEVE DATA
+    public void retrieveAvatars() {
+	try {
+	    String csv = "Accounts.csv";
+	    CSVReader reader = new CSVReader(new FileReader(csv));
+
+	    List<String[]> content =  reader.readAll();
+	    content.remove(0);
+	
+	    for (String[] x : content) {
+		String temp = x[0];
+		avatarList.add( new Avatar(temp,x[1]) );
+		avatarList.get(avatarList.size()-1).setAnimePersona(x[2]);
+		avatarList.get(avatarList.size()-1).setKpopPersona(x[3]);
+		avatarList.get(avatarList.size()-1).setTotalAnime(Integer.parseInt(x[4]));
+		avatarList.get(avatarList.size()-1).setTotalKpop(Integer.parseInt(x[5]));
+	    }
+
+	    reader.close();
+	}
+	catch ( IOException ioe ) { }
+    }
+    
     // NAME CHECK
     public boolean exists(String name) {
 	for ( Avatar x : avatarList ) {
@@ -250,6 +280,21 @@ public class Kanimop {
 		user = x;
 	    }
 	}
+    }
+
+    // WRITE TO CSV
+    public void addToCSV(String n, String p) {
+	try {
+	    String csv = "Accounts.csv";
+	    //with true, appends; without true, overwrites 
+	    CSVWriter writer = new CSVWriter(new FileWriter(csv, true));
+	
+	    String[] record = {n,p,"N/A","N/A","0","0"};
+	    writer.writeNext(record);
+
+	    writer.close();
+	}
+	catch ( IOException ioe ) { }
     }
 
 
@@ -558,11 +603,11 @@ public class Kanimop {
 
 	int numofwinners = 0;
 
-	if (c == values.get(3)) {
+	if (c == values.get(0)) {
 	    numofwinners += 1;
 	    winner = C.get((int)(Math.random() * 4));
 	}
-	if (x == values.get(3)) {
+	if (x == values.get(0)) {
 	    if (numofwinners > 0) { 
 		if (((int)(Math.random() * 10)) > 4) {
 		    winner = X.get((int)(Math.random() * 4));
@@ -573,7 +618,7 @@ public class Kanimop {
 		numofwinners += 1;
 	    }
 	}
-	if (i == values.get(3)) {
+	if (i == values.get(0)) {
 	    if (numofwinners > 0) { 
 		if (((int)(Math.random() * 10)) > 4) {
 		    winner = I.get((int)(Math.random() * 4));
@@ -584,7 +629,7 @@ public class Kanimop {
 		numofwinners += 1;
 	    }
 	}
-	if (l == values.get(3)) {
+	if (l == values.get(0)) {
 	    if (numofwinners > 0) { 
 		if (((int)(Math.random() * 10)) > 4) {
 		    winner = L.get((int)(Math.random() * 4));
@@ -601,6 +646,186 @@ public class Kanimop {
 	text += "\n\n\n\t" + winner + "\n\n\n";
 				
 	System.out.println(text);
+
+			
+	if (winner.equals("Haruhi")) {		
+    	    text = "Haruhi is from the anime: Ouran High School Host Club.\n\n";		
+    	    text += "She is forced to join Ouran Academy's host club of handsome boys after breaking an expensive vase.\n\n";		
+       	    text += "She has a straightforward nature and believes that gender doesn't define your choices.\n\n";		
+    	    text += "Her character is strong and understanding, just like you!\n\n";		
+    	    text += "Read more about your character here: http://ouran.wikia.com/wiki/Haruhi_Fujioka\n\n";		
+    	    System.out.print(text);		
+        }		
+    		
+        if (winner.equals("Kaori")) {		
+    	    text = "Kaori is from the anime: Your Lie In April.\n\n";		
+    	    text += "She is a violinist who helps a dear friend return to the piano world after his mother's death.\n\n";		
+    	    text += "She is often friendly and encouraging, but is also independent, unpredictable, and short-tempered.\n\n";		
+    	    text += "Her character is passionate and powerful, just like you!\n\n";		
+    	    text += "Read more about your character here: http://shigatsu-wa-kimi-no-uso.wikia.com/wiki/Kaori_Miyazono\n\n";		
+    	    System.out.print(text);		
+        }		
+    		
+        if (winner.equals("Teresa")) {		
+       	    text = "Teresa is from the anime: Claymore.\n\n";		
+    	    text += "She is the 182nd Claymore of the 77th generation in the Organization, known to be strongest.\n\n";		
+    	    text += "She guides the main character and slaughters her enemies with a smile, earning the nickname 'Teresa of the Faint Smile'.\n\n";		
+    	    text += "Her character is often ruthless, but also caring, just like you!\n\n";		
+    	    text += "Read more about your character here: http://claymore.wikia.com/wiki/Teresa\n\n";		
+    	    System.out.print(text);		
+        }		
+    		
+        if (winner.equals("Gintoki")) {		
+     	    text = "Gintoki is from the anime: Gintama.\n\n";		
+    	    text += "He is the president of the Yorozuya Gin-Chan and is a highly skilled samurai.\n\n";		
+    	    text += "He is extremely lazy, often imparting wise, sage-like advice that makes no sense, but his personality attracts friends.\n\n";		
+    	    text += "His character is dorky but charismatic, just like you!\n\n";		
+    	    text += "Read more about your character here: http://gintama.wikia.com/wiki/Sakata_Gintoki\n\n";		
+    	    System.out.print(text);		
+        }		
+    		
+        if (winner.equals("Kise")) {		
+    	    text = "Kise is from the anime: Kuroko no Basket.\n\n";		
+    	    text += "He is part of the Generation of Miracles Basketball Players and also works as a model with a pretty face.\n\n";		
+    	    text += "He has a very outgoing personality and tries to be friends with everybody, while he can also be competitive and stubborn.\n\n";		
+    	    text += "His character is funny and lovable, just like you!\n\n";		
+    	    text += "Read more about your avatar here: http://kurokonobasuke.wikia.com/wiki/Ry%C5%8Dta_Kise\n\n";		
+    	    System.out.print(text);		
+        }		
+        		
+        if (winner.equals("Yuno")) {		
+    	    text = "Yuno is from the anime: Future Diary.\n\n";		
+    	    text += "She is known as 'Second' in a Survival Game and she is the owner of a stalker diary all about the main character she loves.\n\n";		
+       	    text += "She is sweet and shy around main character, but is actually a ruthless, calculating psychopath.\n\n";		
+    	    text += "Her character is crazy and dedicated, just like you!\n\n";		
+    	    text += "Read more about your character here: http://futurediary.wikia.com/wiki/Yuno_Gasai\n\n";		
+    	    System.out.print(text);		
+        }		
+    		
+        if (winner.equals("Izaya")) {		
+    	    text = "Izaya is from the anime: Durarara!!\n\n";		
+    	    text += "He is a powerful information broker and gives information for his own enjoyment, claiming to love the entire human race.\n\n";		
+    	    text += "He greatly enjoys putting people in enjoyable or chaotic situations in order to observe their reactions.\n\n";		
+    	    text += "His character is exciting and unique, just like you!\n\n";		
+    	    text += "Read more about your character here: http://durarara.wikia.com/wiki/Izaya_Orihara\n\n";		
+    	    System.out.print(text);		
+        }		
+    		
+        if (winner.equals("Kaneki")) {		
+       	    text = "Kaneki is from the anime: Tokyo Ghoul.\n\n";		
+    	    text += "He was a human living a normal life until he has ghoul parts transplanted in him and became a One-Eyed Ghoul.\n\n";		
+    	    text += "After being tortured, he underwent a drastic personality change to protect the ones precious to him and exterminate enemies.\n\n";		
+    	    text += "His character is adapting and straightforward, just like you!\n\n";		
+    	    text += "Read more about your character here: http://tokyoghoul.wikia.com/wiki/Ken_Kaneki\n\n";		
+    	    System.out.print(text);		
+        }		
+    		
+        if (winner.equals("Shiro")) {		
+     	    text = "Shiro is from the anime: No Game No Life.\n\n";		
+    	    text += "She is a genius in logic and problems, but has difficulty understanding emotions or behaviour.\n\n";		
+    	    text += "She is shown to have a dry and somewhat twisted sense of humor, is addicted to games and is extremely attached to her brother.\n\n";		
+    	    text += "Her character is cute and intelligent, just like you!\n\n";		
+    	    text += "Read more about your character here: http://gintama.wikia.com/wiki/Sakata_Gintoki\n\n";		
+    	    System.out.print(text);		
+        }		
+    		
+        if (winner.equals("Alice")) {		
+    	    text = "Alice is from the anime: Pandora Hearts.\n\n";		
+    	    text += "She is introduced as the B-Rabbit or Blood-Stained Black Rabbit and helps the main character while searching for her lost memories.\n\n";		
+    	    text += "She is cold and rude at the start and turns out to be hotheaded, loud spoken and blunt. However she is powerful and wants to do what's right.\n\n";		
+    	    text += "Her character is simple and awesome, just like you!\n\n";		
+    	    text += "Read more about your avatar here: http://pandorahearts.wikia.com/wiki/Alice\n\n";		
+    	    System.out.print(text);		
+        }		
+        if (winner.equals("Homura")) {		
+    	    text = "Homura is from the anime: Puella Magi Madoka Magica.\n\n";		
+    	    text += "She gets caught in a horrific destiny to save the main character from her fate.\n\n";		
+       	    text += "She is shown to be very intelligent, athletic, distant, and cold because she understands suffering.\n\n";		
+    	    text += "Her character is loyal and unbelievable, just like you!\n\n";		
+    	    text += "Read more about your character here: http://madoka.wikia.com/wiki/Homura_Akemi\n\n";		
+    	    System.out.print(text);		
+        }		
+    		
+        if (winner.equals("Guila")) {		
+    	    text = "Guila is from the anime: Seven Deadly Sins.\n\n";		
+    	    text += "She is a powerful Holy Knight and a caring older sister that is sent to assassinate the protagonists.\n\n";		
+    	    text += "She is a very dedicated knight and is confident in her abilities in the best kind of way.\n\n";		
+    	    text += "Her character is intense and kind, just like you!\n\n";		
+    	    text += "Read more about your character here: http://nanatsu-no-taizai.wikia.com/wiki/Guila\n\n";		
+    	    System.out.print(text);		
+        }		
+ 		
+        if (winner.equals("Kirito")) {		
+       	    text = "Kirito is from the anime: Sword Art Online.\n\n";		
+    	    text += "He was chosen as one of the 1,000 beta testers for the closed beta of the first ever virtual reality video game.\n\n";		
+    	    text += "After being trapped in the game, he fights his way through, calmly and fearlessly, still managing to enjoy the gaming world.\n\n";		
+    	    text += "His character is collected and talented, just like you!\n\n";		
+    	    text += "Read more about your character here: http://swordartonline.wikia.com/wiki/Kirito\n\n";		
+    	    System.out.print(text);		
+        }		
+  		
+        if (winner.equals("Ichigo")) {		
+     	    text = "Ichigo is from the anime: Bleach.\n\n";		
+    	    text += "He becomes a temporary soul reaper and has to fight countless enemies, including entire races of beings.\n\n";		
+    	    text += "Ichigo has a complex sense of honor; he seeks to exact revenge, often taunting, but maintaining the good within, also seen as an older brother figure.\n\n";		
+    	    text += "His character is fierce and evolving, just like you!\n\n";		
+    	    text += "Read more about your character here: http://bleach.wikia.com/wiki/Ichigo_Kurosaki\n\n";		
+    	    System.out.print(text);		
+        }		
+     		
+        if (winner.equals("Edward")) {		
+    	    text = "Edward is from the anime: Fullmetal Alchemist.\n\n";		
+    	    text += "He becomes the youngest State Alchemist in history by achieving his certification at age twelve, seeking to restore his armored-brother.\n\n";		
+    	    text += "Although he is often immature and rebellious, he shows his deeper nature of selflessness, unflinching loyalty, and great compassion.\n\n";		
+    	    text += "His character is deep and honest, just like you!\n\n";		
+    	    text += "Read more about your avatar here: http://fma.wikia.com/wiki/Edward_Elric\n\n";		
+    	    System.out.print(text);		
+        }		
+    		
+        if (winner.equals("L")) {		
+    	    text = "L is from the anime: Death Note.\n\n";		
+    	    text += "He is a world-renowned detective (first, second and third best) who takes on the challenge of catching the serial killer known only as Kira.\n\n";		
+       	    text += "He is secretive, strange, odd but extremely, extremely intelligent with a sense of justice.\n\n";		
+    	    text += "His character is quirky and brilliant, just like you!\n\n";		
+    	    text += "Read more about your character here: http://deathnote.wikia.com/wiki/L_(character)\n\n";		
+    	    System.out.print(text);		
+        }		
+    		
+        if (winner.equals("Lelouch")) {		
+    	    text = "Lelouch is from the anime: Code Geass.\n\n";		
+    	    text += "He is the eleventh prince of the Holy Britannian Empire, the leader of the Black Knights and the key player in a rebellion.\n\n";		
+    	    text += "He pretends to be easygoing and kind, but in reality he is a calm, sophisticated, and arrogant aristocrat with great ambitions.\n\n";		
+    	    text += "His character is clever and ambitious, just like you!\n\n";		
+    	    text += "Read more about your character here: http://codegeass.wikia.com/wiki/Lelouch_vi_Britannia\n\n";		
+    	    System.out.print(text);		
+        }		
+      		
+        if (winner.equals("Itachi")) {		
+       	    text = "Itachi is from the anime: Naruto.\n\n";		
+    	    text += "He is a prodigy who joins a criminal organization after murdering his entire clan with the exception of his brother.\n\n";		
+    	    text += "He is quiet, insightful, distant, carrying himself in a polite, violent manner.\n\n";		
+    	    text += "His character is steel-hearted and soft-spoken, just like you!\n\n";		
+    	    text += "Read more about your character here: http://naruto.wikia.com/wiki/Itachi_Uchiha\n\n";		
+    	    System.out.print(text);		
+        }		
+    		
+        if (winner.equals("Mikasa")) {		
+     	    text = "Mikasa is from the anime: Attack on Titan.\n\n";		
+    	    text += "At the 104th Trainees Squad's graduation, she is ranked first in the class of Titan killers.\n\n";		
+    	    text += "After the murder of her family, she gains a cynical view that the world is cruel, and is blindly devoted to the main character whom she loves.\n\n";		
+    	    text += "Her character is sharp and devoted, just like you!\n\n";		
+    	    text += "Read more about your character here: http://shingekinokyojin.wikia.com/wiki/Mikasa_Ackerman\n\n";		
+    	    System.out.print(text);		
+        }		
+    		
+        if (winner.equals("Erza")) {		
+    	    text = "Erza is from the anime: Fairy Tail.\n\n";		
+    	    text += "She is an S-Class Mage of the Fairy Tail Guild and the strongest member of Team Natsu, with a dark past.\n\n";		
+    	    text += "She is a very strict person, often criticizing the bad behavior and habits of the other guild members, but also has a cute, innocent side. \n\n";		
+    	    text += "Her character is adorable and flawless, just like you!\n\n";		
+    	    text += "Read more about your avatar here: http://fairytail.wikia.com/wiki/Erza_Scarlet\n\n";		
+    	    System.out.print(text);		
+        }
     }	
 			
     public void kpopQuiz() {
@@ -871,11 +1096,11 @@ public class Kanimop {
 			
 	int numofwinners = 0;
 			
-	if (c == values.get(3)) {
+	if (c == values.get(0)) {
 	    numofwinners += 1;
 	    winner = C.get((int)(Math.random() * 4));
 	}
-	if (x == values.get(3)) {
+	if (x == values.get(0)) {
 	    if (numofwinners > 0) { 
 		if (((int)(Math.random() * 10)) > 4) {
 		    winner = X.get((int)(Math.random() * 4));
@@ -886,7 +1111,7 @@ public class Kanimop {
 		numofwinners += 1;
 	    }
 	}
-	if (i == values.get(3)) {
+	if (i == values.get(0)) {
 	    if (numofwinners > 0) { 
 		if (((int)(Math.random() * 10)) > 4) {
 		    winner = I.get((int)(Math.random() * 4));
@@ -897,7 +1122,7 @@ public class Kanimop {
 		numofwinners += 1;
 	    }
 	}
-	if (l == values.get(3)) {
+	if (l == values.get(0)) {
 	    if (numofwinners > 0) { 
 		if (((int)(Math.random() * 10)) > 4) {
 		    winner = L.get((int)(Math.random() * 4));
@@ -914,7 +1139,189 @@ public class Kanimop {
 	text += "\n\n\n\t" + winner + "\n\n\n";
 	
 	System.out.println(text);
-    }	
+
+	if (winner.equals("Jimin")) {		
+    	    text = "Jimin is from the kpop group: AOA.\n\n";		
+    	    text += "She is the leader, guitarist and rapper of AOA.\n\n";		
+       	    text += "She looks young, is very cheerful and can have a childish personality when messing around.\n\n";		
+    	    text += "She's sweet, just like you!\n\n";		
+    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/girl-groups/aoa-ace-of-angels-profile/\n\n";		
+    	    System.out.print(text);		
+        }		
+        		
+        if (winner.equals("Suzy")) {		
+    	    text = "Suzy is from the kpop group: Miss A.\n\n";		
+    	    text += "She is the vocalist, maknae and visual of Miss A.\n\n";		
+       	    text += "She looks young, is very cheerful and can have a childish personality when messing around.\n\n";		
+    	    text += "She's sweet, just like you!\n\n";		
+    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/girl-groups/aoa-ace-of-angels-profile/\n\n";		
+    	    System.out.print(text);		
+        }		
+        		
+        if (winner.equals("Yoseob")) {		
+    	    text = "Jimin is from the kpop group: AOA.\n\n";		
+    	    text += "She is the leader, guitarist, rapper and dancer of AOA.\n\n";		
+       	    text += "She looks young, is very cheerful and can have a childish personality when messing around.\n\n";		
+    	    text += "She's sweet, just like you!\n\n";		
+    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/girl-groups/aoa-ace-of-angels-profile/\n\n";		
+    	    System.out.print(text);		
+        }		
+        		
+        if (winner.equals("Sunggyu")) {		
+    	    text = "Jimin is from the kpop group: AOA.\n\n";		
+    	    text += "She is the leader, guitarist, rapper and dancer of AOA.\n\n";		
+       	    text += "She looks young, is very cheerful and can have a childish personality when messing around.\n\n";		
+    	    text += "She's sweet, just like you!\n\n";		
+    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/girl-groups/aoa-ace-of-angels-profile/\n\n";		
+    	    System.out.print(text);		
+        }		
+        		
+        if (winner.equals("Daehyun")) {		
+    	    text = "Jimin is from the kpop group: AOA.\n\n";		
+    	    text += "She is the leader, guitarist, rapper and dancer of AOA.\n\n";		
+       	    text += "She looks young, is very cheerful and can have a childish personality when messing around.\n\n";		
+    	    text += "She's sweet, just like you!\n\n";		
+    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/girl-groups/aoa-ace-of-angels-profile/\n\n";		
+    	    System.out.print(text);		
+        }		
+        		
+        if (winner.equals("Amber")) {		
+    	    text = "Jimin is from the kpop group: AOA.\n\n";		
+    	    text += "She is the leader, guitarist, rapper and dancer of AOA.\n\n";		
+       	    text += "She looks young, is very cheerful and can have a childish personality when messing around.\n\n";		
+    	    text += "She's sweet, just like you!\n\n";		
+    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/girl-groups/aoa-ace-of-angels-profile/\n\n";		
+    	    System.out.print(text);		
+        }		
+        		
+        if (winner.equals("Jackson")) {		
+    	    text = "Jimin is from the kpop group: AOA.\n\n";		
+    	    text += "She is the leader, guitarist, rapper and dancer of AOA.\n\n";		
+       	    text += "She looks young, is very cheerful and can have a childish personality when messing around.\n\n";		
+    	    text += "She's sweet, just like you!\n\n";		
+    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/girl-groups/aoa-ace-of-angels-profile/\n\n";		
+    	    System.out.print(text);		
+        }		
+        		
+        if (winner.equals("Eunji")) {		
+    	    text = "Jimin is from the kpop group: AOA.\n\n";		
+    	    text += "She is the leader, guitarist, rapper and dancer of AOA.\n\n";		
+       	    text += "She looks young, is very cheerful and can have a childish personality when messing around.\n\n";		
+    	    text += "She's sweet, just like you!\n\n";		
+    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/girl-groups/aoa-ace-of-angels-profile/\n\n";		
+    	    System.out.print(text);		
+        }		
+        		
+        if (winner.equals("Minah")) {		
+    	    text = "Jimin is from the kpop group: AOA.\n\n";		
+    	    text += "She is the leader, guitarist, rapper and dancer of AOA.\n\n";		
+       	    text += "She looks young, is very cheerful and can have a childish personality when messing around.\n\n";		
+    	    text += "She's sweet, just like you!\n\n";		
+    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/girl-groups/aoa-ace-of-angels-profile/\n\n";		
+    	    System.out.print(text);		
+        }		
+        		
+        if (winner.equals("Sungjae")) {		
+    	    text = "Jimin is from the kpop group: AOA.\n\n";		
+    	    text += "She is the leader, guitarist, rapper and dancer of AOA.\n\n";		
+       	    text += "She looks young, is very cheerful and can have a childish personality when messing around.\n\n";		
+    	    text += "She's sweet, just like you!\n\n";		
+    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/girl-groups/aoa-ace-of-angels-profile/\n\n";		
+    	    System.out.print(text);		
+        }		
+        		
+        if (winner.equals("Taeyeon")) {		
+    	    text = "Jimin is from the kpop group: AOA.\n\n";		
+    	    text += "She is the leader, guitarist, rapper and dancer of AOA.\n\n";		
+       	    text += "She looks young, is very cheerful and can have a childish personality when messing around.\n\n";		
+    	    text += "She's sweet, just like you!\n\n";		
+    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/girl-groups/aoa-ace-of-angels-profile/\n\n";		
+    	    System.out.print(text);		
+        }		
+        		
+        if (winner.equals("Jungkook")) {		
+    	    text = "Jimin is from the kpop group: AOA.\n\n";		
+    	    text += "She is the leader, guitarist, rapper and dancer of AOA.\n\n";		
+       	    text += "She looks young, is very cheerful and can have a childish personality when messing around.\n\n";		
+    	    text += "She's sweet, just like you!\n\n";		
+    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/girl-groups/aoa-ace-of-angels-profile/\n\n";		
+    	    System.out.print(text);		
+        }		
+        		
+        if (winner.equals("Baekhyun")) {		
+    	    text = "Jimin is from the kpop group: AOA.\n\n";		
+    	    text += "She is the leader, guitarist, rapper and dancer of AOA.\n\n";		
+       	    text += "She looks young, is very cheerful and can have a childish personality when messing around.\n\n";		
+    	    text += "She's sweet, just like you!\n\n";		
+    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/girl-groups/aoa-ace-of-angels-profile/\n\n";		
+    	    System.out.print(text);		
+        }		
+        		
+        if (winner.equals("Hani")) {		
+    	    text = "Jimin is from the kpop group: AOA.\n\n";		
+    	    text += "She is the leader, guitarist, rapper and dancer of AOA.\n\n";		
+       	    text += "She looks young, is very cheerful and can have a childish personality when messing around.\n\n";		
+    	    text += "She's sweet, just like you!\n\n";		
+    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/girl-groups/aoa-ace-of-angels-profile/\n\n";		
+    	    System.out.print(text);		
+        }		
+        		
+        if (winner.equals("Taemin")) {		
+    	    text = "Jimin is from the kpop group: AOA.\n\n";		
+    	    text += "She is the leader, guitarist, rapper and dancer of AOA.\n\n";		
+       	    text += "She looks young, is very cheerful and can have a childish personality when messing around.\n\n";		
+    	    text += "She's sweet, just like you!\n\n";		
+    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/girl-groups/aoa-ace-of-angels-profile/\n\n";		
+    	    System.out.print(text);		
+        }		
+        		
+        if (winner.equals("G-Dragon")) {		
+    	    text = "Jimin is from the kpop group: AOA.\n\n";		
+    	    text += "She is the leader, guitarist, rapper and dancer of AOA.\n\n";		
+       	    text += "She looks young, is very cheerful and can have a childish personality when messing around.\n\n";		
+    	    text += "She's sweet, just like you!\n\n";		
+    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/girl-groups/aoa-ace-of-angels-profile/\n\n";		
+    	    System.out.print(text);		
+        }		
+        		
+        if (winner.equals("CL")) {		
+    	    text = "Jimin is from the kpop group: AOA.\n\n";		
+    	    text += "She is the leader, guitarist, rapper and dancer of AOA.\n\n";		
+       	    text += "She looks young, is very cheerful and can have a childish personality when messing around.\n\n";		
+    	    text += "She's sweet, just like you!\n\n";		
+    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/girl-groups/aoa-ace-of-angels-profile/\n\n";		
+    	    System.out.print(text);		
+        }		
+        		
+        if (winner.equals("Hyuna")) {		
+    	    text = "Jimin is from the kpop group: AOA.\n\n";		
+    	    text += "She is the leader, guitarist, rapper and dancer of AOA.\n\n";		
+       	    text += "She looks young, is very cheerful and can have a childish personality when messing around.\n\n";		
+    	    text += "She's sweet, just like you!\n\n";		
+    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/girl-groups/aoa-ace-of-angels-profile/\n\n";		
+    	    System.out.print(text);		
+        }		
+        		
+        if (winner.equals("Heechul")) {		
+    	    text = "Jimin is from the kpop group: AOA.\n\n";		
+    	    text += "She is the leader, guitarist, rapper and dancer of AOA.\n\n";		
+       	    text += "She looks young, is very cheerful and can have a childish personality when messing around.\n\n";		
+    	    text += "She's sweet, just like you!\n\n";		
+    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/girl-groups/aoa-ace-of-angels-profile/\n\n";		
+    	    System.out.print(text);		
+        }		
+        		
+        if (winner.equals("Hyorin")) {		
+    	    text = "Jimin is from the kpop group: AOA.\n\n";		
+    	    text += "She is the leader, guitarist, rapper and dancer of AOA.\n\n";		
+       	    text += "She looks young, is very cheerful and can have a childish personality when messing around.\n\n";		
+    	    text += "She's sweet, just like you!\n\n";		
+    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/girl-groups/aoa-ace-of-angels-profile/\n\n";		
+    	    System.out.print(text);		
+        }		
+        		
+    }
+	
 
     public static void main(String[] args) {
 	Kanimop jubjubjub = new Kanimop();

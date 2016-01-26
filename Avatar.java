@@ -70,12 +70,24 @@ public class Avatar {
 
     //MUTATORS
 
+    public void setUPass(String pass) {
+	uPass = pass;
+    }
+
     public void setAnimePersona(String aPersona) {
 	animePersona = aPersona;
     }
 
     public void setKpopPersona(String kPersona) {
 	kpopPersona = kPersona;
+    }
+
+    public void setTotalAnime(int numA) {
+	totalAnime = numA;
+    }
+
+    public void setTotalKpop(int numK) {
+	totalKpop = numK;
     }
     
 
