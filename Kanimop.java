@@ -642,7 +642,7 @@ public class Kanimop {
     	    text = "Kise is from the anime: Kuroko no Basket.\n\n";
     	    text += "He is part of the Generation of Miracles Basketball Players and also works as a model with a pretty face.\n\n";
     	    text += "He has a very outgoing personality and tries to be friends with everybody, while he can also be competitive and stubborn.\n\n";
-    	    text += "Her character is funny and lovable, just like you!\n\n";
+    	    text += "His character is funny and lovable, just like you!\n\n";
     	    text += "Read more about your avatar here: http://kurokonobasuke.wikia.com/wiki/Ry%C5%8Dta_Kise\n\n";
     	    System.out.print(text);
         }
@@ -705,7 +705,7 @@ public class Kanimop {
     	    text = "Guila is from the anime: Seven Deadly Sins.\n\n";
     	    text += "She is a powerful Holy Knight and a caring older sister that is sent to assassinate the protagonists.\n\n";
     	    text += "She is a very dedicated knight and is confident in her abilities in the best kind of way.\n\n";
-    	    text += "His character is intense and kind, just like you!\n\n";
+    	    text += "Her character is intense and kind, just like you!\n\n";
     	    text += "Read more about your character here: http://nanatsu-no-taizai.wikia.com/wiki/Guila\n\n";
     	    System.out.print(text);
         }
@@ -723,38 +723,38 @@ public class Kanimop {
      	    text = "Ichigo is from the anime: Bleach.\n\n";
     	    text += "He becomes a temporary soul reaper and has to fight countless enemies, including entire races of beings.\n\n";
     	    text += "Ichigo has a complex sense of honor; he seeks to exact revenge, often taunting, but maintaining the good within, also seen as an older brother figure.\n\n";
-    	    text += "Her character is fierce and evolving, just like you!\n\n";
+    	    text += "His character is fierce and evolving, just like you!\n\n";
     	    text += "Read more about your character here: http://bleach.wikia.com/wiki/Ichigo_Kurosaki\n\n";
     	    System.out.print(text);
         }
-          //up to here       
+     
         if (winner.equals("Edward")) {
     	    text = "Edward is from the anime: Fullmetal Alchemist.\n\n";
-    	    text += "She is introduced as the B-Rabbit or Blood-Stained Black Rabbit and helps the main character while searching for her lost memories.\n\n";
-    	    text += "She is cold and rude at the start and turns out to be hotheaded, loud spoken and blunt. However she is powerful and wants to do what's right.\n\n";
-    	    text += "Her character is simple and awesome, just like you!\n\n";
-    	    text += "Read more about your avatar here: http://pandorahearts.wikia.com/wiki/Alice\n\n";
+    	    text += "He becomes the youngest State Alchemist in history by achieving his certification at age twelve, seeking to restore his armored-brother.\n\n";
+    	    text += "Although he is often immature and rebellious, he shows his deeper nature of selflessness, unflinching loyalty, and great compassion.\n\n";
+    	    text += "His character is deep and honest, just like you!\n\n";
+    	    text += "Read more about your avatar here: http://fma.wikia.com/wiki/Edward_Elric\n\n";
     	    System.out.print(text);
         }
-        
+    
         if (winner.equals("L")) {
     	    text = "L is from the anime: Death Note.\n\n";
-    	    text += "She is known as 'Second' in a Survival Game and she is the owner of a stalker diary all about the main character she loves.\n\n";
-       	    text += "She is sweet and shy around main character, but is actually a ruthless, calculating psychopath.\n\n";
-    	    text += "Her character is crazy and dedicated, just like you!\n\n";
-    	    text += "Read more about your character here: http://futurediary.wikia.com/wiki/Yuno_Gasai\n\n";
+    	    text += "He is a world-renowned detective (first, second and third best) who takes on the challenge of catching the serial killer known only as Kira.\n\n";
+       	    text += "He is secretive, strange, odd but extremely, extremely intelligent with a sense of justice.\n\n";
+    	    text += "His character is quirky and brilliant, just like you!\n\n";
+    	    text += "Read more about your character here: http://deathnote.wikia.com/wiki/L_(character)\n\n";
     	    System.out.print(text);
         }
     
         if (winner.equals("Lelouch")) {
     	    text = "Lelouch is from the anime: Code Geass.\n\n";
-    	    text += "He is a powerful information broker and gives information for his own enjoyment, claiming to love the entire human race.\n\n";
-    	    text += "He greatly enjoys putting people in enjoyable or chaotic situations in order to observe their reactions.\n\n";
-    	    text += "His character is exciting and unique, just like you!\n\n";
-    	    text += "Read more about your character here: http://durarara.wikia.com/wiki/Izaya_Orihara\n\n";
+    	    text += "He is the eleventh prince of the Holy Britannian Empire, the leader of the Black Knights and the key player in a rebellion.\n\n";
+    	    text += "He pretends to be easygoing and kind, but in reality he is a calm, sophisticated, and arrogant aristocrat with great ambitions.\n\n";
+    	    text += "His character is clever and ambitious, just like you!\n\n";
+    	    text += "Read more about your character here: http://codegeass.wikia.com/wiki/Lelouch_vi_Britannia\n\n";
     	    System.out.print(text);
         }
-    
+            //up to here        
         if (winner.equals("Itachi")) {
        	    text = "Itachi is from the anime: Naruto.\n\n";
     	    text += "He was a human living a normal life until he has ghoul parts transplanted in him and became a One-Eyed Ghoul.\n\n";
