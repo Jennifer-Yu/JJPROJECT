@@ -9,4 +9,6 @@ Different elements (Planned; yet to be completed):
 - Demo to enter anime / kpop world based on quiz results
 
 
+Also note, when you see ">>" and no number choices, you should click enter to proceed!
+
 Kanimop.java is the driver file!!!
