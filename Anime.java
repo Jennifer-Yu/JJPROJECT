@@ -1098,11 +1098,11 @@ public class Anime {
 	System.out.print(text);
 	proceed();
 	
-	text = "\n\n'You stand at the gravestone of your dearest friend, Obito.\n";
+	text = "\n\nYou stand at the gravestone of your dearest friend, Obito.\n";
 	System.out.print(text);
 	proceed();
 
-	text = "\nToday you have a C-rank mission.\n";
+	text = "\nToday the team has a C-rank mission.\n";
 	System.out.print(text);
 	proceed();
 
