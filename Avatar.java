@@ -12,9 +12,9 @@ public class Avatar {
 
     private String uPass;
 
-    private ArrayList<Anime> animeList;
+    public ArrayList<Anime> animeList;
 
-    private ArrayList<Kpop> kpopList;
+    public ArrayList<Kpop> kpopList;
 
     private String animePersona;
 
@@ -120,7 +120,7 @@ public class Avatar {
 	    };*/
 
     public void animeSearch(String name) {
-	ArrayList<String> nameList = new ArrayList<String>(animeList.size);
+	ArrayList<String> nameList = new ArrayList<String>();
 	for (Anime x : animeList) {
 	    nameList.add(x.getName());
 	}
@@ -130,7 +130,7 @@ public class Avatar {
 	    System.out.println("Sorry. This entry does not exist.");
 	}
 	else {
-	    Anime search = nameList.get(index);
+	    String search = nameList.get(index);
 	    viewAnimeInfo(search);
 	}
     }
@@ -143,8 +143,8 @@ public class Avatar {
 		    "\nInformation:" +
 		    "\n Alternative Titles: " + x.getAlternateName() +
 		    "\n Episodes: " + x.getNumEpisodes() + 
-		    "\n Producers: " + x.returnAlStr(x.getProducers())  +
-		    "\n Reviews: " + x.returnAlStr(x.getReviews())+
+		    //"\n Producers: " + x.returnAlStr(x.getProducers())  +
+		    //"\n Reviews: " + x.returnAlStr(x.getReviews())+
 		    "\n Plot: " + x.getPlot(); //insert info
 	    }
 	}
@@ -193,7 +193,7 @@ public class Avatar {
 	    };*/
 
     public void kpopSearch(String name) {
-	ArrayList<String> groupNameList = new ArrayList<String>(kpopList.size);
+	ArrayList<String> groupNameList = new ArrayList<String>();
 	for (Kpop x : kpopList) {
 	    groupNameList.add(x.getGroupName());
 	}
@@ -203,7 +203,7 @@ public class Avatar {
 	    System.out.println("Sorry. This entry does not exist.");
 	}
 	else {
-	    Kpop search = groupNameList.get(index);
+	    String search = groupNameList.get(index);
 	    viewKpopInfo(search);
 	}
     }
@@ -215,13 +215,13 @@ public class Avatar {
 		retStr += "\n Group: " + x.getGroupName() +
 		    "\n Type: " + x.getGender() +
 		    "\n Company: " + x.getCompany() +
-		    "\n Fanbase: " + x.getFanbase() +
+		    "\n Fanbase: " + x.getFanBase() +
 		    "\n Fan Name: " + x.getFanName() +
-		    "\n Members: " + x.returnAlStr(x.getMembers()) +
+		    //"\n Members: " + x.returnAlStr(x.getMembers()) +
 		    "\n Number of Members: " + x.getNumMembers()+
 		    "\n Ratings: " + x.getRating() +
 		    "\n Number of Title Songs: " + x.getTitleSongs()+
-		    "\n Reviews: " + x.returnAlStr(x.getReviews())+
+		    //"\n Reviews: " + x.returnAlStr(x.getReviews())+
 		    "\n Description: " + x.getDescription(); 
 	    }
 	}

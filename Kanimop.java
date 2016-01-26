@@ -135,6 +135,8 @@ public class Kanimop {
 		    catch ( IOException e ) { }
 		}
 
+		retrieveAnimeList();
+		retrieveKpopList();
 		text = "\n\n\n\n\nHurray, you've successfully logged in!!\n";
 		text += "Now go on to take a quiz.\n";
 		    
@@ -208,6 +210,8 @@ public class Kanimop {
 		avatarList.add(new Avatar(name,pass));
 		//+++++++++++++++++++++++++++++++++++++++
 		addToCSV(name, pass);
+		retrieveAnimeList();
+		retrieveKpopList();
 		//+++++++++++++++++++++++++++++++++++++++
 		
 		text = "\n\n\n\n\nHurray, you've successfully created an avatar!!\n";
@@ -246,6 +250,60 @@ public class Kanimop {
 		avatarList.get(avatarList.size()-1).setKpopPersona(x[3]);
 		avatarList.get(avatarList.size()-1).setTotalAnime(Integer.parseInt(x[4]));
 		avatarList.get(avatarList.size()-1).setTotalKpop(Integer.parseInt(x[5]));
+	    }
+
+	    reader.close();
+	}
+	catch ( IOException ioe ) { }
+    }
+
+    public void retrieveAnimeList() {
+	try {
+	    String csv = "Anime.csv";
+	    CSVReader reader = new CSVReader(new FileReader(csv));
+
+	    List<String[]> content =  reader.readAll();
+	    content.remove(0);
+	
+	    for (String[] x : content) {
+		String temp = x[0];
+		user.animeList.add( new Anime(temp) );
+		user.animeList.get(user.animeList.size()-1).setAlternateName(x[2]);
+		//user.animeList.get(user.animeList.size()-1).setGenres(x[3]);
+		//user.animeList.get(user.animeList.size()-1).setCharacters(x[4]);
+		user.animeList.get(user.animeList.size()-1).setRating(Integer.parseInt(x[5]));
+		user.animeList.get(user.animeList.size()-1).setEpisodes(Integer.parseInt(x[6]));
+		//user.animeList.get(user.animeList.size()-1).setProducers(x[7]);
+		//user.animeList.get(user.animeList.size()-1).setReviews(x[8]);
+		user.animeList.get(user.animeList.size()-1).setPlot(x[9]);
+	    }
+
+	    reader.close();
+	}
+	catch ( IOException ioe ) { }
+    }
+
+    public void retrieveKpopList() {
+	try {
+	    String csv = "Kpop.csv";
+	    CSVReader reader = new CSVReader(new FileReader(csv));
+
+	    List<String[]> content =  reader.readAll();
+	    content.remove(0);
+	
+	    for (String[] x : content) {
+		String temp = x[0];
+		user.kpopList.add( new Kpop(temp, true) );
+		user.kpopList.get(user.kpopList.size()-1).setGender(x[2]);
+		user.kpopList.get(user.kpopList.size()-1).setCompany(x[3]);
+		user.kpopList.get(user.kpopList.size()-1).setFanBase(x[4]);
+		user.kpopList.get(user.kpopList.size()-1).setFanName(x[5]);
+		//user.kpopList.get(user.kpopList.size()-1).setMembers(x[6]);
+		user.kpopList.get(user.kpopList.size()-1).setNumMembers(Integer.parseInt(x[7]));
+		user.kpopList.get(user.kpopList.size()-1).setRating(Integer.parseInt(x[8]));
+		user.kpopList.get(user.kpopList.size()-1).setTitleSongs(Integer.parseInt(x[9]));
+		//user.kpopList.get(user.kpopList.size()-1).setReviews(x[10]);
+		user.kpopList.get(user.kpopList.size()-1).setDescription(x[11]);
 	    }
 
 	    reader.close();
@@ -1475,8 +1533,7 @@ public class Kanimop {
 
 	if (choice == 1) {
 	    choice = 0;
-	    Anime Naruto = new Anime();
-   	    Naruto.setName("Naruto");
+	    Anime Naruto = new Anime("Naruto");
    	    Naruto.demo();
 	}
 
