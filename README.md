@@ -5,7 +5,7 @@ Kanimop ~ Search Engine for Everything Anime / Kpop !
 
 Different elements: 
 - Database 
-- Quiz to generate a persona!
+- Quiz to generate a persona for your avatar!
 - Demo for Naruto (can play as four different characters!)
 
 
