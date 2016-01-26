@@ -213,11 +213,16 @@ public class Anime {
 	catch ( Exception e ) { }
 	
 	System.out.println("");
+	System.out.println("");
     }
 	
     
     public void naruto1() {
-	text = "\n\n\n\n\n'Believe it!' You shout, hopping out of bed.\n";
+    	text = "\n\n\n\n\nThe day has begun...\n";
+	System.out.print(text);
+	proceed();
+	
+	text = "\n\n\n'Believe it!' You shout, hopping out of bed.\n";
 	System.out.print(text);
 	proceed();
 
@@ -294,7 +299,7 @@ public class Anime {
 	proceed();
 	
 	while (choice != 1 && choice != 2) {
-	    text = "What do you do?\n";
+	    text = "\nWhat do you do?\n";
 	    text += "\t1: Go on the S-ranked mission.\n";
 	    text += "\t2: Ask for an easier mission.\n\n";
 	
@@ -336,11 +341,19 @@ public class Anime {
 	
 	if (choice == 2) {
 	    choice = 0;
-	    text = "\nKakashi: Very well, a lady in town wants you to help her find her cat.\n";
+	    text = "\nKakashi: Very well, a lady wants you to help her find her cat.\n";
 	    System.out.print(text);
 	    proceed();
 	    
 	    text = "\nNaruto: Not again!\n";
+	    System.out.print(text);
+	    proceed();
+	    
+	    text = "\nSakura: Oh, stop complaining.\n";
+	    System.out.print(text);
+	    proceed();
+	    
+	    text = "\nYou enter the outskirts of the village and... it's scary.\n";
 	    System.out.print(text);
 	    proceed();
 	}	
@@ -460,7 +473,7 @@ public class Anime {
 	}
 	
 	if (choice == 2 || choice == 4) {
-	    text = "\nYou: You made a mistake.\n";
+	    text = "\nYou: Orochimaru, you made a mistake.\n";
 	    System.out.print(text);
 	    proceed();
 	        
@@ -472,7 +485,7 @@ public class Anime {
 	    System.out.print(text);
 	    proceed();
 	        
-	    text = "\nYou: Nine tailed-fox, if you're there. KILL THEM.\n";
+	    text = "\nYou: Nine tailed-fox, if you're there. KILL THEM ALL.\n";
 	    System.out.print(text);
 	    proceed();
 	        
