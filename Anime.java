@@ -204,7 +204,7 @@ public class Anime {
 	
 
     public void proceed() {
-	text = ">> ";
+	text = "> \n";
 	System.out.print(text);
 	
 	try {
@@ -227,7 +227,7 @@ public class Anime {
 	System.out.print(text);
 	proceed();
 
-	text = "Oh well. Time to leave.";
+	text = "Oh well. Time to leave.\n";
 	System.out.print(text);
 	proceed();
 
@@ -282,12 +282,55 @@ public class Anime {
 	text = "ALL: WHAT?!\n";
 	System.out.print(text);
 	proceed();
+	
+	text = "Kakashi smiles underneath his ninja mask.\n";
+	System.out.print(text);
+	proceed();	
+	
+	text = "Kakashi: Well, if you're not up for it...\n";
+	System.out.print(text);
+	proceed();
+	
+	while (choice != 1 && choice != 2) {
+	    text = "What do you do?\n";
+	    text += "\t1: Go on the S-ranked mission."
+	    text += "\t2: Ask for an easier mission."
+	
+	    text += ">> ";
+	    System.out.print(text);
+	
+	    try {
+	        choice = Integer.parseInt ( in.readLine() );
+	    }
+	    catch ( Exception e ) { }
+	
+	    if (choice != 1 && choice != 2) {
+		System.out.print("\n\n\n\n\nSorry! You need to pick 1 or 2 to continue.\n");
+	    }
+	}
+	
+	if (choice == 1) {
+	    text = "Kakashi: Very well, we're off to the Sound village.\n";
+	    System.out.print(text);
+	    proceed();	    
+	    
+	    text = "You: Yes! The moment I've been waiting for...\n";
+	    System.out.print(text);
+	    proceed();
+	}
+	
+	if (choice == 2) {
+	    text = "Kakashi: Very well, a lady in town wants you to help her find her cat.\n";
+	    System.out.print(text);
+	    proceed();
+	    
+	    text = "Naruto: Not again!\n";
+	    System.out.print(text);
+	    proceed();
+	}
     }
 	/*
 	text += "\t1: Go on the mission anyway.\n";
-	text += "\t2: .\n";
-	text += "\t3: Sakura.\n";
-	text += "\t4: Kakashi.\n";
 	
 	text += ">> ";
 	System.out.print(text);
