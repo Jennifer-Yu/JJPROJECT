@@ -31,12 +31,10 @@ public class Anime {
 
 
     // INSTANCE VARIABLES
-    private InputStreamReader isr;
-    private BufferedReader in;
+    private InputStreamReader isr = new InputStreamReader( System.in );
+    private BufferedReader in = new BufferedReader( isr );
     private int choice = 0;
     private String text = "";
-    isr = new InputStreamReader( System.in );
-    in = new BufferedReader( isr );	
 
     //CONSTRUCTORS
 
