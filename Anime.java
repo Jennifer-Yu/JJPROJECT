@@ -162,7 +162,7 @@ public class Anime {
 	
 
 	while (choice != 1 && choice != 2 && choice != 3 && choice != 4) {
-	    text = "Please select a character.\n";
+	    text = "\nPlease select a character.\n";
 	    text += "\t1: Naruto.\n";
 	    text += "\t2: Sasuke.\n";
 	    text += "\t3: Sakura.\n";
@@ -204,7 +204,7 @@ public class Anime {
 	
 
     public void proceed() {
-	text = "> \n";
+	text = "> ";
 	System.out.print(text);
 	
 	try {
