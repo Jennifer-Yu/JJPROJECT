@@ -657,11 +657,11 @@ public class Kanimop {
         }
     
         if (winner.equals("Izaya")) {
-    	    text = "Kaori is from the anime: Your Lie In April.\n\n";
-    	    text += "She is a violinist who helps a dear friend return to the piano world after his mother's death.\n\n";
-    	    text += "She is often friendly and encouraging, but is also independent, unpredictable, and short-tempered.\n\n";
-    	    text += "Her character is passionate and powerful, just like you!\n\n";
-    	    text += "Read more about your character here: http://shigatsu-wa-kimi-no-uso.wikia.com/wiki/Kaori_Miyazono\n\n";
+    	    text = "Izaya is from the anime: Durarara!!\n\n";
+    	    text += "He is a powerful information broker and gives information for his own enjoyment, claiming to love the entire human race.\n\n";
+    	    text += "He greatly enjoys putting people in enjoyable or chaotic situations in order to observe their reactions.\n\n";
+    	    text += "His character is exciting and unique, just like you!\n\n";
+    	    text += "Read more about your character here: http://durarara.wikia.com/wiki/Izaya_Orihara\n\n";
     	    System.out.print(text);
         }
     
