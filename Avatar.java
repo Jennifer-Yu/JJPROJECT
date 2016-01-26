@@ -131,7 +131,7 @@ public class Avatar {
 	}
 	else {
 	    Anime search = nameList.get(index);
-	    viewAnimeInfo;
+	    viewAnimeInfo(search);
 	}
     }
 	
@@ -204,7 +204,7 @@ public class Avatar {
 	}
 	else {
 	    Kpop search = groupNameList.get(index);
-	    viewKpopInfo;
+	    viewKpopInfo(search);
 	}
     }
     
