@@ -1249,47 +1249,47 @@ public class Kanimop {
         }
         
         if (winner.equals("Baekhyun")) {
-    	    text = "Jimin is from the kpop group: AOA.\n\n";
-    	    text += "She is the leader, guitarist, rapper and dancer of AOA.\n\n";
-       	    text += "She looks young, is very cheerful and can have a childish personality when messing around.\n\n";
-    	    text += "She's sweet, just like you!\n\n";
-    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/girl-groups/aoa-ace-of-angels-profile/\n\n";
+    	    text = "Baekhyun is from the kpop boy group: EXO.\n\n";
+    	    text += "He is the main vocalist of EXO.\n\n";
+       	    text += "He's known for being a jokester, social, talkative, funny, friendly and handsome with a powerful voice.\n\n";
+    	    text += "He's talented and likable, just like you!\n\n";
+    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/boy-groups/exo-k-profile/\n\n";
     	    System.out.print(text);
         }
         
         if (winner.equals("Hani")) {
-    	    text = "Jimin is from the kpop group: AOA.\n\n";
-    	    text += "She is the leader, guitarist, rapper and dancer of AOA.\n\n";
-       	    text += "She looks young, is very cheerful and can have a childish personality when messing around.\n\n";
-    	    text += "She's sweet, just like you!\n\n";
-    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/girl-groups/aoa-ace-of-angels-profile/\n\n";
+    	    text = "Hani is from the kpop girl group: EXID.\n\n";
+    	    text += "She is the lead vocalist of EXID.\n\n";
+       	    text += "She is often credited with EXID's boom in popularity, their sexy songs and her captivating personality.\n\n";
+    	    text += "She's sexy, just like you!\n\n";
+    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/girl-groups/exid-profile/\n\n";
     	    System.out.print(text);
         }
         
         if (winner.equals("Taemin")) {
-    	    text = "Jimin is from the kpop group: AOA.\n\n";
-    	    text += "She is the leader, guitarist, rapper and dancer of AOA.\n\n";
-       	    text += "She looks young, is very cheerful and can have a childish personality when messing around.\n\n";
-    	    text += "She's sweet, just like you!\n\n";
+    	    text = "Taemin is from the kpop boy group: SHINee.\n\n";
+    	    text += "He is the lead vocalist, main dancer and maknae of SHINee.\n\n";
+       	    text += "Debuting at one of the youngest ages, Taemin has essentially lived his life as an idol, and now he is promoting solo activities as well.\n\n";
+    	    text += "He's come a long way, just like you!\n\n";
     	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/girl-groups/aoa-ace-of-angels-profile/\n\n";
     	    System.out.print(text);
         }
         
         if (winner.equals("G-Dragon")) {
-    	    text = "Jimin is from the kpop group: AOA.\n\n";
-    	    text += "She is the leader, guitarist, rapper and dancer of AOA.\n\n";
-       	    text += "She looks young, is very cheerful and can have a childish personality when messing around.\n\n";
-    	    text += "She's sweet, just like you!\n\n";
+    	    text = "G-Dragon is from the kpop boy group: BIG BANG.\n\n";
+    	    text += "He is the leader, main rapper and visual of BIG BANG.\n\n";
+       	    text += "Probably the most popular idol around, GD has been in entertainment for a long time, expressing a unique style.\n\n";
+    	    text += "He's hardworking and different, just like you!\n\n";
     	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/girl-groups/aoa-ace-of-angels-profile/\n\n";
     	    System.out.print(text);
         }
         
         if (winner.equals("CL")) {
-    	    text = "Jimin is from the kpop group: AOA.\n\n";
-    	    text += "She is the leader, guitarist, rapper and dancer of AOA.\n\n";
-       	    text += "She looks young, is very cheerful and can have a childish personality when messing around.\n\n";
-    	    text += "She's sweet, just like you!\n\n";
-    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/girl-groups/aoa-ace-of-angels-profile/\n\n";
+    	    text = "CL is from the kpop girl group: 2NE1.\n\n";
+    	    text += "She is the leader, main rapper and main vocalist of 2NE1.\n\n";
+       	    text += "She has made it big internationally and is one of the most famous korean rappers in the industry.\n\n";
+    	    text += "She's a legend, just like you!\n\n";
+    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/girl-groups/2ne1-profile/\n\n";
     	    System.out.print(text);
         }
         
