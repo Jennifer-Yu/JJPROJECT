@@ -606,7 +606,7 @@ public class Kanimop {
     public void kpopQuiz() {
 				
 	ArrayList<String> C = new ArrayList<String>(Arrays.asList("Jimin", "Suzy", "Yoseob", "Sunggyu", "Daehyun"));
-	ArrayList<String> X = new ArrayList<String>(Arrays.asList("Amber", "Jackson", "Eunji", "Minah", "Eunji"));
+	ArrayList<String> X = new ArrayList<String>(Arrays.asList("Amber", "Jackson", "Eunji", "Minah", "Sungjae"));
 	ArrayList<String> I = new ArrayList<String>(Arrays.asList("Taeyeon", "Jungkook", "Baekhyun", "Hani", "Taemin"));
 	ArrayList<String> L = new ArrayList<String>(Arrays.asList("G-Dragon", "CL", "Hyuna", "Heechul", "Hyorin"));
 					
@@ -620,9 +620,9 @@ public class Kanimop {
 			
 	//1
 	while (choice != 1 && choice != 2) {
-	    text = "Would you hug a stranger?\n";
-	    text += "\t1: Yeah, why not.\n";
-	    text += "\t2: Ew, no.\n";
+	    text = "How do you look?\n";
+	    text += "\t1: I look good.\n";
+	    text += "\t2: Mirrors love me.\n";
 			
 	    text += ">> ";
 	    System.out.print(text);
@@ -637,22 +637,22 @@ public class Kanimop {
 	}
 			
 	if (choice == 1) {
-	    x += 1;
+	    i += 1;
 	    c += 1;
 	    choice = 0;
 	}
 			
 	if (choice == 2) {
 	    l += 1;
-	    i += 1;
+	    x += 1;
 	    choice = 0;
 	}
 			
 	//2
 	while (choice != 1 && choice != 2) {
-	    text = "\n\n\n\n\nAre you active or a lazy potato?\n";
-	    text += "\t1: Mostly active, a little potato.\n";
-	    text += "\t2: A little active, mostly potato.\n";
+	    text = "\n\n\n\n\nWhich is more like you?\n";
+	    text += "\t1: I'm a leader, rapper, composer, dreamer.\n";
+	    text += "\t2: I'm a singer, dancer, smiler, rocker.\n";
 			
 	    text += ">> ";
 	    System.out.print(text);
@@ -667,22 +667,22 @@ public class Kanimop {
 	}
 			
 	if (choice == 1) {
-	    x += 1;
+	    i += 1;
 	    l += 1;
 	    choice = 0;
 	}
 			
 	if (choice == 2) {
 	    c += 1;
-	    i += 1;
+	    x += 1;
 	    choice = 0;
 	}
 			
 	//3
 	while (choice != 1 && choice != 2) {
-	    text = "\n\n\n\n\nIf you could, would you take over the world?\n";
-	    text += "\t1: Yeah, sounds cool.\n";
-	    text += "\t2: No, okay, maybe a little.\n";
+	    text = "\n\n\n\n\nWhich would you rather be?\n";
+	    text += "\t1: The most fun person in the world.\n";
+	    text += "\t2: The most famous person in the world.\n";
 			
 	    text += ">> ";
 	    System.out.print(text);
@@ -710,9 +710,9 @@ public class Kanimop {
 			
 	//4
 	while (choice != 1 && choice != 2) {
-	    text = "\n\n\n\n\nAre you good at keeping secrets?\n";
-	    text += "\t1: Sure, there was that one time when...\n";
-	    text += "\t2: I guess.\n";
+	    text = "\n\n\n\n\nWhich part of your body are you more confident in?\n";
+	    text += "\t1: Pssh, my hair.\n";
+	    text += "\t2: Duh, my personality.\n";
 			
 	    text += ">> ";
 	    System.out.print(text);
@@ -727,22 +727,22 @@ public class Kanimop {
 	}
 			
 	if (choice == 1) {
+	    i += 1;
+	    l += 1;
+	    choice = 0;
+	}
+			
+	if (choice == 2) {
 	    x += 1;
 	    c += 1;
 	    choice = 0;
 	}
 			
-	if (choice == 2) {
-	    l += 1;
-	    i += 1;
-	    choice = 0;
-	}
-			
 	//5
 	while (choice != 1 && choice != 2) {
-	    text = "\n\n\n\n\nEvil-o-meter?\n";
-	    text += "\t1: Secretly evil, but outwardly nice.\n";
-	    text += "\t2: Evil, of course.\n";
+	    text = "\n\n\n\n\nHow strong are you?\n";
+	    text += "\t1: Strong enough to withstand pressure.\n";
+	    text += "\t2: Strong enough to withhold anger.\n";
 			
 	    text += ">> ";
 	    System.out.print(text);
@@ -770,9 +770,9 @@ public class Kanimop {
 			
 	//6
 	while (choice != 1 && choice != 2) {
-	    text = "\n\n\n\n\nAre you an honest person?\n";
-	    text += "\t1: Maybe.\n";
-	    text += "\t2: Yeah, most of the time.\n";
+	    text = "\n\n\n\n\nHow trusting are you?\n";
+	    text += "\t1: Trusting enough to be taken advantage of.\n";
+	    text += "\t2: Trusting too little to be trusted.\n";
 			
 	    text += ">> ";
 	    System.out.print(text);
@@ -819,12 +819,12 @@ public class Kanimop {
 	}
 			
 	if (choice == 1) {
-	    l += 1;
+	    x += 1;
 	    choice = 0;
 	}
 			
 	if (choice == 2) {
-	    x += 1;
+	    l += 1;
 	    choice = 0;
 	}
 			
