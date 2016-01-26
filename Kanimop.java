@@ -754,31 +754,31 @@ public class Kanimop {
     	    text += "Read more about your character here: http://codegeass.wikia.com/wiki/Lelouch_vi_Britannia\n\n";
     	    System.out.print(text);
         }
-            //up to here        
+      
         if (winner.equals("Itachi")) {
        	    text = "Itachi is from the anime: Naruto.\n\n";
-    	    text += "He was a human living a normal life until he has ghoul parts transplanted in him and became a One-Eyed Ghoul.\n\n";
-    	    text += "After being tortured, he underwent a drastic personality change to protect the ones precious to him and exterminate enemies.\n\n";
-    	    text += "His character is adapting and straightforward, just like you!\n\n";
-    	    text += "Read more about your character here: http://tokyoghoul.wikia.com/wiki/Ken_Kaneki\n\n";
+    	    text += "He is a prodigy who joins a criminal organization after murdering his entire clan with the exception of his brother.\n\n";
+    	    text += "He is quiet, insightful, distant, carrying himself in a polite, violent manner.\n\n";
+    	    text += "His character is steel-hearted and soft-spoken, just like you!\n\n";
+    	    text += "Read more about your character here: http://naruto.wikia.com/wiki/Itachi_Uchiha\n\n";
     	    System.out.print(text);
         }
     
         if (winner.equals("Mikasa")) {
      	    text = "Mikasa is from the anime: Attack on Titan.\n\n";
-    	    text += "She is a genius in logic and problems, but has difficulty understanding emotions or behaviour.\n\n";
-    	    text += "She is shown to have a dry and somewhat twisted sense of humor, is addicted to games and is extremely attached to her brother.\n\n";
-    	    text += "Her character is cute and intelligent, just like you!\n\n";
-    	    text += "Read more about your character here: http://gintama.wikia.com/wiki/Sakata_Gintoki\n\n";
+    	    text += "At the 104th Trainees Squad's graduation, she is ranked first in the class of Titan killers.\n\n";
+    	    text += "After the murder of her family, she gains a cynical view that the world is cruel, and is blindly devoted to the main character whom she loves.\n\n";
+    	    text += "Her character is sharp and devoted, just like you!\n\n";
+    	    text += "Read more about your character here: http://shingekinokyojin.wikia.com/wiki/Mikasa_Ackerman\n\n";
     	    System.out.print(text);
         }
     
         if (winner.equals("Erza")) {
     	    text = "Erza is from the anime: Fairy Tail.\n\n";
-    	    text += "She is introduced as the B-Rabbit or Blood-Stained Black Rabbit and helps the main character while searching for her lost memories.\n\n";
-    	    text += "She is cold and rude at the start and turns out to be hotheaded, loud spoken and blunt. However she is powerful and wants to do what's right.\n\n";
-    	    text += "Her character is simple and awesome, just like you!\n\n";
-    	    text += "Read more about your avatar here: http://pandorahearts.wikia.com/wiki/Alice\n\n";
+    	    text += "She is an S-Class Mage of the Fairy Tail Guild and the strongest member of Team Natsu, with a dark past.\n\n";
+    	    text += "She is a very strict person, often criticizing the bad behavior and habits of the other guild members, but also has a cute, innocent side. \n\n";
+    	    text += "Her character is adorable and flawless, just like you!\n\n";
+    	    text += "Read more about your avatar here: http://fairytail.wikia.com/wiki/Erza_Scarlet\n\n";
     	    System.out.print(text);
         }
     }	
