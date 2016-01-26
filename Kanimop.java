@@ -309,7 +309,15 @@ public class Kanimop {
 
 	    reader.close();
 
-	    String[] newLine = {user.getUName(),user.getUPass(),ap,kp,ta,tk};
+	    String tempPass = "";
+	    for ( Avatar x : avatarList ) {
+		if ( user.getUName().equals(x.getUName()) ) { 
+		    user = x;
+		    tempPass = user.getUPass();
+		}
+	    }
+	    
+	    String[] newLine = {user.getUName(),tempPass,ap,kp,ta,tk};
 	    for (int x = 0; x < content.size(); x++) {
 		String temp = content.get(x)[0];
 		if (user.getUName().equals(temp)) {
