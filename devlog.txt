@@ -8,15 +8,17 @@ Kanimop ~ Search Engine for Everything Anime / Kpop !
 
 01/25/15
 JENN
-- creating working demos
+- creating working demos for Naruto
+- implemented anime descriptions
+- implemented kpop descriptions
 - working on options and navigation
 
 JESS
-- working on login, masterlist
+- implemented login csv
+- working on printing the masterlist
 - implementing search engine feature
 
 JENN & JESS
-- touching up
 - finishing touches
 - submission
 
