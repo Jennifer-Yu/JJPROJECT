@@ -155,7 +155,7 @@ public class Anime {
 
     public void naruto() {
 	text = "\n\n\n\n\nWelcome to Naruto!\n\n";
-	text += "You are about to begin your path to becoming a ninja.\n\n";
+	text += "You are about to begin your path to becoming a ninja.\n";
 	System.out.print(text);
 	proceed();
 
@@ -204,7 +204,7 @@ public class Anime {
 	
 
     public void proceed() {
-	text = "\n>> ";
+	text = "\n\n>> ";
 	System.out.print(text);
 	
 	try {
@@ -215,7 +215,7 @@ public class Anime {
 	
     
     public void naruto1() {
-	text = "\n\n\n\n\n'Believe it!' You shout, hopping out of bed.\n\n";
+	text = "\n\n\n\n\n'Believe it!' You shout, hopping out of bed.\n";
 	System.out.print(text);
 	proceed();
 
@@ -310,6 +310,7 @@ public class Anime {
 	}
 	
 	if (choice == 1) {
+	    choice = 0;
 	    text = "\nKakashi: Very well, we're off to the Sound village.\n";
 	    System.out.print(text);
 	    proceed();	    
@@ -332,6 +333,7 @@ public class Anime {
 	}
 	
 	if (choice == 2) {
+	    choice = 0;
 	    text = "\nKakashi: Very well, a lady in town wants you to help her find her cat.\n";
 	    System.out.print(text);
 	    proceed();
@@ -361,7 +363,7 @@ public class Anime {
 	System.out.print(text);
 	proceed();
 	    
-	text = "\nNaruto!\n";
+	text = "\n...Naruto!!!\n";
 	System.out.print(text);
 	proceed();
 	    
@@ -369,7 +371,7 @@ public class Anime {
 	System.out.print(text);
 	proceed();
 	    
-	text = "\nSasuke: Hey, idiot. We need to get to Sakura and Kakashi-sensei.\n";
+	text = "\nSasuke: Hey, idiot! We need to get to Sakura and Kakashi-sensei!\n";
 	System.out.print(text);
 	proceed();
 	    
@@ -393,11 +395,11 @@ public class Anime {
 	System.out.print(text);
 	proceed();
 	    
-	text = "\nSasuke: Naruto, snap out of it! That's Orochimaru! He has an army with him!\n";
+	text = "\nSasuke: Naruto, snap out of it! That's Orochimaru! He has an army with him too!\n";
 	System.out.print(text);
 	proceed();
 	    
-	text = "\nYou:...\n";
+	text = "\nYou: ...\n";
 	System.out.print(text);
 	proceed();
 	    
