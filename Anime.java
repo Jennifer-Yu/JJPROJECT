@@ -293,8 +293,8 @@ public class Anime {
 	
 	while (choice != 1 && choice != 2) {
 	    text = "What do you do?\n";
-	    text += "\t1: Go on the S-ranked mission."
-	    text += "\t2: Ask for an easier mission."
+	    text += "\t1: Go on the S-ranked mission.\n";
+	    text += "\t2: Ask for an easier mission.\n";
 	
 	    text += ">> ";
 	    System.out.print(text);
@@ -317,6 +317,18 @@ public class Anime {
 	    text = "You: Yes! The moment I've been waiting for...\n";
 	    System.out.print(text);
 	    proceed();
+	    
+	    text = "The Sound village is silent... and it's scary.\n";
+	    System.out.print(text);
+	    proceed();
+	    
+	    text = "Kakashi: We're investigating one of Orochimaru's abandoned experiments.\n";
+	    System.out.print(text);
+	    proceed();
+	    
+	    text = "Sakura: Gross, it smells like...\n";
+	    System.out.print(text);
+	    proceed();
 	}
 	
 	if (choice == 2) {
@@ -327,26 +339,154 @@ public class Anime {
 	    text = "Naruto: Not again!\n";
 	    System.out.print(text);
 	    proceed();
-	}
-    }
-	/*
-	text += "\t1: Go on the mission anyway.\n";
-	
-	text += ">> ";
+	}	
+	    
+	text = "Kakashi: Naruto, get down!\n";
 	System.out.print(text);
+	proceed();
+	    
+	text = "You black out.\n";
+	System.out.print(text);
+	proceed();
+	    
+	text = "...\n";
+	System.out.print(text);
+	proceed();
+	    
+	text = "...Naruto...\n";
+	System.out.print(text);
+	proceed();
+	    
+	text = "...\n";
+	System.out.print(text);
+	proceed();
+	    
+	text = "Naruto!\n";
+	System.out.print(text);
+	proceed();
+	    
+	text = "You open your eyes, and darkness greets you. But somehow you can still hear Sasuke's annoying voice.\n";
+	System.out.print(text);
+	proceed();
+	    
+	text = "Sasuke: Hey, idiot. We need to get to Sakura and Kakashi-sensei.\n";
+	System.out.print(text);
+	proceed();
+	    
+	text = "You: Where are we?\n";
+	System.out.print(text);
+	proceed();
+	    
+	text = "Sasuke: I don't know. Someone knocked us out.\n";
+	System.out.print(text);
+	proceed();
+	    
+	text = "Unknown: Hello, children. I killed your precious friend.\n";
+	System.out.print(text);
+	proceed();
+	    
+	text = "You: ...what?\n";
+	System.out.print(text);
+	proceed();
+	    
+	text = "Unknown: ...and that bothersome sensei of yours.\n";
+	System.out.print(text);
+	proceed();
+	    
+	text = "Sasuke: Naruto, snap out of it! That's Orochimaru! He has an army with him!\n";
+	System.out.print(text);
+	proceed();
+	    
+	text = "You:...\n";
+	System.out.print(text);
+	proceed();
+	    
+	while (choice != 1 && choice != 2 && choice != 3 && choice != 4) {
+	    text = "Make a decision.\n";
+	    text += "\t1: Ask what is going on.\n";
+	    text += "\t2: Unleash the nine-tailed fox within you.\n";
+	    text += "\t3: Scream, cry, beg for mercy.\n";
+	    text += "\t3: Kill them all.\n";
 	
-	try {
-	    choice = Integer.parseInt ( in.readLine() );
+	    text += ">> ";
+	    System.out.print(text);
+	
+	    try {
+	        choice = Integer.parseInt ( in.readLine() );
 	    }
 	    catch ( Exception e ) { }
-	    
+	
 	    if (choice != 1 && choice != 2 && choice != 3 && choice != 4) {
 		System.out.print("\n\n\n\n\nSorry! You need to pick 1, 2, 3 or 4 to continue.\n");
 	    }
-
-	System.out.print(text);
+	}
+	    
+	if (choice == 1 || choice == 3) {
+	    text = "You: Please... what is going on... don't do this...\n";
+	    System.out.print(text);
+	    proceed();
+	        
+	    text = "Something hard hits you on the head. Your eyes open.\n";
+	    System.out.print(text);
+	    proceed();
+	        
+	    text = "Sakura: We found the cat without you!\n";
+	    System.out.print(text);
+	    proceed();
+	        
+	    text = "You: What?\n";
+	    System.out.print(text);
+	    proceed();
+	        
+	    text = "Sasuke: I can't believe you were asleep the entire time. What an idiot.\n";
+	    System.out.print(text);
+	    proceed();
+	        
+	    text = "You: HUH?\n";
+	    System.out.print(text);
+	    proceed();
+	        
+	    text = "Kakashi: And you wanted an S-ranked mission?\n";
+	    System.out.print(text);
+	    proceed();
+	        
+	    text = "You end up having to spend all day searching for cats, but at least everyone is safe.\n";
+	    System.out.print(text);
+	    proceed();
+	}
 	
-
+	if (choice == 2 || choice == 4) {
+	    text = "You: You made a mistake.\n";
+	    System.out.print(text);
+	    proceed();
+	        
+	    text = "Orochimaru: Hmm?\n";
+	    System.out.print(text);
+	    proceed();
+	        
+	    text = "Sasuke: Naruto, no!\n";
+	    System.out.print(text);
+	    proceed();
+	        
+	    text = "You: Nine tailed-fox, if you're there. KILL THEM.\n";
+	    System.out.print(text);
+	    proceed();
+	        
+	    text = "Orochimaru's army is destroyed. They lie on the ground, dead. Orochimaru escapes angrily.\n";
+	    System.out.print(text);
+	    proceed();
+	        
+	    text = "Kakashi and Sakura arrive, appearing unharmed.\n";
+	    System.out.print(text);
+	    proceed();
+	        
+	    text = "Sakura jumps into your arms and shouts: 'You did it, Naruto!'\n";
+	    System.out.print(text);
+	    proceed();
+	        
+	    text = "You end up getting a lot of attention for defeating Orochimaru's army and become the Hokage!\n";
+	    System.out.print(text);
+	    proceed();	
     }
 
     public void sasuke() {
