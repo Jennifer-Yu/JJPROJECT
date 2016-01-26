@@ -1359,6 +1359,102 @@ public class Kanimop {
         }
         
         choice = 0;
+        String search = "";
+        /*
+        while () {
+	    text = "\n\n\n\n\nType in the anime / kpop group that you would like to search for!\n";
+	    
+	    text += ">> ";
+	    System.out.print(text);
+	    
+	    try {
+		search = in.readLine();
+	    }
+	    catch ( Exception e ) { }
+	    
+	    //check if anime / kpop exists
+	    if (  ) { //does not exist
+		System.out.print("\n\n\n\n\nThat does not exist. Would you like to add this to your list?");
+		
+		//idk how to add the anime / kpop?
+	    }	    
+	}
+
+//anime exists
+
+	while (choice != 1 && choice != 2 && choice != 3 && choice != 4 && choice != 5) {
+	    text = "\n\n\n\n\nWhat would you like to do?\n";
+	    text += "\t1: Update rating.\n";
+	    text += "\t2: Update number of episodes watched.\n";
+	    text += "\t1: Edit/Add Review\n";
+	    text += "\t2: Change your favorite character.\n";
+	    text += "\t1: Go back!\n";
+	    
+	    text += ">> ";
+	    System.out.print(text);
+	    
+	    try {
+		choice = Integer.parseInt( in.readLine() );
+	    }
+	    catch ( Exception e ) { }
+	    if ( choice != 1 && choice != 2 && choice != 3 && choice != 4 && choice != 5) {
+		System.out.print("\n\n\n\n\nSorry! You need to pick 1, 2, 3, 4 or 5 to continue.");
+	    }
+	}
+
+	if (choice == 1) {
+	}
+
+	if (choice == 2) {
+	}
+	
+	if (choice == 3) {
+	}
+	
+	if (choice == 4) {
+	}
+	
+	if (choice == 5) {
+	}
+	
+	
+//kpop group exists
+
+	while (choice != 1 && choice != 2 && choice != 3 && choice != 4 && choice != 5) {
+	    text = "\n\n\n\n\nWhat would you like to do?\n";
+	    text += "\t1: Update rating.\n";
+	    text += "\t2: Update number of title songs.\n";
+	    text += "\t1: Edit/Add Review\n";
+	    text += "\t2: Change your favorite member.\n";
+	    text += "\t1: Go back!\n";
+	    
+	    text += ">> ";
+	    System.out.print(text);
+	    
+	    try {
+		choice = Integer.parseInt( in.readLine() );
+	    }
+	    catch ( Exception e ) { }
+	    if ( choice != 1 && choice != 2 && choice != 3 && choice != 4 && choice != 5) {
+		System.out.print("\n\n\n\n\nSorry! You need to pick 1, 2, 3, 4 or 5 to continue.");
+	    }
+	}
+
+	if (choice == 1) {
+	}
+
+	if (choice == 2) {
+	}
+	
+	if (choice == 3) {
+	}
+	
+	if (choice == 4) {
+	}
+	
+	if (choice == 5) {
+	}
+	*/
         
 	while (choice != 1 && choice != 2) {
 	    text = "\n\n\n\n\nTry our Naruto demo!\n";
