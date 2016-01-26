@@ -558,11 +558,11 @@ public class Kanimop {
 
 	int numofwinners = 0;
 
-	if (c == values.get(3)) {
+	if (c == values.get(0)) {
 	    numofwinners += 1;
 	    winner = C.get((int)(Math.random() * 4));
 	}
-	if (x == values.get(3)) {
+	if (x == values.get(0)) {
 	    if (numofwinners > 0) { 
 		if (((int)(Math.random() * 10)) > 4) {
 		    winner = X.get((int)(Math.random() * 4));
@@ -573,7 +573,7 @@ public class Kanimop {
 		numofwinners += 1;
 	    }
 	}
-	if (i == values.get(3)) {
+	if (i == values.get(0)) {
 	    if (numofwinners > 0) { 
 		if (((int)(Math.random() * 10)) > 4) {
 		    winner = I.get((int)(Math.random() * 4));
@@ -584,7 +584,7 @@ public class Kanimop {
 		numofwinners += 1;
 	    }
 	}
-	if (l == values.get(3)) {
+	if (l == values.get(0)) {
 	    if (numofwinners > 0) { 
 		if (((int)(Math.random() * 10)) > 4) {
 		    winner = L.get((int)(Math.random() * 4));
@@ -871,11 +871,11 @@ public class Kanimop {
 			
 	int numofwinners = 0;
 			
-	if (c == values.get(3)) {
+	if (c == values.get(0)) {
 	    numofwinners += 1;
 	    winner = C.get((int)(Math.random() * 4));
 	}
-	if (x == values.get(3)) {
+	if (x == values.get(0)) {
 	    if (numofwinners > 0) { 
 		if (((int)(Math.random() * 10)) > 4) {
 		    winner = X.get((int)(Math.random() * 4));
@@ -886,7 +886,7 @@ public class Kanimop {
 		numofwinners += 1;
 	    }
 	}
-	if (i == values.get(3)) {
+	if (i == values.get(0)) {
 	    if (numofwinners > 0) { 
 		if (((int)(Math.random() * 10)) > 4) {
 		    winner = I.get((int)(Math.random() * 4));
@@ -897,7 +897,7 @@ public class Kanimop {
 		numofwinners += 1;
 	    }
 	}
-	if (l == values.get(3)) {
+	if (l == values.get(0)) {
 	    if (numofwinners > 0) { 
 		if (((int)(Math.random() * 10)) > 4) {
 		    winner = L.get((int)(Math.random() * 4));
