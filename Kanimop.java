@@ -666,11 +666,11 @@ public class Kanimop {
         }
     
         if (winner.equals("Kaneki")) {
-       	    text = "Teresa is from the anime: Claymore.\n\n";
-    	    text += "She is the 182nd Claymore of the 77th generation in the Organization, known to be strongest.\n\n";
-    	    text += "She guides the main character and slaughters her enemies with a smile, earning the nickname 'Teresa of the Faint Smile'.\n\n";
-    	    text += "Her character is often ruthless, but also caring, just like you!\n\n";
-    	    text += "Read more about your character here: http://claymore.wikia.com/wiki/Teresa\n\n";
+       	    text = "Kaneki is from the anime: Tokyo Ghoul.\n\n";
+    	    text += "He was a human living a normal life until he has ghoul parts transplanted in him and became a One-Eyed Ghoul.\n\n";
+    	    text += "After being tortured, he underwent a drastic personality change to protect the ones precious to him and exterminate enemies.\n\n";
+    	    text += "His character is adapting and straightforward, just like you!\n\n";
+    	    text += "Read more about your character here: http://tokyoghoul.wikia.com/wiki/Ken_Kaneki\n\n";
     	    System.out.print(text);
         }
     
