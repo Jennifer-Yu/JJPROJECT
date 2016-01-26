@@ -1271,7 +1271,7 @@ public class Kanimop {
     	    text += "He is the lead vocalist, main dancer and maknae of SHINee.\n\n";
        	    text += "Debuting at one of the youngest ages, Taemin has essentially lived his life as an idol, and now he is promoting solo activities as well.\n\n";
     	    text += "He's come a long way, just like you!\n\n";
-    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/girl-groups/aoa-ace-of-angels-profile/\n\n";
+    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/boy-groups/shinee-profile/\n\n";
     	    System.out.print(text);
         }
         
@@ -1280,7 +1280,7 @@ public class Kanimop {
     	    text += "He is the leader, main rapper and visual of BIG BANG.\n\n";
        	    text += "Probably the most popular idol around, GD has been in entertainment for a long time, expressing a unique style.\n\n";
     	    text += "He's hardworking and different, just like you!\n\n";
-    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/girl-groups/aoa-ace-of-angels-profile/\n\n";
+    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/boy-groups/big-bang-profile/\n\n";
     	    System.out.print(text);
         }
         
@@ -1294,33 +1294,32 @@ public class Kanimop {
         }
         
         if (winner.equals("Hyuna")) {
-    	    text = "Jimin is from the kpop group: AOA.\n\n";
-    	    text += "She is the leader, guitarist, rapper and dancer of AOA.\n\n";
-       	    text += "She looks young, is very cheerful and can have a childish personality when messing around.\n\n";
-    	    text += "She's sweet, just like you!\n\n";
-    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/girl-groups/aoa-ace-of-angels-profile/\n\n";
+    	    text = "Hyuna is from the kpop girl group: 4Minute.\n\n";
+    	    text += "She is the main rapper, main dancer and visual of 4Minute.\n\n";
+       	    text += "She made it big in Psy's music video Gangnam Style, then formed a subunit and finally is promoting solo activities.\n\n";
+    	    text += "She's working hard, just like you!\n\n";
+    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/girl-groups/4minute-profile/\n\n";
     	    System.out.print(text);
         }
         
         if (winner.equals("Heechul")) {
-    	    text = "Jimin is from the kpop group: AOA.\n\n";
-    	    text += "She is the leader, guitarist, rapper and dancer of AOA.\n\n";
-       	    text += "She looks young, is very cheerful and can have a childish personality when messing around.\n\n";
-    	    text += "She's sweet, just like you!\n\n";
-    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/girl-groups/aoa-ace-of-angels-profile/\n\n";
+    	    text = "Heechul is from the kpop boy group: Super Junior.\n\n";
+    	    text += "He is a vocalist, rapper and visual of Super Junior.\n\n";
+       	    text += "He's probably the craziest korean idol for being so open and born for entertainment.\n\n";
+    	    text += "He's eccentric, just like you!\n\n";
+    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/boy-groups/super-junior-profile/\n\n";
     	    System.out.print(text);
         }
         
         if (winner.equals("Hyorin")) {
-    	    text = "Jimin is from the kpop group: AOA.\n\n";
-    	    text += "She is the leader, guitarist, rapper and dancer of AOA.\n\n";
-       	    text += "She looks young, is very cheerful and can have a childish personality when messing around.\n\n";
-    	    text += "She's sweet, just like you!\n\n";
-    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/girl-groups/aoa-ace-of-angels-profile/\n\n";
+    	    text = "Hyorin is from the kpop group: SISTAR.\n\n";
+    	    text += "She is the leader, main vocalist and visual of SISTAR.\n\n";
+       	    text += "She's hyper and energetic, has made her own solo debut, and has tried rapping as well.\n\n";
+    	    text += "She's cool, just like you!\n\n";
+    	    text += "Read more about your idol here:https://sumandu.wordpress.com/kpop-profiles/girl-groups/sistar-sisters-and-stars-profile/\n\n";
     	    System.out.print(text);
         }
         
-
     }
 
 
