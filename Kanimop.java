@@ -691,6 +691,96 @@ public class Kanimop {
     	    text += "Read more about your avatar here: http://pandorahearts.wikia.com/wiki/Alice\n\n";
     	    System.out.print(text);
         }
+
+        if (winner.equals("Homura")) {
+    	    text = "Homura is from the anime: Puella Magi Madoka Magica.\n\n";
+    	    text += "She gets caught in a horrific destiny to save the main character from her fate.\n\n";
+       	    text += "She is shown to be very intelligent, athletic, distant, and cold because she understands suffering.\n\n";
+    	    text += "Her character is loyal and unbelievable, just like you!\n\n";
+    	    text += "Read more about your character here: http://madoka.wikia.com/wiki/Homura_Akemi\n\n";
+    	    System.out.print(text);
+        }
+    
+        if (winner.equals("Guila")) {
+    	    text = "Guila is from the anime: Seven Deadly Sins.\n\n";
+    	    text += "She is a powerful Holy Knight and a caring older sister that is sent to assassinate the protagonists.\n\n";
+    	    text += "She is a very dedicated knight and is confident in her abilities in the best kind of way.\n\n";
+    	    text += "His character is intense and kind, just like you!\n\n";
+    	    text += "Read more about your character here: http://nanatsu-no-taizai.wikia.com/wiki/Guila\n\n";
+    	    System.out.print(text);
+        }
+        //up to here    
+        if (winner.equals("Kirito")) {
+       	    text = "Kaneki is from the anime: Tokyo Ghoul.\n\n";
+    	    text += "He was a human living a normal life until he has ghoul parts transplanted in him and became a One-Eyed Ghoul.\n\n";
+    	    text += "After being tortured, he underwent a drastic personality change to protect the ones precious to him and exterminate enemies.\n\n";
+    	    text += "His character is adapting and straightforward, just like you!\n\n";
+    	    text += "Read more about your character here: http://tokyoghoul.wikia.com/wiki/Ken_Kaneki\n\n";
+    	    System.out.print(text);
+        }
+    
+        if (winner.equals("Ichigo")) {
+     	    text = "Shiro is from the anime: No Game No Life.\n\n";
+    	    text += "She is a genius in logic and problems, but has difficulty understanding emotions or behaviour.\n\n";
+    	    text += "She is shown to have a dry and somewhat twisted sense of humor, is addicted to games and is extremely attached to her brother.\n\n";
+    	    text += "Her character is cute and intelligent, just like you!\n\n";
+    	    text += "Read more about your character here: http://gintama.wikia.com/wiki/Sakata_Gintoki\n\n";
+    	    System.out.print(text);
+        }
+    
+        if (winner.equals("Edward")) {
+    	    text = "Alice is from the anime: Pandora Hearts.\n\n";
+    	    text += "She is introduced as the B-Rabbit or Blood-Stained Black Rabbit and helps the main character while searching for her lost memories.\n\n";
+    	    text += "She is cold and rude at the start and turns out to be hotheaded, loud spoken and blunt. However she is powerful and wants to do what's right.\n\n";
+    	    text += "Her character is simple and awesome, just like you!\n\n";
+    	    text += "Read more about your avatar here: http://pandorahearts.wikia.com/wiki/Alice\n\n";
+    	    System.out.print(text);
+        }
+        
+        if (winner.equals("L")) {
+    	    text = "Yuno is from the anime: Future Diary.\n\n";
+    	    text += "She is known as 'Second' in a Survival Game and she is the owner of a stalker diary all about the main character she loves.\n\n";
+       	    text += "She is sweet and shy around main character, but is actually a ruthless, calculating psychopath.\n\n";
+    	    text += "Her character is crazy and dedicated, just like you!\n\n";
+    	    text += "Read more about your character here: http://futurediary.wikia.com/wiki/Yuno_Gasai\n\n";
+    	    System.out.print(text);
+        }
+    
+        if (winner.equals("Lelouch")) {
+    	    text = "Izaya is from the anime: Durarara!!\n\n";
+    	    text += "He is a powerful information broker and gives information for his own enjoyment, claiming to love the entire human race.\n\n";
+    	    text += "He greatly enjoys putting people in enjoyable or chaotic situations in order to observe their reactions.\n\n";
+    	    text += "His character is exciting and unique, just like you!\n\n";
+    	    text += "Read more about your character here: http://durarara.wikia.com/wiki/Izaya_Orihara\n\n";
+    	    System.out.print(text);
+        }
+    
+        if (winner.equals("Itachi")) {
+       	    text = "Kaneki is from the anime: Tokyo Ghoul.\n\n";
+    	    text += "He was a human living a normal life until he has ghoul parts transplanted in him and became a One-Eyed Ghoul.\n\n";
+    	    text += "After being tortured, he underwent a drastic personality change to protect the ones precious to him and exterminate enemies.\n\n";
+    	    text += "His character is adapting and straightforward, just like you!\n\n";
+    	    text += "Read more about your character here: http://tokyoghoul.wikia.com/wiki/Ken_Kaneki\n\n";
+    	    System.out.print(text);
+        }
+    
+        if (winner.equals("Mikasa")) {
+     	    text = "Shiro is from the anime: No Game No Life.\n\n";
+    	    text += "She is a genius in logic and problems, but has difficulty understanding emotions or behaviour.\n\n";
+    	    text += "She is shown to have a dry and somewhat twisted sense of humor, is addicted to games and is extremely attached to her brother.\n\n";
+    	    text += "Her character is cute and intelligent, just like you!\n\n";
+    	    text += "Read more about your character here: http://gintama.wikia.com/wiki/Sakata_Gintoki\n\n";
+    	    System.out.print(text);
+        }
+    
+        if (winner.equals("Erza")) {
+    	    text = "Alice is from the anime: Pandora Hearts.\n\n";
+    	    text += "She is introduced as the B-Rabbit or Blood-Stained Black Rabbit and helps the main character while searching for her lost memories.\n\n";
+    	    text += "She is cold and rude at the start and turns out to be hotheaded, loud spoken and blunt. However she is powerful and wants to do what's right.\n\n";
+    	    text += "Her character is simple and awesome, just like you!\n\n";
+    	    text += "Read more about your avatar here: http://pandorahearts.wikia.com/wiki/Alice\n\n";
+    	    System.out.print(text);
+        }
     }	
 			
     public void kpopQuiz() {
