@@ -46,7 +46,7 @@ public class Kanimop {
 
 	while ( choice != 1 && choice != 2 ) {
 
-	    text = "\n\n\n\n\nWould you like to create a new avatar?\n";
+	    text = "\n\n\n\n\nWould you like to use Kanimop?\n";
 	    text += "\t1: Yeah, let's go!\n";
 	    text += "\t2: Nah, maybe later.\n";
 	    
