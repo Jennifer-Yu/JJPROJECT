@@ -5,8 +5,8 @@ Kanimop ~ Search Engine for Everything Anime / Kpop !
 
 Different elements: 
 - Database 
-- Quiz to generate a setting accordingly
-- Demo to enter anime / kpop world based on quiz results
+- Quiz to generate a persona!
+- Demo for Naruto (can play as four different characters!)
 
 
 Also note, when you see ">>" and no number choices, you should click enter to proceed!
