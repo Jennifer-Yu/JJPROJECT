@@ -953,7 +953,7 @@ public class Kanimop {
     
         if (winner.equals("Kise")) {
     	    text = "Kise is from the anime, Kuroko no Basket.\n";
-    	    text += "He is part of the Generation of Miracles Basketball Players and also works as a model with a "pretty" face.\n";
+    	    text += "He is part of the Generation of Miracles Basketball Players and also works as a model with a pretty face.\n";
     	    text += "He has a very carefree, outgoing personality and tries to be friends with everybody, while often showing competitive qualities.\n";
     	    text += "Her character is funny and lovable, just like you!\n";
     	    text += "Read more about your avatar here: http://kurokonobasuke.wikia.com/wiki/Ry%C5%8Dta_Kise\n";
