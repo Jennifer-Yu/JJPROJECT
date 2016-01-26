@@ -709,27 +709,27 @@ public class Kanimop {
     	    text += "Read more about your character here: http://nanatsu-no-taizai.wikia.com/wiki/Guila\n\n";
     	    System.out.print(text);
         }
-        //up to here    
+ 
         if (winner.equals("Kirito")) {
-       	    text = "Kaneki is from the anime: Tokyo Ghoul.\n\n";
-    	    text += "He was a human living a normal life until he has ghoul parts transplanted in him and became a One-Eyed Ghoul.\n\n";
-    	    text += "After being tortured, he underwent a drastic personality change to protect the ones precious to him and exterminate enemies.\n\n";
-    	    text += "His character is adapting and straightforward, just like you!\n\n";
-    	    text += "Read more about your character here: http://tokyoghoul.wikia.com/wiki/Ken_Kaneki\n\n";
+       	    text = "Kirito is from the anime: Sword Art Online.\n\n";
+    	    text += "He was chosen as one of the 1,000 beta testers for the closed beta of the first ever virtual reality video game.\n\n";
+    	    text += "After being trapped in the game, he fights his way through, calmly and fearlessly, still managing to enjoy the gaming world.\n\n";
+    	    text += "His character is collected and talented, just like you!\n\n";
+    	    text += "Read more about your character here: http://swordartonline.wikia.com/wiki/Kirito\n\n";
     	    System.out.print(text);
         }
-    
+  
         if (winner.equals("Ichigo")) {
-     	    text = "Shiro is from the anime: No Game No Life.\n\n";
-    	    text += "She is a genius in logic and problems, but has difficulty understanding emotions or behaviour.\n\n";
-    	    text += "She is shown to have a dry and somewhat twisted sense of humor, is addicted to games and is extremely attached to her brother.\n\n";
-    	    text += "Her character is cute and intelligent, just like you!\n\n";
-    	    text += "Read more about your character here: http://gintama.wikia.com/wiki/Sakata_Gintoki\n\n";
+     	    text = "Ichigo is from the anime: Bleach.\n\n";
+    	    text += "He becomes a temporary soul reaper and has to fight countless enemies, including entire races of beings.\n\n";
+    	    text += "Ichigo has a complex sense of honor; he seeks to exact revenge, often taunting, but maintaining the good within, also seen as an older brother figure.\n\n";
+    	    text += "Her character is fierce and evolving, just like you!\n\n";
+    	    text += "Read more about your character here: http://bleach.wikia.com/wiki/Ichigo_Kurosaki\n\n";
     	    System.out.print(text);
         }
-    
+          //up to here       
         if (winner.equals("Edward")) {
-    	    text = "Alice is from the anime: Pandora Hearts.\n\n";
+    	    text = "Edward is from the anime: Fullmetal Alchemist.\n\n";
     	    text += "She is introduced as the B-Rabbit or Blood-Stained Black Rabbit and helps the main character while searching for her lost memories.\n\n";
     	    text += "She is cold and rude at the start and turns out to be hotheaded, loud spoken and blunt. However she is powerful and wants to do what's right.\n\n";
     	    text += "Her character is simple and awesome, just like you!\n\n";
@@ -738,7 +738,7 @@ public class Kanimop {
         }
         
         if (winner.equals("L")) {
-    	    text = "Yuno is from the anime: Future Diary.\n\n";
+    	    text = "L is from the anime: Death Note.\n\n";
     	    text += "She is known as 'Second' in a Survival Game and she is the owner of a stalker diary all about the main character she loves.\n\n";
        	    text += "She is sweet and shy around main character, but is actually a ruthless, calculating psychopath.\n\n";
     	    text += "Her character is crazy and dedicated, just like you!\n\n";
@@ -747,7 +747,7 @@ public class Kanimop {
         }
     
         if (winner.equals("Lelouch")) {
-    	    text = "Izaya is from the anime: Durarara!!\n\n";
+    	    text = "Lelouch is from the anime: Code Geass.\n\n";
     	    text += "He is a powerful information broker and gives information for his own enjoyment, claiming to love the entire human race.\n\n";
     	    text += "He greatly enjoys putting people in enjoyable or chaotic situations in order to observe their reactions.\n\n";
     	    text += "His character is exciting and unique, just like you!\n\n";
@@ -756,7 +756,7 @@ public class Kanimop {
         }
     
         if (winner.equals("Itachi")) {
-       	    text = "Kaneki is from the anime: Tokyo Ghoul.\n\n";
+       	    text = "Itachi is from the anime: Naruto.\n\n";
     	    text += "He was a human living a normal life until he has ghoul parts transplanted in him and became a One-Eyed Ghoul.\n\n";
     	    text += "After being tortured, he underwent a drastic personality change to protect the ones precious to him and exterminate enemies.\n\n";
     	    text += "His character is adapting and straightforward, just like you!\n\n";
@@ -765,7 +765,7 @@ public class Kanimop {
         }
     
         if (winner.equals("Mikasa")) {
-     	    text = "Shiro is from the anime: No Game No Life.\n\n";
+     	    text = "Mikasa is from the anime: Attack on Titan.\n\n";
     	    text += "She is a genius in logic and problems, but has difficulty understanding emotions or behaviour.\n\n";
     	    text += "She is shown to have a dry and somewhat twisted sense of humor, is addicted to games and is extremely attached to her brother.\n\n";
     	    text += "Her character is cute and intelligent, just like you!\n\n";
@@ -774,7 +774,7 @@ public class Kanimop {
         }
     
         if (winner.equals("Erza")) {
-    	    text = "Alice is from the anime: Pandora Hearts.\n\n";
+    	    text = "Erza is from the anime: Fairy Tail.\n\n";
     	    text += "She is introduced as the B-Rabbit or Blood-Stained Black Rabbit and helps the main character while searching for her lost memories.\n\n";
     	    text += "She is cold and rude at the start and turns out to be hotheaded, loud spoken and blunt. However she is powerful and wants to do what's right.\n\n";
     	    text += "Her character is simple and awesome, just like you!\n\n";
