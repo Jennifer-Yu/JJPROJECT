@@ -297,7 +297,37 @@ public class Kanimop {
 	catch ( IOException ioe ) { }
     }
 
+    // OVERWRITE CSV DATA
+    public void overwriteCSV(String ap, String kp, String ta, String tk) {
+	try {
+	    String csv = "Accounts.csv";
 
+	    CSVReader reader = new CSVReader(new FileReader(csv));
+	    List<String[]> content =  reader.readAll();
+	    String[] header = content.get(0);
+	    content.remove(0);
+
+	    reader.close();
+
+	    String[] newLine = {user.getUName(),user.getUPass(),ap,kp,ta,tk};
+	    for (int x = 0; x < content.size(); x++) {
+		String temp = content.get(x)[0];
+		if (user.getUName().equals(temp)) {
+		    content.set(x, newLine);
+		}
+	    }
+
+	    content.add(0, header);
+	    
+	    CSVWriter writer = new CSVWriter(new FileWriter(csv));
+	
+	    writer.writeAll(content);
+
+	    writer.close();
+	}
+	catch ( IOException ioe ) { }
+    }
+    
     // RESTART
     public void restart() {
     }
@@ -641,7 +671,8 @@ public class Kanimop {
 	    }
 	}
 
-	//user.setAnimePersona(winner);
+	user.setAnimePersona(winner);
+	overwriteCSV(user.getAnimePersona(),user.getKpopPersona(),""+user.getTotalAnime(),""+user.getTotalKpop());
 	text = "\n\n\n\n\nYour avatar is...";
 	text += "\n\n\n\t" + winner + "\n\n\n";
 				
@@ -1134,7 +1165,8 @@ public class Kanimop {
 	    }
 	}
 			
-	//user.setKpopPersona(winner);
+	user.setKpopPersona(winner);
+	overwriteCSV(user.getAnimePersona(),user.getKpopPersona(),""+user.getTotalAnime(),""+user.getTotalKpop());
 	text = "\n\n\n\n\nYour avatar is...";
 	text += "\n\n\n\t" + winner + "\n\n\n";
 	
