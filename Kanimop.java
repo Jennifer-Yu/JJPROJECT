@@ -1361,9 +1361,9 @@ public class Kanimop {
         choice = 0;
         
 	while (choice != 1 && choice != 2) {
-	    text = "\n\n\n\n\nWould you like to search for an anime or a kpop group?\n";
-	    text += "\t1: Anime!\n";
-	    text += "\t2: Kpop Group!\n";
+	    text = "\n\n\n\n\nTry our Naruto demo!\n";
+	    text += "\t1: YES!\n";
+	    text += "\t2: No thanks!\n";
 	    
 	    text += ">> ";
 	    System.out.print(text);
@@ -1386,6 +1386,8 @@ public class Kanimop {
 
 	if (choice == 2) {
 	    choice = 0;
+	    text = "\n\n\n\n\nSee you later then!\n";
+	    System.out.print(text);
 	}
 }
 
