@@ -35,6 +35,8 @@ public class Anime {
     private BufferedReader in;
     private int choice = 0;
     private String text = "";
+    isr = new InputStreamReader( System.in );
+    in = new BufferedReader( isr );	
 
     //CONSTRUCTORS
 
@@ -172,19 +174,12 @@ public class Anime {
 	    System.out.print(text);
 	    
 	    try {
-		String temp = in.readLine();
-		System.out.println("1");
-		choice = Integer.parseInt(temp);
-		System.out.println("2");
+		choice = Integer.parseInt( in.readLine() );
 	    }
-	    catch ( Exception e ) { 
-		System.out.println("3");
-		System.out.println("oops");
-	    }
+	    catch ( Exception e ) { }
 	    
 	    if (choice != 1 && choice != 2 && choice != 3 && choice != 4) {
 		System.out.print("\n\n\n\n\nSorry! You need to pick 1, 2, 3 or 4 to continue.\n\n\n\n\n");
-		System.out.println("ayymao");
 	    }
 	}
 	
