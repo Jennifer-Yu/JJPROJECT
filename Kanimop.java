@@ -675,10 +675,10 @@ public class Kanimop {
         }
     
         if (winner.equals("Shiro")) {
-     	    text = "Gintoki is from the anime: Gintama.\n\n";
-    	    text += "He is the president of the Yorozuya Gin-Chan and is a highly skilled samurai.\n\n";
-    	    text += "He is extremely lazy, often imparting wise, sage-like advice that makes no sense, but his personality attracts friends.\n\n";
-    	    text += "His character is dorky but charismatic, just like you!\n\n";
+     	    text = "Shiro is from the anime: No Game No Life.\n\n";
+    	    text += "She is a genius in logic and problems, but has difficulty understanding emotions or behaviour.\n\n";
+    	    text += "She is shown to have a dry and somewhat twisted sense of humor, is addicted to games and is extremely attached to her brother.\n\n";
+    	    text += "Her character is cute and intelligent, just like you!\n\n";
     	    text += "Read more about your character here: http://gintama.wikia.com/wiki/Sakata_Gintoki\n\n";
     	    System.out.print(text);
         }
