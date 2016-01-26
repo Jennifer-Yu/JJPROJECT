@@ -225,9 +225,7 @@ public class Kanimop {
 
 	if ( choice == 2 ) {
 	    choice = 0;
-	    //skip(); go to database
-	    text = "\n\n\n\n\nYou have entered as a guest.\n";
-	    text += "Feel free to browse and type, but remember that you need a character to save your progress!\n\n";
+	    text = "\n\n\n\n\nSee you next time!\n";
 	    System.out.println(text);
 	}
     }
