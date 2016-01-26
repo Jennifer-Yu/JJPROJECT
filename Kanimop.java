@@ -1360,13 +1360,7 @@ public class Kanimop {
     	    System.out.print(text);
         }
         
-        searchengine();
-    }
-
-    public static void searchengine() {
-    	int choice2 = 0;
-    	String text = "";
-	while (choice2 != 1 && choice2 != 2) {
+	while (choice != 1 && choice != 2) {
 	    text = "\n\n\n\n\nWould you like to search for an anime or a kpop group?\n";
 	    text += "\t1: Anime!\n";
 	    text += "\t2: Kpop Group!\n";
@@ -1375,23 +1369,23 @@ public class Kanimop {
 	    System.out.print(text);
 	    
 	    try {
-		choice2 = Integer.parseInt( in.readLine() );
+		choice = Integer.parseInt( in.readLine() );
 	    }
 	    catch ( Exception e ) { }
-	    if ( choice2 != 1 && choice2 != 2 ) {
+	    if ( choice != 1 && choice != 2 ) {
 		System.out.print("\n\n\n\n\nSorry! You need to pick 1 or 2 to continue.");
 	    }
 	}
 
-	if (choice2 == 1) {
-	    choice2 = 0;
+	if (choice == 1) {
+	    choice = 0;
 	    Anime Naruto = new Anime();
    	    Naruto.setName("Naruto");
    	    Naruto.demo();
 	}
 
-	if (choice2 == 2) {
-	    choice2 = 0;
+	if (choice == 2) {
+	    choice = 0;
 	}
 }
 
