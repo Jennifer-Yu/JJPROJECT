@@ -30,17 +30,20 @@ public class Anime {
     public String plot;
 
 
-    // INSTANCE VARIABLES
     private InputStreamReader isr = new InputStreamReader( System.in );
+    
     private BufferedReader in = new BufferedReader( isr );
+    
     private int choice = 0;
+    
     private String text = "";
+    
 
     //CONSTRUCTORS
 
-    public Anime() {
+    public Anime(String aName) {
 	
-	name = "Name";
+	name = aName;
 	alternateName = "N/A";
 	genres = new ArrayList<String>();
 	characters = new ArrayList<String>();

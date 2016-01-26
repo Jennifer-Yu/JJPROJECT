@@ -1,6 +1,7 @@
 // KPOP SKELETON IN DATABASE
 
-import java.util.ArrayList;
+import java.io.*;
+import java.util.*;
 
 public class Kpop {
 
@@ -32,10 +33,15 @@ public class Kpop {
 
     //CONSTRUCTORS
 
-    public Kpop() {
+    public Kpop(String gName, boolean boy) {
 
-	groupName = "Name of Group";
-	gender = "Girl Group or Boy Group?";
+	groupName = gName;
+	if (boy) {
+	    gender = "Boy Group";
+	}
+	else {
+	    gender = "Girl Group";
+	}
 	company = "Company Name";
 	fanBase = "Name of Fanbase";
 	fanName = "Name of Fans";
@@ -140,6 +146,17 @@ public class Kpop {
     public void setDescription(String input) {
 	description = input;
     }
+
+
+    // METHODS
+    public static String returnALStr(ArrayList<String> input) {
+	String retStr = "";
+	for (String x : input) {
+	    retStr += x + ", ";
+	}
+	retStr = retStr.substring(0, retStr.length()-2); //remove last comma
+	return retStr;
+    } 
 
 
     //MAIN METHOD FOR TESTING    

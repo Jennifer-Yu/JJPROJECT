@@ -1,7 +1,7 @@
 // AVATAR SKELETON IN DATABASE
 
-import java.util.ArrayList;
-import java.util.Comparator;
+import java.io.*;
+import java.util.*;
 
 public class Avatar {
 
@@ -118,6 +118,22 @@ public class Avatar {
 		return animeRating1.compareTo(animeRating2);
 	    }
 	    };*/
+
+    public void animeSearch(String name) {
+	ArrayList<String> nameList = new ArrayList<String>(animeList.size);
+	for (Anime x : animeList) {
+	    nameList.add(x.getName());
+	}
+	Collections.sort(nameList);
+	int index = Collections.binarySearch(nameList,name);
+	if (index == -1) {
+	    System.out.println("Sorry. This entry does not exist.");
+	}
+	else {
+	    Anime search = nameList.get(index);
+	    viewAnimeInfo;
+	}
+    }
 	
     public String viewAnimeInfo(String animeName) {
 	String retStr = "";
@@ -174,12 +190,38 @@ public class Avatar {
 		return groupRating1.compareTo(groupRating2);	
 	    }
 	    };*/
+
+    public void kpopSearch(String name) {
+	ArrayList<String> groupNameList = new ArrayList<String>(kpopList.size);
+	for (Kpop x : kpopList) {
+	    groupNameList.add(x.getGroupName());
+	}
+	Collections.sort(groupNameList);
+	int index = Collections.binarySearch(groupNameList,name);
+	if (index == -1) {
+	    System.out.println("Sorry. This entry does not exist.");
+	}
+	else {
+	    Kpop search = groupNameList.get(index);
+	    viewKpopInfo;
+	}
+    }
     
     public String viewKpopInfo(String groupName) {
 	String retStr = "";
 	for (Kpop x : kpopList) {
 	    if (x.getGroupName().equals(groupName)) {
-		retStr += "TO BE INSERTED NOT DONE"; //insert info
+		retStr += "Group: " + x.getGroupName() +
+		    "Type: " + x.getGender() +
+		    "Company: " + x.getCompany() +
+		    "Fanbase: " + x.getFanbase() +
+		    "Fan Name: " + x.getFanName() +
+		    "Members: " + x.returnAlStr(x.getMembers()) +
+		    "Number of Members: " + x.getNumMembers()+
+		    "Ratings: " + x.getRating() +
+		    "Number of Title Songs: " + x.getTitleSongs()+
+		    "Reviews: " + x.returnAlStr(x.getReviews())+
+		    "Description: " + x.getDescription(); 
 	    }
 	}
 	retStr = "Sorry, this group is not on your list.";
