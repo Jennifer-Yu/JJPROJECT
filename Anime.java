@@ -204,13 +204,15 @@ public class Anime {
 	
 
     public void proceed() {
-	text = "\n\n>> ";
+	text = "\n>> ";
 	System.out.print(text);
 	
 	try {
 	    choice = Integer.parseInt ( in.readLine() );
 	}
 	catch ( Exception e ) { }
+	
+	System.out.println("");
     }
 	
     
