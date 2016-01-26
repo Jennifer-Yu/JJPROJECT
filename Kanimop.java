@@ -1358,6 +1358,8 @@ public class Kanimop {
     	    System.out.print(text);
         }
         
+        choice = 0;
+        
 	while (choice != 1 && choice != 2) {
 	    text = "\n\n\n\n\nWould you like to search for an anime or a kpop group?\n";
 	    text += "\t1: Anime!\n";
