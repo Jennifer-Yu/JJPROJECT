@@ -1094,7 +1094,189 @@ public class Kanimop {
 	text += "\n\n\n\t" + winner + "\n\n\n";
 	
 	System.out.println(text);
-    }	
+	
+	if (winner.equals("Jimin")) {
+    	    text = "Jimin is from the kpop group: AOA.\n\n";
+    	    text += "She is the leader, guitarist and rapper of AOA.\n\n";
+       	    text += "She looks young, is very cheerful and can have a childish personality when messing around.\n\n";
+    	    text += "She's sweet, just like you!\n\n";
+    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/girl-groups/aoa-ace-of-angels-profile/\n\n";
+    	    System.out.print(text);
+        }
+        
+        if (winner.equals("Suzy")) {
+    	    text = "Suzy is from the kpop group: Miss A.\n\n";
+    	    text += "She is the vocalist, maknae and visual of Miss A.\n\n";
+       	    text += "She looks young, is very cheerful and can have a childish personality when messing around.\n\n";
+    	    text += "She's sweet, just like you!\n\n";
+    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/girl-groups/aoa-ace-of-angels-profile/\n\n";
+    	    System.out.print(text);
+        }
+        
+        if (winner.equals("Yoseob")) {
+    	    text = "Jimin is from the kpop group: AOA.\n\n";
+    	    text += "She is the leader, guitarist, rapper and dancer of AOA.\n\n";
+       	    text += "She looks young, is very cheerful and can have a childish personality when messing around.\n\n";
+    	    text += "She's sweet, just like you!\n\n";
+    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/girl-groups/aoa-ace-of-angels-profile/\n\n";
+    	    System.out.print(text);
+        }
+        
+        if (winner.equals("Sunggyu")) {
+    	    text = "Jimin is from the kpop group: AOA.\n\n";
+    	    text += "She is the leader, guitarist, rapper and dancer of AOA.\n\n";
+       	    text += "She looks young, is very cheerful and can have a childish personality when messing around.\n\n";
+    	    text += "She's sweet, just like you!\n\n";
+    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/girl-groups/aoa-ace-of-angels-profile/\n\n";
+    	    System.out.print(text);
+        }
+        
+        if (winner.equals("Daehyun")) {
+    	    text = "Jimin is from the kpop group: AOA.\n\n";
+    	    text += "She is the leader, guitarist, rapper and dancer of AOA.\n\n";
+       	    text += "She looks young, is very cheerful and can have a childish personality when messing around.\n\n";
+    	    text += "She's sweet, just like you!\n\n";
+    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/girl-groups/aoa-ace-of-angels-profile/\n\n";
+    	    System.out.print(text);
+        }
+        
+        if (winner.equals("Amber")) {
+    	    text = "Jimin is from the kpop group: AOA.\n\n";
+    	    text += "She is the leader, guitarist, rapper and dancer of AOA.\n\n";
+       	    text += "She looks young, is very cheerful and can have a childish personality when messing around.\n\n";
+    	    text += "She's sweet, just like you!\n\n";
+    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/girl-groups/aoa-ace-of-angels-profile/\n\n";
+    	    System.out.print(text);
+        }
+        
+        if (winner.equals("Jackson")) {
+    	    text = "Jimin is from the kpop group: AOA.\n\n";
+    	    text += "She is the leader, guitarist, rapper and dancer of AOA.\n\n";
+       	    text += "She looks young, is very cheerful and can have a childish personality when messing around.\n\n";
+    	    text += "She's sweet, just like you!\n\n";
+    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/girl-groups/aoa-ace-of-angels-profile/\n\n";
+    	    System.out.print(text);
+        }
+        
+        if (winner.equals("Eunji")) {
+    	    text = "Jimin is from the kpop group: AOA.\n\n";
+    	    text += "She is the leader, guitarist, rapper and dancer of AOA.\n\n";
+       	    text += "She looks young, is very cheerful and can have a childish personality when messing around.\n\n";
+    	    text += "She's sweet, just like you!\n\n";
+    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/girl-groups/aoa-ace-of-angels-profile/\n\n";
+    	    System.out.print(text);
+        }
+        
+        if (winner.equals("Minah")) {
+    	    text = "Jimin is from the kpop group: AOA.\n\n";
+    	    text += "She is the leader, guitarist, rapper and dancer of AOA.\n\n";
+       	    text += "She looks young, is very cheerful and can have a childish personality when messing around.\n\n";
+    	    text += "She's sweet, just like you!\n\n";
+    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/girl-groups/aoa-ace-of-angels-profile/\n\n";
+    	    System.out.print(text);
+        }
+        
+        if (winner.equals("Sungjae")) {
+    	    text = "Jimin is from the kpop group: AOA.\n\n";
+    	    text += "She is the leader, guitarist, rapper and dancer of AOA.\n\n";
+       	    text += "She looks young, is very cheerful and can have a childish personality when messing around.\n\n";
+    	    text += "She's sweet, just like you!\n\n";
+    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/girl-groups/aoa-ace-of-angels-profile/\n\n";
+    	    System.out.print(text);
+        }
+        
+        if (winner.equals("Taeyeon")) {
+    	    text = "Jimin is from the kpop group: AOA.\n\n";
+    	    text += "She is the leader, guitarist, rapper and dancer of AOA.\n\n";
+       	    text += "She looks young, is very cheerful and can have a childish personality when messing around.\n\n";
+    	    text += "She's sweet, just like you!\n\n";
+    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/girl-groups/aoa-ace-of-angels-profile/\n\n";
+    	    System.out.print(text);
+        }
+        
+        if (winner.equals("Jungkook")) {
+    	    text = "Jimin is from the kpop group: AOA.\n\n";
+    	    text += "She is the leader, guitarist, rapper and dancer of AOA.\n\n";
+       	    text += "She looks young, is very cheerful and can have a childish personality when messing around.\n\n";
+    	    text += "She's sweet, just like you!\n\n";
+    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/girl-groups/aoa-ace-of-angels-profile/\n\n";
+    	    System.out.print(text);
+        }
+        
+        if (winner.equals("Baekhyun")) {
+    	    text = "Jimin is from the kpop group: AOA.\n\n";
+    	    text += "She is the leader, guitarist, rapper and dancer of AOA.\n\n";
+       	    text += "She looks young, is very cheerful and can have a childish personality when messing around.\n\n";
+    	    text += "She's sweet, just like you!\n\n";
+    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/girl-groups/aoa-ace-of-angels-profile/\n\n";
+    	    System.out.print(text);
+        }
+        
+        if (winner.equals("Hani")) {
+    	    text = "Jimin is from the kpop group: AOA.\n\n";
+    	    text += "She is the leader, guitarist, rapper and dancer of AOA.\n\n";
+       	    text += "She looks young, is very cheerful and can have a childish personality when messing around.\n\n";
+    	    text += "She's sweet, just like you!\n\n";
+    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/girl-groups/aoa-ace-of-angels-profile/\n\n";
+    	    System.out.print(text);
+        }
+        
+        if (winner.equals("Taemin")) {
+    	    text = "Jimin is from the kpop group: AOA.\n\n";
+    	    text += "She is the leader, guitarist, rapper and dancer of AOA.\n\n";
+       	    text += "She looks young, is very cheerful and can have a childish personality when messing around.\n\n";
+    	    text += "She's sweet, just like you!\n\n";
+    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/girl-groups/aoa-ace-of-angels-profile/\n\n";
+    	    System.out.print(text);
+        }
+        
+        if (winner.equals("G-Dragon")) {
+    	    text = "Jimin is from the kpop group: AOA.\n\n";
+    	    text += "She is the leader, guitarist, rapper and dancer of AOA.\n\n";
+       	    text += "She looks young, is very cheerful and can have a childish personality when messing around.\n\n";
+    	    text += "She's sweet, just like you!\n\n";
+    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/girl-groups/aoa-ace-of-angels-profile/\n\n";
+    	    System.out.print(text);
+        }
+        
+        if (winner.equals("CL")) {
+    	    text = "Jimin is from the kpop group: AOA.\n\n";
+    	    text += "She is the leader, guitarist, rapper and dancer of AOA.\n\n";
+       	    text += "She looks young, is very cheerful and can have a childish personality when messing around.\n\n";
+    	    text += "She's sweet, just like you!\n\n";
+    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/girl-groups/aoa-ace-of-angels-profile/\n\n";
+    	    System.out.print(text);
+        }
+        
+        if (winner.equals("Hyuna")) {
+    	    text = "Jimin is from the kpop group: AOA.\n\n";
+    	    text += "She is the leader, guitarist, rapper and dancer of AOA.\n\n";
+       	    text += "She looks young, is very cheerful and can have a childish personality when messing around.\n\n";
+    	    text += "She's sweet, just like you!\n\n";
+    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/girl-groups/aoa-ace-of-angels-profile/\n\n";
+    	    System.out.print(text);
+        }
+        
+        if (winner.equals("Heechul")) {
+    	    text = "Jimin is from the kpop group: AOA.\n\n";
+    	    text += "She is the leader, guitarist, rapper and dancer of AOA.\n\n";
+       	    text += "She looks young, is very cheerful and can have a childish personality when messing around.\n\n";
+    	    text += "She's sweet, just like you!\n\n";
+    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/girl-groups/aoa-ace-of-angels-profile/\n\n";
+    	    System.out.print(text);
+        }
+        
+        if (winner.equals("Hyorin")) {
+    	    text = "Jimin is from the kpop group: AOA.\n\n";
+    	    text += "She is the leader, guitarist, rapper and dancer of AOA.\n\n";
+       	    text += "She looks young, is very cheerful and can have a childish personality when messing around.\n\n";
+    	    text += "She's sweet, just like you!\n\n";
+    	    text += "Read more about your idol here: https://sumandu.wordpress.com/kpop-profiles/girl-groups/aoa-ace-of-angels-profile/\n\n";
+    	    System.out.print(text);
+        }
+        
+
+    }
     
 
     public static void main(String[] args) {
