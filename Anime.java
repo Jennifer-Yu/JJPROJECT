@@ -222,7 +222,7 @@ public class Anime {
 	System.out.print(text);
 	proceed();
 	
-	text = "\n\n\n'Believe it!' You shout, hopping out of bed.\n";
+	text = "\n\n'Believe it!' You shout, hopping out of bed.\n";
 	System.out.print(text);
 	proceed();
 
@@ -318,7 +318,7 @@ public class Anime {
 	
 	if (choice == 1) {
 	    choice = 0;
-	    text = "\nKakashi: Very well, we're off to the Sound village.\n";
+	    text = "\n\nKakashi: Very well, we're off to the Sound village.\n";
 	    System.out.print(text);
 	    proceed();	    
 	    
@@ -341,7 +341,7 @@ public class Anime {
 	
 	if (choice == 2) {
 	    choice = 0;
-	    text = "\nKakashi: Very well, a lady wants you to help her find her cat.\n";
+	    text = "\n\nKakashi: Very well, a lady wants you to help her find her cat.\n";
 	    System.out.print(text);
 	    proceed();
 	    
@@ -439,7 +439,8 @@ public class Anime {
 	}
 	    
 	if (choice == 1 || choice == 3) {
-	    text = "\nYou: Please... what is going on... don't do this...\n";
+	    choice = 0;
+	    text = "\n\nYou: Please... what is going on... don't do this...\n";
 	    System.out.print(text);
 	    proceed();
 	        
@@ -473,7 +474,8 @@ public class Anime {
 	}
 	
 	if (choice == 2 || choice == 4) {
-	    text = "\nYou: Orochimaru, you made a mistake.\n";
+	    choice = 0;
+	    text = "\n\nYou: Orochimaru, you made a mistake.\n";
 	    System.out.print(text);
 	    proceed();
 	        
