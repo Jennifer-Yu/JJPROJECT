@@ -46,7 +46,7 @@ public class Kanimop {
 
 	while ( choice != 1 && choice != 2 ) {
 
-	    text = "\n\n\n\n\nWould you like to create a new avatar?\n";
+	    text = "\n\n\n\n\nWould you like to use Kanimop?\n";
 	    text += "\t1: Yeah, let's go!\n";
 	    text += "\t2: Nah, maybe later.\n";
 	    
@@ -225,9 +225,7 @@ public class Kanimop {
 
 	if ( choice == 2 ) {
 	    choice = 0;
-	    //skip(); go to database
-	    text = "\n\n\n\n\nYou have entered as a guest.\n";
-	    text += "Feel free to browse and type, but remember that you need a character to save your progress!\n\n";
+	    text = "\n\n\n\n\nSee you next time!\n";
 	    System.out.println(text);
 	}
     }
@@ -1360,7 +1358,38 @@ public class Kanimop {
     	    System.out.print(text);
         }
         
-    }
+        choice = 0;
+        
+	while (choice != 1 && choice != 2) {
+	    text = "\n\n\n\n\nTry our Naruto demo!\n";
+	    text += "\t1: YES!\n";
+	    text += "\t2: No thanks!\n";
+	    
+	    text += ">> ";
+	    System.out.print(text);
+	    
+	    try {
+		choice = Integer.parseInt( in.readLine() );
+	    }
+	    catch ( Exception e ) { }
+	    if ( choice != 1 && choice != 2 ) {
+		System.out.print("\n\n\n\n\nSorry! You need to pick 1 or 2 to continue.");
+	    }
+	}
+
+	if (choice == 1) {
+	    choice = 0;
+	    Anime Naruto = new Anime();
+   	    Naruto.setName("Naruto");
+   	    Naruto.demo();
+	}
+
+	if (choice == 2) {
+	    choice = 0;
+	    text = "\n\n\n\n\nSee you later then!\n";
+	    System.out.print(text);
+	}
+}
 
 
     public static void main(String[] args) {
