@@ -525,10 +525,10 @@ public class Kanimop {
 	    choice = 0;
 	}
 
-	//System.out.println(c);
-	//System.out.println(i);
-	//System.out.println(x);
-	//System.out.println(l);
+	System.out.println(c);
+	System.out.println(i);
+	System.out.println(x);
+	System.out.println(l);
 
 	ArrayList<Comparable> values = new ArrayList<Comparable>(4);
 	values.add(c);
@@ -536,9 +536,9 @@ public class Kanimop {
 	values.add(i);
 	values.add(l);
 
-	//for (Comparable yum : values) {
-	//    System.out.print(yum + " ");
-	//}
+	for (Comparable yum : values) {
+	    System.out.print(yum + " ");
+	}
 
 	int passes = 0;
 	while (passes < 4) {
@@ -550,9 +550,9 @@ public class Kanimop {
 	    passes++;
 	}
 
-	//for (Comparable yum : values) {
-	//    System.out.print(yum + " ");
-	//}
+	for (Comparable yum : values) {
+	    System.out.print(yum + " ");
+	}
 
 	String winner = "";
 
