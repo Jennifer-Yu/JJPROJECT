@@ -646,6 +646,51 @@ public class Kanimop {
     	    text += "Read more about your avatar here: http://kurokonobasuke.wikia.com/wiki/Ry%C5%8Dta_Kise\n\n";
     	    System.out.print(text);
         }
+        
+        if (winner.equals("Yuno")) {
+    	    text = "Yuno is from the anime: Future Diary.\n\n";
+    	    text += "She is known as 'Second' in a Survival Game and she is the owner of a stalker diary all about the main character she loves.\n\n";
+       	    text += "She is sweet and shy around main character, but is actually a ruthless, calculating psychopath.\n\n";
+    	    text += "Her character is crazy and dedicated, just like you!\n\n";
+    	    text += "Read more about your character here: http://futurediary.wikia.com/wiki/Yuno_Gasai\n\n";
+    	    System.out.print(text);
+        }
+    
+        if (winner.equals("Izaya")) {
+    	    text = "Kaori is from the anime: Your Lie In April.\n\n";
+    	    text += "She is a violinist who helps a dear friend return to the piano world after his mother's death.\n\n";
+    	    text += "She is often friendly and encouraging, but is also independent, unpredictable, and short-tempered.\n\n";
+    	    text += "Her character is passionate and powerful, just like you!\n\n";
+    	    text += "Read more about your character here: http://shigatsu-wa-kimi-no-uso.wikia.com/wiki/Kaori_Miyazono\n\n";
+    	    System.out.print(text);
+        }
+    
+        if (winner.equals("Kaneki")) {
+       	    text = "Teresa is from the anime: Claymore.\n\n";
+    	    text += "She is the 182nd Claymore of the 77th generation in the Organization, known to be strongest.\n\n";
+    	    text += "She guides the main character and slaughters her enemies with a smile, earning the nickname 'Teresa of the Faint Smile'.\n\n";
+    	    text += "Her character is often ruthless, but also caring, just like you!\n\n";
+    	    text += "Read more about your character here: http://claymore.wikia.com/wiki/Teresa\n\n";
+    	    System.out.print(text);
+        }
+    
+        if (winner.equals("Shiro")) {
+     	    text = "Gintoki is from the anime: Gintama.\n\n";
+    	    text += "He is the president of the Yorozuya Gin-Chan and is a highly skilled samurai.\n\n";
+    	    text += "He is extremely lazy, often imparting wise, sage-like advice that makes no sense, but his personality attracts friends.\n\n";
+    	    text += "His character is dorky but charismatic, just like you!\n\n";
+    	    text += "Read more about your character here: http://gintama.wikia.com/wiki/Sakata_Gintoki\n\n";
+    	    System.out.print(text);
+        }
+    
+        if (winner.equals("Alice")) {
+    	    text = "Kise is from the anime: Kuroko no Basket.\n\n";
+    	    text += "He is part of the Generation of Miracles Basketball Players and also works as a model with a pretty face.\n\n";
+    	    text += "He has a very outgoing personality and tries to be friends with everybody, while he can also be competitive and stubborn.\n\n";
+    	    text += "Her character is funny and lovable, just like you!\n\n";
+    	    text += "Read more about your avatar here: http://kurokonobasuke.wikia.com/wiki/Ry%C5%8Dta_Kise\n\n";
+    	    System.out.print(text);
+        }
     }	
 			
     public void kpopQuiz() {
