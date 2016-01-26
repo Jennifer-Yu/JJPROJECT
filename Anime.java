@@ -204,7 +204,7 @@ public class Anime {
 	
 
     public void proceed() {
-	text = "\n>> ";
+	text = ">> ";
 	System.out.print(text);
 	
 	try {
@@ -219,47 +219,47 @@ public class Anime {
 	System.out.print(text);
 	proceed();
 
-	text = "Today you have a C-rank mission.\n\n";
+	text = "\nToday you have a C-rank mission.\n";
 	System.out.print(text);
 	proceed();
 
-	text = "It's probably something dumb like chasing cats.\n\n";
+	text = "\nIt's probably something dumb like chasing cats.\n";
 	System.out.print(text);
 	proceed();
 
-	text = "Oh well. Time to leave.\n\n";
+	text = "\nOh well. Time to leave.\n";
 	System.out.print(text);
 	proceed();
 
-	text = "You've finally met up with Sasuke and Sakura, but Kakashi is nowhere to be found.\n\n";
+	text = "\nYou've finally met up with Sasuke and Sakura, but Kakashi is nowhere to be found.\n";
 	System.out.print(text);
 	proceed();
 
-	text = "You: Where is Kakashi-sensei?\n\n";
+	text = "\nYou: Where is Kakashi-sensei?\n";
 	System.out.print(text);
 	proceed();
 
-	text = "Sasuke: How should I know? What are you, an idiot?\n\n";
+	text = "\nSasuke: How should I know? What are you, an idiot?\n";
 	System.out.print(text);
 	proceed();
 
-	text = "Sakura: Yeah, does he look like he's here?\n\n";
+	text = "\nSakura: Yeah, does he look like he's here?\n";
 	System.out.print(text);
 	proceed();
 
-	text = "Before you can sputter about how much of a jerk Sasuke is, Kakashi arrives.\n\n";
+	text = "\nBefore you can sputter about how much of a jerk Sasuke is, Kakashi arrives.\n";
 	System.out.print(text);
 	proceed();
 
-	text = "Sorry I'm late, a cat just crossed my path...\n\n";
+	text = "\nSorry I'm late, a cat just crossed my path...\n";
 	System.out.print(text);
 	proceed();
 
-	text = "It's an obvious lie and the three of you see right through it!\n\n";
+	text = "\nIt's an obvious lie and the three of you see right through it!\n";
 	System.out.print(text);
 	proceed();
 
-	text = "Sakura: Yeah right, Kakashi-sensei!\n\n";
+	text = "\nSakura: Yeah right, Kakashi-sensei!\n";
 	System.out.print(text);
 	proceed();
 
