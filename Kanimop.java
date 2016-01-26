@@ -920,7 +920,7 @@ public class Kanimop {
     	    text += "She is forced to join Ouran Academy's host club of handsome boys after breaking an expensive vase.\n";
        	    text += "She has a straightforward nature and believes that gender doesn't define your choices.\n";
     	    text += "Her character is strong and understanding, just like you!\n";
-    	    text += "Read more about your character here: http://ouran.wikia.com/wiki/Haruhi_Fujioka\n"
+    	    text += "Read more about your character here: http://ouran.wikia.com/wiki/Haruhi_Fujioka\n";
     	    System.out.print(text);
         }
     
@@ -929,7 +929,7 @@ public class Kanimop {
     	    text += "She is a violinist who helps a dear friend return to the piano world after his mother's death.\n";
     	    text += "She is often friendly and encouraging, but is also independent, unpredictable, and short-tempered.\n";
     	    text += "Her character is passionate and powerful, just like you!\n";
-    	    text += "Read more about your character here: http://shigatsu-wa-kimi-no-uso.wikia.com/wiki/Kaori_Miyazono\n"
+    	    text += "Read more about your character here: http://shigatsu-wa-kimi-no-uso.wikia.com/wiki/Kaori_Miyazono\n";
     	    System.out.print(text);
         }
     
@@ -938,7 +938,7 @@ public class Kanimop {
     	    text += "She is the 182nd Claymore of the 77th generation in the Organization, known to be strongest.\n";
     	    text += "She guides the main character and slaughters her enemies with a smile, earning the nickname 'Teresa of the Faint Smile'.\n";
     	    text += "Her character is often ruthless, but also caring, just like you!\n";
-    	    text += "Read more about your character here: http://claymore.wikia.com/wiki/Teresa\n"
+    	    text += "Read more about your character here: http://claymore.wikia.com/wiki/Teresa\n";
     	    System.out.print(text);
         }
     
@@ -947,7 +947,7 @@ public class Kanimop {
     	    text += "He is the founder and president of the Yorozuya Gin-Chan, as well as a highly skilled samurai, having fought in the Joui War in the past.\n";
     	    text += "He is extremely lazy, often imparting wise, sage-like advice that makes no sense, but his personality attracts friends.\n";
     	    text += "His character is dorky but charismatic, just like you!\n";
-    	    text += "Read more about your character here: http://gintama.wikia.com/wiki/Sakata_Gintoki\n"
+    	    text += "Read more about your character here: http://gintama.wikia.com/wiki/Sakata_Gintoki\n";
     	    System.out.print(text);
         }
     
@@ -956,7 +956,7 @@ public class Kanimop {
     	    text += "He is part of the Generation of Miracles Basketball Players and also works as a model with a "pretty" face.\n";
     	    text += "He has a very carefree, outgoing personality and tries to be friends with everybody, while often showing competitive qualities.\n";
     	    text += "Her character is funny and lovable, just like you!\n";
-    	    text += "Read more about your avatar here: http://kurokonobasuke.wikia.com/wiki/Ry%C5%8Dta_Kise\n"
+    	    text += "Read more about your avatar here: http://kurokonobasuke.wikia.com/wiki/Ry%C5%8Dta_Kise\n";
     	    System.out.print(text);
         }
     }	
