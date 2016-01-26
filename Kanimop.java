@@ -1364,7 +1364,7 @@ public class Kanimop {
     }
 
     public static void searchengine() {
-    	int choice2
+    	int choice2 = 0;
 	while (choice2 != 1 && choice2 != 2) {
 	    text = "\n\n\n\n\nWould you like to search for an anime or a kpop group?\n";
 	    text += "\t1: Anime!\n";
