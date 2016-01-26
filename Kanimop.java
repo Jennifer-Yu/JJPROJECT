@@ -603,47 +603,47 @@ public class Kanimop {
 	System.out.println(text);
 	
 	if (winner.equals("Haruhi")) {
-    	    text = "Haruhi is from the anime, Ouran High School Host Club.\n";
-    	    text += "She is forced to join Ouran Academy's host club of handsome boys after breaking an expensive vase.\n";
-       	    text += "She has a straightforward nature and believes that gender doesn't define your choices.\n";
-    	    text += "Her character is strong and understanding, just like you!\n";
-    	    text += "Read more about your character here: http://ouran.wikia.com/wiki/Haruhi_Fujioka\n";
+    	    text = "Haruhi is from the anime: Ouran High School Host Club.\n\n";
+    	    text += "She is forced to join Ouran Academy's host club of handsome boys after breaking an expensive vase.\n\n";
+       	    text += "She has a straightforward nature and believes that gender doesn't define your choices.\n\n";
+    	    text += "Her character is strong and understanding, just like you!\n\n";
+    	    text += "Read more about your character here: http://ouran.wikia.com/wiki/Haruhi_Fujioka\n\n";
     	    System.out.print(text);
         }
     
         if (winner.equals("Kaori")) {
-    	    text = "Kaori is from the anime, Your Lie In April.\n";
-    	    text += "She is a violinist who helps a dear friend return to the piano world after his mother's death.\n";
-    	    text += "She is often friendly and encouraging, but is also independent, unpredictable, and short-tempered.\n";
-    	    text += "Her character is passionate and powerful, just like you!\n";
-    	    text += "Read more about your character here: http://shigatsu-wa-kimi-no-uso.wikia.com/wiki/Kaori_Miyazono\n";
+    	    text = "Kaori is from the anime: Your Lie In April.\n\n";
+    	    text += "She is a violinist who helps a dear friend return to the piano world after his mother's death.\n\n";
+    	    text += "She is often friendly and encouraging, but is also independent, unpredictable, and short-tempered.\n\n";
+    	    text += "Her character is passionate and powerful, just like you!\n\n";
+    	    text += "Read more about your character here: http://shigatsu-wa-kimi-no-uso.wikia.com/wiki/Kaori_Miyazono\n\n";
     	    System.out.print(text);
         }
     
         if (winner.equals("Teresa")) {
-       	    text = "Teresa is from the anime, Claymore.\n";
-    	    text += "She is the 182nd Claymore of the 77th generation in the Organization, known to be strongest.\n";
-    	    text += "She guides the main character and slaughters her enemies with a smile, earning the nickname 'Teresa of the Faint Smile'.\n";
-    	    text += "Her character is often ruthless, but also caring, just like you!\n";
-    	    text += "Read more about your character here: http://claymore.wikia.com/wiki/Teresa\n";
+       	    text = "Teresa is from the anime: Claymore.\n\n";
+    	    text += "She is the 182nd Claymore of the 77th generation in the Organization, known to be strongest.\n\n";
+    	    text += "She guides the main character and slaughters her enemies with a smile, earning the nickname 'Teresa of the Faint Smile'.\n\n";
+    	    text += "Her character is often ruthless, but also caring, just like you!\n\n";
+    	    text += "Read more about your character here: http://claymore.wikia.com/wiki/Teresa\n\n";
     	    System.out.print(text);
         }
     
         if (winner.equals("Gintoki")) {
-     	    text = "Gintoki is from the anime, Gintama.\n";
-    	    text += "He is the founder and president of the Yorozuya Gin-Chan, as well as a highly skilled samurai, having fought in the Joui War in the past.\n";
-    	    text += "He is extremely lazy, often imparting wise, sage-like advice that makes no sense, but his personality attracts friends.\n";
-    	    text += "His character is dorky but charismatic, just like you!\n";
-    	    text += "Read more about your character here: http://gintama.wikia.com/wiki/Sakata_Gintoki\n";
+     	    text = "Gintoki is from the anime: Gintama.\n\n";
+    	    text += "He is the president of the Yorozuya Gin-Chan and is a highly skilled samurai.\n\n";
+    	    text += "He is extremely lazy, often imparting wise, sage-like advice that makes no sense, but his personality attracts friends.\n\n";
+    	    text += "His character is dorky but charismatic, just like you!\n\n";
+    	    text += "Read more about your character here: http://gintama.wikia.com/wiki/Sakata_Gintoki\n\n";
     	    System.out.print(text);
         }
     
         if (winner.equals("Kise")) {
-    	    text = "Kise is from the anime, Kuroko no Basket.\n";
-    	    text += "He is part of the Generation of Miracles Basketball Players and also works as a model with a pretty face.\n";
-    	    text += "He has a very carefree, outgoing personality and tries to be friends with everybody, while often showing competitive qualities.\n";
-    	    text += "Her character is funny and lovable, just like you!\n";
-    	    text += "Read more about your avatar here: http://kurokonobasuke.wikia.com/wiki/Ry%C5%8Dta_Kise\n";
+    	    text = "Kise is from the anime: Kuroko no Basket.\n\n";
+    	    text += "He is part of the Generation of Miracles Basketball Players and also works as a model with a pretty face.\n\n";
+    	    text += "He has a very outgoing personality and tries to be friends with everybody, while he can also be competitive and stubborn.\n\n";
+    	    text += "Her character is funny and lovable, just like you!\n\n";
+    	    text += "Read more about your avatar here: http://kurokonobasuke.wikia.com/wiki/Ry%C5%8Dta_Kise\n\n";
     	    System.out.print(text);
         }
     }	
