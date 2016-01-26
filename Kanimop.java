@@ -684,11 +684,11 @@ public class Kanimop {
         }
     
         if (winner.equals("Alice")) {
-    	    text = "Kise is from the anime: Kuroko no Basket.\n\n";
-    	    text += "He is part of the Generation of Miracles Basketball Players and also works as a model with a pretty face.\n\n";
-    	    text += "He has a very outgoing personality and tries to be friends with everybody, while he can also be competitive and stubborn.\n\n";
-    	    text += "Her character is funny and lovable, just like you!\n\n";
-    	    text += "Read more about your avatar here: http://kurokonobasuke.wikia.com/wiki/Ry%C5%8Dta_Kise\n\n";
+    	    text = "Alice is from the anime: Pandora Hearts.\n\n";
+    	    text += "She is introduced as the B-Rabbit or Blood-Stained Black Rabbit and helps the main character while searching for her lost memories.\n\n";
+    	    text += "She is cold and rude at the start and turns out to be hotheaded, loud spoken and blunt. However she is powerful and wants to do what's right.\n\n";
+    	    text += "Her character is simple and awesome, just like you!\n\n";
+    	    text += "Read more about your avatar here: http://pandorahearts.wikia.com/wiki/Alice\n\n";
     	    System.out.print(text);
         }
     }	
