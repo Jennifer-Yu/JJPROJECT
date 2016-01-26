@@ -163,8 +163,7 @@ public class Kpop {
 
     public static void main(String[] args) {
 
-	Kpop GOT7 = new Kpop();
-	GOT7.setGroupName("GOT7");
+	Kpop GOT7 = new Kpop("GOT7", true);
 	System.out.println(GOT7.getGroupName());
 	
     }

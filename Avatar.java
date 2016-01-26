@@ -143,8 +143,9 @@ public class Avatar {
 		    "\nInformation:" +
 		    "\n Alternative Titles: " + x.getAlternateName() +
 		    "\n Episodes: " + x.getNumEpisodes() + 
-		    "\n Producers: " + "TO BE INSERTED NOT DONE"  +
-		    "TO BE INSERTED NOT DONE"; //insert info
+		    "\n Producers: " + x.returnAlStr(x.getProducers())  +
+		    "\n Reviews: " + x.returnAlStr(x.getReviews())+
+		    "\n Plot: " + x.getPlot(); //insert info
 	    }
 	}
 	retStr = "Sorry, this anime is not on your list.";
@@ -211,17 +212,17 @@ public class Avatar {
 	String retStr = "";
 	for (Kpop x : kpopList) {
 	    if (x.getGroupName().equals(groupName)) {
-		retStr += "Group: " + x.getGroupName() +
-		    "Type: " + x.getGender() +
-		    "Company: " + x.getCompany() +
-		    "Fanbase: " + x.getFanbase() +
-		    "Fan Name: " + x.getFanName() +
-		    "Members: " + x.returnAlStr(x.getMembers()) +
-		    "Number of Members: " + x.getNumMembers()+
-		    "Ratings: " + x.getRating() +
-		    "Number of Title Songs: " + x.getTitleSongs()+
-		    "Reviews: " + x.returnAlStr(x.getReviews())+
-		    "Description: " + x.getDescription(); 
+		retStr += "\n Group: " + x.getGroupName() +
+		    "\n Type: " + x.getGender() +
+		    "\n Company: " + x.getCompany() +
+		    "\n Fanbase: " + x.getFanbase() +
+		    "\n Fan Name: " + x.getFanName() +
+		    "\n Members: " + x.returnAlStr(x.getMembers()) +
+		    "\n Number of Members: " + x.getNumMembers()+
+		    "\n Ratings: " + x.getRating() +
+		    "\n Number of Title Songs: " + x.getTitleSongs()+
+		    "\n Reviews: " + x.returnAlStr(x.getReviews())+
+		    "\n Description: " + x.getDescription(); 
 	    }
 	}
 	retStr = "Sorry, this group is not on your list.";

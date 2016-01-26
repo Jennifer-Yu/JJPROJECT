@@ -1,6 +1,5 @@
 // ANIME SKELETON IN DATABASE
 
-import java.util.ArrayList;
 import java.io.*;
 import java.util.*;
 
@@ -1144,8 +1143,7 @@ public class Anime {
 
     public static void main(String[] args) {
 
-	Anime Naruto = new Anime();
-	Naruto.setName("Naruto");
+	Anime Naruto = new Anime("Naruto");
 	Naruto.demo();
 
     }
