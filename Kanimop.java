@@ -343,10 +343,12 @@ public class Kanimop {
     // QUIZ
     public void quiz() {
 
-	while (choice != 1 && choice != 2) {
-	    text = "\n\n\n\n\nWould you like to be an anime character or a korean pop star?\n";
+	while (choice != 1 && choice != 2 && choice != 3 && choice != 4) {
+	    text = "\n\n\n\n\nWould you like to set your anime character or a korean pop star?\n";
 	    text += "\t1: ANIME CHARACTER PLZZ!\n";
 	    text += "\t2: Smoking hot kpop star, DUR.\n";
+	    text += "\t3: I want to stick with my old one.\n";
+	    text += "\t4: I don't want to set it.\n";	    
 	    
 	    text += ">> ";
 	    System.out.print(text);
@@ -355,8 +357,8 @@ public class Kanimop {
 		choice = Integer.parseInt( in.readLine() );
 	    }
 	    catch ( Exception e ) { }
-	    if ( choice != 1 && choice != 2 ) {
-		System.out.print("\n\n\n\n\nSorry! You need to pick 1 or 2 to continue.");
+	    if ( choice != 1 && choice != 2 && choice != 3 && choice != 4) {
+		System.out.print("\n\n\n\n\nSorry! You need to pick 1, 2, 3 or 4 to continue.");
 	    }
 	}
 
